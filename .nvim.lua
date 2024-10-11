@@ -5,6 +5,8 @@ vim.api.nvim_create_autocmd({ "BufRead", "BufNewFile" }, {
 		local file = arg.file:sub(#root + 2)
 		if file == ".chezmoi.toml.tmpl" then
 			vim.bo.filetype = "toml"
+		elseif file == "dot_editorconfig" then
+			vim.bo.filetype = "editorconfig"
 		end
 	end,
 })
