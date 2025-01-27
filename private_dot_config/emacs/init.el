@@ -23,4 +23,5 @@
 (elpaca-wait)
 
 ;; Setup packages
+(require 'my-spec-keymap)
 (elpaca-wait)
