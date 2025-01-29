@@ -9,6 +9,10 @@ vim.api.nvim_create_autocmd({ "BufRead", "BufNewFile" }, {
 			vim.bo.filetype = "editorconfig"
 		elseif file == "dot_Brewfile.tmpl" then
 			vim.bo.filetype = "ruby"
+		elseif file == "private_dot_config/git/config" then
+			vim.bo.filetype = "gitconfig"
+		elseif file == "private_dot_config/git/ignore" then
+			vim.bo.filetype = "gitignore"
 		end
 	end,
 })

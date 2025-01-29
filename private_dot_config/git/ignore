@@ -1,0 +1,4 @@
+# Direnv environment settings
+/.envrc
+# Jetbrains IDE project settings
+/.idea/
