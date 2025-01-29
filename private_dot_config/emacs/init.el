@@ -27,6 +27,7 @@
 
 ;; Setup packages
 (require 'my-spec-keymap)
+(require 'my-spec-ui)
 (elpaca-wait)
 
 ;; Load package modules
