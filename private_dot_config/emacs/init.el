@@ -30,6 +30,7 @@
 ;; Setup packages
 (require 'my-spec-keymap)
 (require 'my-spec-ui)
+(require 'my-spec-cmp)
 (elpaca-wait)
 
 ;; Load package modules
