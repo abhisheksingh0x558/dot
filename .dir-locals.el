@@ -16,5 +16,6 @@
                                  ("dot_zprofile" (sh-mode))
                                  ("dot_zshrc" (sh-mode))
                                  ("dot_bash_profile" (sh-mode))
-                                 ("dot_bashrc" (sh-mode)))))
+                                 ("dot_bashrc" (sh-mode))
+                                 ("private_dot_config/git/cyberhaven" (gitconfig-mode)))))
                            nil t)))))

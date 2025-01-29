@@ -27,6 +27,8 @@ vim.api.nvim_create_autocmd({ "BufRead", "BufNewFile" }, {
 			vim.bo.filetype = "bash"
 		elseif file == "dot_bashrc" then
 			vim.bo.filetype = "bash"
+		elseif file == "private_dot_config/git/cyberhaven" then
+			vim.bo.filetype = "gitconfig"
 		end
 	end,
 })
