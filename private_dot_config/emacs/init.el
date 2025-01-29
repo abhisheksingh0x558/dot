@@ -32,6 +32,7 @@
 (require 'my-spec-ui)
 (require 'my-spec-cmp)
 (require 'my-spec-fuzzy)
+(require 'my-spec-vcs)
 (elpaca-wait)
 
 ;; Load package modules
