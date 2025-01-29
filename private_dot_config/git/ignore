@@ -1,0 +1,6 @@
+# Git worktrees
+/git-worktree/
+# Direnv environment settings
+/.envrc
+# Jetbrains IDE project settings
+/.idea/
