@@ -33,4 +33,6 @@
 /.bin/brew-upgrade
 # Homebrew applications
 /.Brewfile
+# Karabiner settings
+/.config/karabiner/
 {{ end }}
