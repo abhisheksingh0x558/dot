@@ -31,6 +31,7 @@
 (require 'my-spec-keymap)
 (require 'my-spec-ui)
 (require 'my-spec-cmp)
+(require 'my-spec-fuzzy)
 (elpaca-wait)
 
 ;; Load package modules
