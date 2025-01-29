@@ -7,5 +7,7 @@
                                (pcase file
                                  (".chezmoi.toml.tmpl" (conf-toml-mode))
                                  ("dot_editorconfig" (editorconfig-conf-mode))
-                                 ("dot_Brewfile.tmpl" (ruby-ts-mode)))))
+                                 ("dot_Brewfile.tmpl" (ruby-ts-mode))
+                                 ("private_dot_config/git/config" (gitconfig-mode))
+                                 ("private_dot_config/git/ignore" (gitignore-mode)))))
                            nil t)))))
