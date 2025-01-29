@@ -1,0 +1,26 @@
+(defcfg
+  process-unmapped-keys yes
+)
+
+(defvar
+  tap-timeout 200
+  hold-timeout 200
+)
+
+(defalias
+  caps-lock (tap-hold-press $tap-timeout $hold-timeout esc lctl)
+  return    (tap-hold-press $tap-timeout $hold-timeout ret rctl)
+  space     (tap-hold-press $tap-timeout $hold-timeout spc alt)
+)
+
+(defsrc
+  esc caps ret spc
+)
+
+;; Remap escape to caps lock
+;; Remap caps lock to escape when tapped and left control when held
+;; Remap return to return when tapped and right control when held
+;; Remap space to space when tapped and alternate when held
+(deflayer default
+  caps @caps-lock @return @space
+)
