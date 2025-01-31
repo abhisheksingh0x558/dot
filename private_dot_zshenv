@@ -16,3 +16,8 @@ unset local_bin
 doomemacs_bin=~/.config/doomemacs/bin
 [[ -d "$doomemacs_bin" ]] && path+="$doomemacs_bin"
 unset doomemacs_bin
+
+# UI/UX
+HISTFILE=~/.zsh_history # File where history is stored
+HISTSIZE=5000           # Number of entries to load from history file into shell memory
+SAVEHIST=100000         # Number of entries stored in history file

@@ -6,3 +6,42 @@ source "$(brew --prefix zinit)/zinit.zsh"
 # Vi mode
 bindkey -v
 zinit light jeffreytse/zsh-vi-mode
+
+# UI/UX
+setopt EXTENDED_HISTORY                                   # Store additional metadata in history file
+setopt INC_APPEND_HISTORY_TIME                            # Append command to history file as each command is entered
+setopt HIST_EXPIRE_DUPS_FIRST                             # Remove oldest duplicate commands from history file when history reaches its limit
+setopt HIST_IGNORE_ALL_DUPS                               # Remove old duplicate commands from history file as each command is entered
+setopt HIST_REDUCE_BLANKS                                 # Trim blanks from commands before adding to history list
+setopt AUTO_CD                                            # If command is name of directory then cd into that directory
+zinit light zsh-users/zsh-syntax-highlighting             # Enable syntax highlighting
+# Default terminal
+(( $+commands[ghostty] )) && export TERMINAL=ghostty # Default terminal
+# Default editor
+if (( $+commands[nvim] )); then
+	export EDITOR=nvim
+	export VISUAL="$EDITOR"
+fi
+# Default browser
+if [[ "$(uname -s)" == "Linux" ]]; then
+	(( $+commands[brave] )) && export BROWSER=brave
+elif [[ "$(uname -s)" == "Darwin" ]]; then
+	[[ -x "/Applications/Brave Browser.app/Contents/MacOS/Brave Browser" ]] && export BROWSER='open -a "Brave Browser"'
+fi
+# Delta
+if (( $+commands[delta] )); then
+	export DELTA_FEATURES=line-numbers # Features to enable
+	# TODO: Enable this
+	# export DELTA_PAGER=builtin         # Pager
+fi
+(( $+commands[difft] )) && export DFT_DISPLAY=inline                   # Display style for difftastic
+(( $+commands[just] )) && export JUST_UNSTABLE=1                       # Enable unstable just features # TODO: Remove this
+(( $+commands[rg] )) && export RIPGREP_CONFIG_PATH=~/.config/rg/config # Ripgrep settings
+(( $+commands[docker] )) && export DOCKER_BUILDKIT=1                   # Enable docker buildkit plugin # TODO: Remove this
+# Sops age keys
+if (( $+commands[sops] )); then
+	export SOPS_AGE_KEY_FILE="$HOME/.config/age/key.txt"
+	SOPS_AGE_RECIPIENTS="$(age-keygen -y "$SOPS_AGE_KEY_FILE")"
+	export SOPS_AGE_RECIPIENTS
+fi
+(( $+commands[starship] )) && source <(starship init zsh) # Shell prompt
