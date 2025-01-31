@@ -59,3 +59,6 @@ $env.GOPATH = ($nu.home-dir | path join '.go')              # Global Go director
 
 # Version manager
 (which mise | is-not-empty); mise activate nu | save --force ($vendor_autoload_dir | path join 'mise.nu')
+
+# Key mappings
+$env.config.edit_mode = 'vi' # Vi mode
