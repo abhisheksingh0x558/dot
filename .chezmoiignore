@@ -42,4 +42,6 @@
 /.Brewfile
 # Karabiner settings
 /.config/karabiner/
+# MacOS application settings
+/Library/Application Support/
 {{ end }}
