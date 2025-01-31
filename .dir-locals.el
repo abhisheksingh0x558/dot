@@ -11,5 +11,7 @@
                                  ("private_dot_config/git/config" (gitconfig-mode))
                                  ("private_dot_config/git/ignore" (gitignore-mode))
                                  ("dot_ssh/private_config" (conf-space-mode))
-                                 ("private_dot_gnupg/gpg-agent.conf.tmpl" (conf-space-mode)))))
+                                 ("private_dot_gnupg/gpg-agent.conf.tmpl" (conf-space-mode))
+                                 ("private_dot_zprofile" (sh-mode))
+                                 ("private_dot_zshenv" (sh-mode))))
                            nil t)))))
