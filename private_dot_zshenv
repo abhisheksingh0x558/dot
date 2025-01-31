@@ -1,0 +1,10 @@
+# Path
+declare -U path # De-duplicate path elements
+# Custom scripts
+local_bin=~/.bin
+[[ -d "$local_bin" ]] && path+="$local_bin"
+unset local_bin
+# Doomemacs binaries
+doomemacs_bin=~/.config/doomemacs/bin
+[[ -d "$doomemacs_bin" ]] && path+="$doomemacs_bin"
+unset doomemacs_bin
