@@ -1,0 +1,3 @@
+# Plugin manager
+# TODO: Fix this for Linux
+source "$(brew --prefix zinit)/zinit.zsh"
