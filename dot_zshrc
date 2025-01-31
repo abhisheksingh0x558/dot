@@ -1,0 +1,4 @@
+# Key mappings
+# Vi mode
+bindkey -v
+zinit light jeffreytse/zsh-vi-mode
