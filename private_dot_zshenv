@@ -1,0 +1,3 @@
+# Plugin manager
+declare -A ZINIT
+ZINIT[NO_ALIASES]=1 # Disable aliases
