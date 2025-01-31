@@ -36,4 +36,6 @@
 /.bin/brew-upgrade
 # Homebrew applications
 /.Brewfile
+# MacOS application settings
+/Library/Application Support/
 {{ end }}
