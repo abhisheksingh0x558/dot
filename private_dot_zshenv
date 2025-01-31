@@ -16,3 +16,8 @@ export GOPATH=~/.go              # Global Go directory
 # Plugin manager
 declare -A ZINIT
 ZINIT[NO_ALIASES]=1 # Disable aliases
+
+# UI/UX
+HISTFILE=~/.zsh_history # File where history is stored
+HISTSIZE=5000           # Number of entries to load from history file into shell memory
+SAVEHIST=100000         # Number of entries stored in history file
