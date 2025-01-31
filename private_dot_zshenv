@@ -12,3 +12,7 @@ unset doomemacs_bin
 # Environment
 export XDG_CONFIG_HOME=~/.config # TODO: Check if this is required for Linux otherwise add a guard to set only for MacOS
 export GOPATH=~/.go              # Global Go directory
+
+# Plugin manager
+declare -A ZINIT
+ZINIT[NO_ALIASES]=1 # Disable aliases
