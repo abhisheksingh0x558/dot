@@ -17,6 +17,8 @@ vim.api.nvim_create_autocmd({ "BufRead", "BufNewFile" }, {
 			vim.bo.filetype = "sshconfig"
 		elseif file == "private_dot_gnupg/gpg-agent.conf.tmpl" then
 			vim.bo.filetype = "conf"
+		elseif file == "dot_zshenv" then
+			vim.bo.filetype = "zsh"
 		end
 	end,
 })
