@@ -42,6 +42,7 @@
 (require 'my-spec-fold)
 (require 'my-spec-outline)
 (require 'my-spec-ts)
+(require 'my-spec-lsp)
 (elpaca-wait)
 
 ;; Load package modules
