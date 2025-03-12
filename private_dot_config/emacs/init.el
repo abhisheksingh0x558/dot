@@ -37,6 +37,7 @@
 (require 'my-spec-note)
 (require 'my-spec-file)
 (require 'my-spec-term)
+(require 'my-spec-repl)
 (elpaca-wait)
 
 ;; Load package modules
