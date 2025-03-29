@@ -45,6 +45,7 @@
 (require 'my-spec-lsp)
 (require 'my-spec-lint)
 (require 'my-spec-format)
+(require 'my-spec-debug)
 (elpaca-wait)
 
 ;; Load package modules
