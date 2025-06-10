@@ -46,6 +46,7 @@
 (require 'my-spec-lint)
 (require 'my-spec-format)
 (require 'my-spec-debug)
+(require 'my-spec-ai)
 (elpaca-wait)
 
 ;; Load package modules
