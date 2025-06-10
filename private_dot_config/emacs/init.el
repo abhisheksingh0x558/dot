@@ -49,6 +49,7 @@
 (require 'my-spec-ai)
 (require 'my-spec-dot)
 (require 'my-spec-rest)
+(require 'my-spec-github)
 (elpaca-wait)
 
 ;; Load package modules
