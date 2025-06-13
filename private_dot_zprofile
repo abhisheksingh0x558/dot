@@ -1,0 +1,2 @@
+# Version manager
+(( $+commands[mise] )) && source <(mise activate zsh --shims)
