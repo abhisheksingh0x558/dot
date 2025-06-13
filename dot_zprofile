@@ -1,0 +1,2 @@
+# Version manager
+source <(mise activate zsh --shims)

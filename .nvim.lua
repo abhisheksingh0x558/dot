@@ -19,6 +19,8 @@ vim.api.nvim_create_autocmd({ "BufRead", "BufNewFile" }, {
 			vim.bo.filetype = "conf"
 		elseif file == "dot_zshenv" then
 			vim.bo.filetype = "zsh"
+		elseif file == "dot_zprofile" then
+			vim.bo.filetype = "zsh"
 		end
 	end,
 })
