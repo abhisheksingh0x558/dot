@@ -20,3 +20,6 @@ if (( $+commands[go] )); then
 	[[ -d "$go_bin" ]] && path+="$go_bin"
 	unset go_bin
 fi
+
+# Version manager
+(( $+commands[mise] )) && source <(mise activate zsh)
