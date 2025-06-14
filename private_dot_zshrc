@@ -71,3 +71,6 @@ if (( $+commands[fzf] )); then
 fi
 (( $+commands[zoxide] )) && source <(zoxide init zsh)                          # Change directory
 (( $+commands[atuin] )) && zvm_after_init_commands+='source <(atuin init zsh)' # History, direct sourcing causes conflicts with vi mode plugin
+
+# Environment manager
+(( $+commands[direnv] )) && source <(direnv hook zsh)
