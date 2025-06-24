@@ -6,5 +6,6 @@
                                     (file  (file-relative-name buffer-file-name root)))
                                (pcase file
                                  (".chezmoi.toml.tmpl" (conf-toml-mode))
-                                 ("dot_editorconfig" (editorconfig-conf-mode)))))
+                                 ("dot_editorconfig" (editorconfig-conf-mode))
+                                 ("dot_Brewfile.tmpl" (ruby-ts-mode)))))
                            nil t)))))
