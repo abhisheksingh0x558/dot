@@ -27,4 +27,6 @@
 /.bin/brew-refresh
 /.bin/brew-sync
 /.bin/brew-upgrade
+# Homebrew applications
+/.Brewfile
 {{ end }}
