@@ -7,6 +7,8 @@ vim.api.nvim_create_autocmd({ "BufRead", "BufNewFile" }, {
 			vim.bo.filetype = "toml"
 		elseif file == "dot_editorconfig" then
 			vim.bo.filetype = "editorconfig"
+		elseif file == "dot_Brewfile.tmpl" then
+			vim.bo.filetype = "ruby"
 		end
 	end,
 })
