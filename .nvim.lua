@@ -15,6 +15,8 @@ vim.api.nvim_create_autocmd({ "BufRead", "BufNewFile" }, {
 			vim.bo.filetype = "gitignore"
 		elseif file == "dot_ssh/private_config" then
 			vim.bo.filetype = "sshconfig"
+		elseif file == "private_dot_gnupg/gpg-agent.conf.tmpl" then
+			vim.bo.filetype = "conf"
 		end
 	end,
 })
