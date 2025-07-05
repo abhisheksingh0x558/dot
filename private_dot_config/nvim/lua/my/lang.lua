@@ -16,6 +16,13 @@ local languages = {
 		linters = { "shellcheck" },
 		formatters = { "shfmt" },
 	},
+
+	-- Bash
+	bash = {
+		language_server = "bashls",
+		linters = { "shellcheck" },
+		formatters = { "shfmt" },
+	},
 }
 
 -- Setup language tools
