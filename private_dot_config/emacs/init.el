@@ -63,3 +63,6 @@
 (require 'my-pkg-lint)
 (require 'my-pkg-format)
 (require 'my-pkg-dot)
+
+;; Load language settings
+(require 'my-lang)
