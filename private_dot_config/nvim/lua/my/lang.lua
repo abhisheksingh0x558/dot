@@ -174,6 +174,8 @@ local languages = {
 	},
 
 	-- TODO: Setup CSV
+
+	-- TODO: Setup SQL
 }
 
 -- Setup language tools
