@@ -18,7 +18,13 @@
      (haskell-ts-mode
        :language-server lsp-haskell
        :linters (haskell-hlint)
-       :formatters (fourmolu))))
+       :formatters (fourmolu))
+
+     ;; Rust
+     (rust-ts-mode
+       :language-server rust-analyzer
+       :linters (rust-clippy)
+       :formatters (rustfmt))))
 
 ;; Setup language tools
 ;; TODO: Fix check the executable as not all executable are named as the config name
@@ -79,5 +85,9 @@
 (leaf haskell-mode)
 (leaf haskell-ts-mode)
 (leaf lsp-haskell)
+
+;; Rust support
+;; TODO: Remove these
+(leaf rust-mode)
 
 (provide 'my-lang)
