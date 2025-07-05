@@ -24,7 +24,13 @@
      (rust-ts-mode
        :language-server rust-analyzer
        :linters (rust-clippy)
-       :formatters (rustfmt))))
+       :formatters (rustfmt))
+
+     ;; Go
+     (go-ts-mode
+       :language-server gopls
+       :linters (go-staticcheck)
+       :formatters (gofumpt))))
 
 ;; Setup language tools
 ;; TODO: Fix check the executable as not all executable are named as the config name
@@ -89,5 +95,9 @@
 ;; Rust support
 ;; TODO: Remove these
 (leaf rust-mode)
+
+;; Go support
+;; TODO: Remove these
+(leaf go-mode)
 
 (provide 'my-lang)
