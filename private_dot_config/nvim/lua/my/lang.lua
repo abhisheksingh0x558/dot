@@ -172,6 +172,8 @@ local languages = {
 		-- TODO: Add linters
 		formatters = { "yq" }, -- TODO: Check alternatives
 	},
+
+	-- TODO: Setup CSV
 }
 
 -- Setup language tools
