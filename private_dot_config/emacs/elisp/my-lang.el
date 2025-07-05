@@ -1,7 +1,12 @@
 (require 'lsp-diagnostics) ; TODO: Autoload this package
 
 ;; Language settings
-(defvar languages '())
+(defvar languages
+  '(;; Nix
+     (nix-ts-mode
+       :language-server nix-nil
+       :linters (statix)
+       :formatters (nixfmt))))
 
 ;; Setup language tools
 ;; TODO: Fix check the executable as not all executable are named as the config name
@@ -46,5 +51,10 @@
 ;; TODO: Remove these
 (leaf just-mode)
 (leaf just-ts-mode)
+
+;; Nix support
+;; TODO: Remove these
+(leaf nix-mode)
+(leaf nix-ts-mode)
 
 (provide 'my-lang)
