@@ -63,6 +63,13 @@ local languages = {
 		linters = { "fennel" },
 		formatters = { "fnlfmt" },
 	},
+
+	-- Haskell
+	haskell = {
+		language_server = "hls",
+		linters = { "hlint" },
+		formatters = { "fourmolu" },
+	},
 }
 
 -- Setup language tools
