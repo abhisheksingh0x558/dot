@@ -39,6 +39,7 @@
 (require 'my-spec-term)
 (require 'my-spec-repl)
 (require 'my-spec-exec)
+(require 'my-spec-fold)
 (elpaca-wait)
 
 ;; Load package modules
