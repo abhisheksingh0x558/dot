@@ -49,6 +49,13 @@ local languages = {
 
 	-- Typst
 	typst = {},
+
+	-- Lua
+	lua = {
+		language_server = "lua_ls",
+		linters = { "luacheck" },
+		formatters = { "stylua" },
+	},
 }
 
 -- Setup language tools
