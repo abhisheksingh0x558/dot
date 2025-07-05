@@ -36,7 +36,13 @@
      (scala-mode
        :language-server metals
        :linters nil ; TODO: Add linters
-       :formatters (scalafmt))))
+       :formatters (scalafmt))
+
+     ;; PureScript
+     (purescript-mode
+       :language-server purescript-language-server
+       :linters nil ; TODO: Add linters
+       :formatters (purs-tidy))))
 
 ;; Setup language tools
 ;; TODO: Fix check the executable as not all executable are named as the config name
@@ -112,5 +118,10 @@
 (leaf scala-mode)
 (leaf scala-ts-mode)
 (leaf lsp-metals)
+
+;; PureScript support
+;; TODO: Remove these
+;; TODO: Setup purescript treesitter mode
+(leaf purescript-mode)
 
 (provide 'my-lang)
