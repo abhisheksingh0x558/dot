@@ -2,7 +2,14 @@ local treesitter = require("nvim-treesitter")
 local lint = require("lint")
 local conform = require("conform")
 
-local languages = {}
+local languages = {
+	-- Nushell
+	nu = {
+		language_server = "nushell",
+		-- TODO: Add linters
+		-- TODO: Add formatters
+	},
+}
 
 -- Setup language tools
 -- TODO: Fix check the executable as not all executable are named as the config name
