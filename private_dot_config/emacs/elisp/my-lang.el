@@ -12,7 +12,13 @@
      (beancount-mode
        :language-server beancount-ls
        :linters nil ; TODO: Add linters
-       :formatters (bean-format))))
+       :formatters (bean-format))
+
+     ;; Haskell
+     (haskell-ts-mode
+       :language-server lsp-haskell
+       :linters (haskell-hlint)
+       :formatters (fourmolu))))
 
 ;; Setup language tools
 ;; TODO: Fix check the executable as not all executable are named as the config name
@@ -67,5 +73,11 @@
 ;; TODO: Remove these
 (leaf beancount)
 ;; TODO: Setup beancount treesitter mode
+
+;; Haskell support
+;; TODO: Remove these
+(leaf haskell-mode)
+(leaf haskell-ts-mode)
+(leaf lsp-haskell)
 
 (provide 'my-lang)
