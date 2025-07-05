@@ -108,6 +108,13 @@ local languages = {
 		linters = { "biomejs" },
 		formatters = { "biome" },
 	},
+
+	-- PureScript
+	purescript = {
+		language_server = "purescriptls",
+		-- TODO: Add linters
+		formatters = { "purs-tidy" },
+	},
 }
 
 -- Setup language tools
