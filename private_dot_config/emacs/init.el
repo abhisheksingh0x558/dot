@@ -40,6 +40,7 @@
 (require 'my-spec-repl)
 (require 'my-spec-exec)
 (require 'my-spec-fold)
+(require 'my-spec-outline)
 (elpaca-wait)
 
 ;; Load package modules
