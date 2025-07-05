@@ -49,3 +49,6 @@ require("my.plug.outline")
 require("my.plug.ts")
 require("my.plug.lint")
 require("my.plug.format")
+
+-- Load language settings
+require("my.lang")
