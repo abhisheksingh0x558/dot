@@ -30,7 +30,13 @@
      (go-ts-mode
        :language-server gopls
        :linters (go-staticcheck)
-       :formatters (gofumpt))))
+       :formatters (gofumpt))
+
+     ;; Scala
+     (scala-mode
+       :language-server metals
+       :linters nil ; TODO: Add linters
+       :formatters (scalafmt))))
 
 ;; Setup language tools
 ;; TODO: Fix check the executable as not all executable are named as the config name
@@ -99,5 +105,12 @@
 ;; Go support
 ;; TODO: Remove these
 (leaf go-mode)
+
+;; Scala support
+;; TODO: Remove these
+;; TODO: Add scala mode as parent for scala treesitter mode
+(leaf scala-mode)
+(leaf scala-ts-mode)
+(leaf lsp-metals)
 
 (provide 'my-lang)
