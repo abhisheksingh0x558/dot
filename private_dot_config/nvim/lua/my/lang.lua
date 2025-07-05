@@ -83,6 +83,13 @@ local languages = {
 	},
 
 	-- TODO: Setup Racket
+
+	-- Go
+	go = {
+		language_server = "gopls",
+		linters = { "staticcheck" },
+		formatters = { "gofumpt" },
+	},
 }
 
 -- Setup language tools
