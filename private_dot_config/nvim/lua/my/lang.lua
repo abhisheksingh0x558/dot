@@ -145,6 +145,19 @@ local languages = {
 	},
 
 	-- TODO: Setup GraphQL
+
+	-- JSON
+	-- TODO: Setup JSON5
+	json = {
+		-- TODO: Add language server
+		-- TODO: Add linters
+		formatters = { "gojq" }, -- TODO: Check alternatives
+	},
+	jsonc = {
+		-- TODO: Add language server
+		-- TODO: Add linters
+		formatters = { "gojq" }, -- TODO: Check alternatives
+	},
 }
 
 -- Setup language tools
