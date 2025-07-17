@@ -6,3 +6,62 @@ cask "karabiner-elements"
 
 # Fonts
 cask "font-fira-code-nerd-font"
+
+# CLIs
+brew "usage"                                 # UI toolkit
+brew "gum"                                   # Specification for parsing arguments
+brew "mise"                                  # Tool version manager
+brew "git"                                   # VCS
+brew "git-absorb"                            # Git plugin
+brew "git-flow-next"                         # Git plugin
+brew "just"                                  # Command runner
+brew "chezmoi"                               # Dotfile manager
+brew "zoxide"                                # Change directory
+brew "eza"                                   # List files
+brew "bat"                                   # View files
+brew "bat-extras"                            # Bat utilities
+brew "fd"                                    # Find files
+brew "ripgrep"                               # Search files
+brew "ripgrep-all"                           # Ripgrep utilities
+brew "git-delta"                             # Compare files
+brew "sd"                                    # Search and replace files
+brew "choose"                                # Extract text from files
+brew "rust-parallel"                         # Parse arguments and execute commands
+brew "pueue", restart_service: :changed      # Background task executor
+brew "watchexec"                             # File watcher
+brew "scc"                                   # Code counter
+brew "hyperfine"                             # Benchmarking
+brew "procs"                                 # View running processes
+brew "ouch"                                  # Compress and decompress files
+brew "age"                                   # Encryption
+brew "sops"                                  # Configuration file encryption
+brew "gojq"                                  # JSON toolkit
+brew "taplo"                                 # TOML toolkit
+brew "yq"                                    # JSON, TOML, YAML, XML and CSV toolkit
+brew "precious"                              # Linter and formatter
+brew "lefthook"                              # Git hook manager
+brew "tree-sitter-cli"                       # Treesitter parser generator
+brew "xh"                                    # HTTP client
+brew "less"                                  # Pager
+brew "make"                                  # Build system
+brew "gnupg"                                 # Encryption and signing
+brew "task"                                  # To do manager
+brew "timewarrior"                           # Time tracker
+brew "beanquery"                             # Beancount query tool
+brew "mermaid-cli"                           # Diagram as code
+brew "marp-cli"                              # Presentation as code
+brew "gh"                                    # GitHub client
+brew "podman"                                # Containerization
+brew "podman-compose"                        # Podman plugin
+brew "colima", restart_service: :changed     # Containerization
+brew "docker"                                # Containerization
+brew "docker-compose"                        # Docker plugin
+brew "docker-buildx"                         # Docker plugin
+brew "kubernetes-cli"                        # Container orchestration
+brew "helm"                                  # Kubernetes package manager
+brew "stern"                                 # Kubernetes log explorer
+brew "kubectx"                               # Kubernetes context and namespace manager
+brew "postgresql", restart_service: :changed # SQL database
+brew "redis", restart_service: :changed      # Key value database
+brew "ollama"                                # Local LLM manager
+brew "aider"                                 # AI agent
