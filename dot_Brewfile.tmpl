@@ -78,3 +78,30 @@ brew "podman-tui"      # Podman client
 brew "lazydocker"      # Docker client
 brew "k9s"             # Kubernetes client
 brew "opencode"        # AI agent
+
+# GUIs
+brew "pinentry-mac"  # Passphrase dialog
+cask "brave-browser" # Browser
+cask "browseros"     # Browser
+cask "ghostty"       # Terminal
+cask "wave"          # Terminal
+cask "emacs-app"     # Text editor
+cask "zed"           # Text editor
+cask "void"          # Text editor
+cask "utm"           # Virtualisation and emulation
+# Proprietary
+cask "raycast" # Application launcher
+
+
+{{ if eq .profile "default" -}}
+# Default profile
+
+# GUIs
+cask "proton-pass"  # Password manager
+cask "proton-drive" # Cloud storage
+cask "protonvpn"    # VPN client
+# Proprietary
+cask "dropbox"      # Cloud storage
+cask "onedrive"     # Cloud storage
+cask "google-drive" # Cloud storage
+{{- end }}
