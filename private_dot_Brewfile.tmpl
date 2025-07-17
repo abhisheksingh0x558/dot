@@ -88,3 +88,56 @@ brew "jiratui"         # Jira client
 brew "podman-tui"      # Podman client
 brew "lazydocker"      # Docker client
 brew "k9s"             # Kubernetes client
+
+# GUIs
+brew "pinentry-mac"              # Passphrase dialog
+cask "chromium"                  # Browser
+cask "brave-browser"             # Browser
+cask "firefox"                   # Browser
+cask "firefox@developer-edition" # Browser
+cask "browseros"                 # Browser
+cask "zen"                       # Browser
+cask "helium-browser"            # Browser
+cask "ghostty"                   # Terminal
+cask "wezterm"                   # Terminal
+cask "alacritty"                 # Terminal
+cask "wave"                      # Terminal
+cask "cmux"                      # Terminal
+cask "iterm2"                    # Terminal
+cask "emacs-app"                 # Text editor
+cask "vscodium"                  # Text editor
+cask "zed"                       # Text editor
+cask "void"                      # Text editor
+cask "logseq"                    # Note taker
+cask "bitwarden"                 # Password manager
+cask "bruno"                     # API client
+cask "dbeaver-community"         # DB client
+cask "utm"                       # Virtualisation and emulation
+# Proprietary
+cask "raycast"            # Application launcher
+cask "google-chrome"      # Browser
+cask "warp"               # Terminal
+cask "visual-studio-code" # Text editor
+cask "antigravity"        # Text editor
+cask "cursor"             # Text editor
+cask "windsurf"           # Text editor
+cask "obsidian"           # Note taker
+cask "notion"             # Note taker
+cask "postman"            # API client
+cask "okta-verify"        # Authenticator
+cask "slack"              # Instant messenger
+cask "zoom"               # Video caller
+cask "figma"              # Designer
+
+{{ if eq .profile "default" -}}
+# Default profile
+
+# GUIs
+cask "proton-pass"  # Password manager
+cask "proton-drive" # Cloud storage
+cask "protonvpn"    # VPN client
+# Proprietary
+cask "dropbox"      # Cloud storage
+cask "onedrive"     # Cloud storage
+cask "google-drive" # Cloud storage
+{{- end }}
