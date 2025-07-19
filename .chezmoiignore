@@ -2,6 +2,8 @@
 /README.md
 # License
 /LICENSE
+# Installation script
+/install
 
 {{ if ne .chezmoi.os "linux" }}
 # Arch Linux only includes

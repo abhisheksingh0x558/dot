@@ -1,0 +1,76 @@
+#!/usr/bin/env bash
+
+set -o errexit
+set -o nounset
+set -o pipefail
+
+# Install Arch Linux package manager
+paru-init() {
+	command -v paru &>/dev/null || return
+	local paru_dir
+	paru_dir="$(mktemp --directory)"
+	trap 'rm -r "$paru_dir"' RETURN
+	git clone https://aur.archlinux.org/paru.git "$paru_dir"
+	cd "$paru_dir"
+	makepkg --install --syncdeps --noconfirm
+	cd -
+}
+
+# Install Paru applications
+paru-sync() {
+	local paru_file=~/.config/paru.toml
+	[[ -f "$paru_file" ]] &&
+		yq '.applications[]' "$paru_file" |
+		paru --sync --needed --noconfirm -
+}
+
+# Install MacOS package manager
+brew-init() {
+	command -v nix &>/dev/null &&
+		curl --fail --silent --location --show-error https://install.determinate.systems/nix |
+		bash -s -- install --determinate
+	# Add Homebrew to path # TODO: test and fix this if not working
+	if [[ "$(uname -s)" == "Darwin" ]]; then
+		if [[ "$(uname -m)" == "arm64" ]]; then
+			eval "$(/opt/homebrew/bin/brew shellenv)"
+		elif [[ "$(uname -m)" == "x86_64" ]]; then
+			eval "$(/usr/local/bin/brew shellenv)"
+		fi
+	fi
+}
+
+# Install Homebrew applications
+brew-sync() {
+	[[ -f ~/.Brewfile ]] && brew bundle install --global
+}
+
+# TODO: Add support for installing git via pacman/xcode-select
+main() {
+	dir=~/.dot
+	git clone https://codeberg.org/abhisheksingh0x558/dot.git "$dir" # Clone dotfiles
+	echo "Enter profile (Default profile is default): "
+	local profile
+	read -r profile
+	[[ -z "$profile" ]] && profile="default"
+	echo "profile = \"$profile\"" >"$dir/.chezmoidata.toml"
+	if [[ "$(uname -s)" == "Linux" ]]; then
+		# Arch Linux
+		paru-init "$@"                                   # Install Paru
+		paru --sync --needed --noconfirm chezmoi mise yq # Install Paru applications
+	elif [[ "$(uname -s)" == "Darwin" ]]; then
+		# MacOS
+		brew-init "$@"            # Install Homebrew
+		brew install chezmoi mise # Install Homebrew applications
+	fi
+	chezmoi init --apply --source "$dir" # Link dotfiles
+	mise install                         # Install Mise tools
+	if [[ "$(uname -s)" == "Linux" ]]; then
+		# Arch Linux
+		paru-sync "$@" # Install Paru applications
+	elif [[ "$(uname -s)" == "Darwin" ]]; then
+		# MacOS
+		brew-sync "$@" # Install Homebrew applications
+	fi
+}
+
+main "$@"
