@@ -1,0 +1,8 @@
+# Show hidden files
+--hidden
+# Show files ignored by VCS tools
+--no-ignore-vcs
+# Respect case if pattern has upper case characters otherwise ignore it
+--smart-case
+# Ignore Git directory
+--glob=!.git
