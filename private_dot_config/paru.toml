@@ -108,4 +108,52 @@ applications = [
   "podman-tui-bin",  # Podman client
   "lazydocker",      # Docker client
   "k9s",             # Kubernetes client
+
+  # GUIs
+  "walker-bin",                # Application launcher
+  "elephant-all-bin",          # Application launcher
+  "chromium",                  # Browser
+  "brave-bin",                 # Browser
+  "firefox",                   # Browser
+  "firefox-developer-edition", # Browser
+  "browseros-bin",             # Browser
+  "zen-browser",               # Browser
+  "helium-browser",            # Browser
+  "xdg-terminal-exec",         # Terminal
+  "ghostty",                   # Terminal
+  "wezterm",                   # Terminal
+  "alacritty",                 # Terminal
+  "waveterm-bin",              # Terminal
+  "cmux",                      # Terminal
+  "emacs",                     # Text editor
+  "vscodium",                  # Text editor
+  "zed",                       # Text editor
+  "void-bin",                  # Text editor
+  "logseq",                    # Note taker
+  "affine",                    # Note taker
+  "anytype",                   # Note taker
+  "appflowy",                  # Note taker
+  "element-desktop",           # Instant messenger
+  "signal-desktop",            # Instant messenger
+  "telegram-desktop",          # Instant messenger
+  "proton-pass-bin",           # Password manager
+  "bruno",                     # API client
+  "insomnia",                  # API client
+  "dbeaver",                   # DB client
+  # TODO: Proton drive
+  # TODO: Proton VPN
+  # Proprietary
+  "google-chrome",          # Browser
+  "warp-terminal-bin",      # Terminal
+  "visual-studio-code-bin", # Text editor
+  "antigravity",            # Text editor
+  "cursor",                 # Text editor
+  "windsurf",               # Text editor
+  "obsidian",               # Note taker
+  "notion-app-electron",    # Note taker
+  "postman-bin",            # API client
+  "discord",                # Instant messenger
+  "slack",                  # Instant messenger
+  "whatsapp-for-linux",     # Instant messenger
+  "zoom",                   # Video caller
 ]
