@@ -9,4 +9,7 @@ applications = [
   "xorg-xwayland",               # X11 compatibility layer for Wayland
   "xdg-desktop-portal",          # XDG desktop portal
   "xdg-desktop-portal-hyprland", # XDG desktop portal
+
+  # Shells
+  "bash",
 ]
