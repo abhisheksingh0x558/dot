@@ -149,4 +149,9 @@ applications = [
   "haskell-language-server", # Language server
   "hlint",                   # Linter
   "haskell-fourmolu",        # Formatter
+
+  # Rust
+  "rust",
+  "cargo-binstall", # Binary installer
+  "rust-analyzer",  # Language server
 ]
