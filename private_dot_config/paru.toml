@@ -14,4 +14,7 @@ applications = [
   "nushell",
   "zsh",
   "bash",
+
+  # Key mapper
+  "keyd",
 ]
