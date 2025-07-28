@@ -83,4 +83,17 @@ applications = [
   "redis",           # Key value database
   "ollama",          # Local LLM manager
   "aider-chat",      # AI agent
+
+  # TUIs
+  "fzf",             # Fuzzy finder
+  "yazi",            # File system explorer
+  "neovim",          # Text editor
+  "lazygit",         # Git client
+  "zellij",          # Terminal multiplexer
+  "bottom",          # System monitor
+  "taskwarrior-tui", # Taskwarrior client
+  "podman-tui-bin",  # Podman client
+  "lazydocker",      # Docker client
+  "k9s",             # Kubernetes client
+  "opencode-bin",    # AI agent
 ]
