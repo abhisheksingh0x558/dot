@@ -92,4 +92,20 @@ applications = [
   "kubens",            # Kubernetes namespace manager
   "postgresql",        # SQL database
   "redis",             # Key value database
+
+  # TUIs
+  "jjui",            # Jujutsu client
+  "fzf",             # Fuzzy finder
+  "television",      # Fuzzy finder
+  "yazi",            # File system explorer
+  "neovim",          # Text editor
+  "gitui",           # Git client
+  "lazygit",         # Git client
+  "zellij",          # Terminal multiplexer
+  "bottom",          # System monitor
+  "taskwarrior-tui", # Taskwarrior client
+  "jiratui",         # Jira client
+  "podman-tui-bin",  # Podman client
+  "lazydocker",      # Docker client
+  "k9s",             # Kubernetes client
 ]
