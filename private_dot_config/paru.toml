@@ -137,4 +137,9 @@ applications = [
   "lua-language-server", # Language server
   "luacheck",            # Linter
   "stylua",              # Formatter
+
+  # Fennel
+  "fennel",
+  "fennel-ls", # Language server
+  "fnlfmt",    # Formatter
 ]
