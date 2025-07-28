@@ -101,4 +101,41 @@ applications = [
   "podman-tui-bin",  # Podman client
   "lazydocker",      # Docker client
   "k9s",             # Kubernetes client
+
+  # GUIs
+  "walker-bin",                # Application launcher
+  "elephant-all-bin",          # Application launcher
+  "chromium",                  # Browser
+  "brave-bin",                 # Browser
+  "firefox",                   # Browser
+  "firefox-developer-edition", # Browser
+  "browseros-bin",             # Browser
+  "zen-browser",               # Browser
+  "xdg-terminal-exec",         # Terminal
+  "ghostty",                   # Terminal
+  "wezterm",                   # Terminal
+  "alacritty",                 # Terminal
+  "waveterm-bin",              # Terminal
+  "emacs",                     # Text editor
+  "vscodium",                  # Text editor
+  "zed",                       # Text editor
+  "void-bin",                  # Text editor
+  "logseq",                    # Note taker
+  "proton-pass-bin",           # Password manager
+  "bruno",                     # API client
+  "dbeaver",                   # DB client
+  # TODO: Proton drive
+  # TODO: Proton VPN
+  # Proprietary
+  "google-chrome",          # Browser
+  "warp-terminal-bin",      # Terminal
+  "visual-studio-code-bin", # Text editor
+  "antigravity",            # Text editor
+  "cursor",                 # Text editor
+  "windsurf",               # Text editor
+  "obsidian",               # Note taker
+  "notion-app-electron",    # Note taker
+  "postman-bin",            # API client
+  "slack",                  # Instant messenger
+  "zoom",                   # Video caller
 ]
