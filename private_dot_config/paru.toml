@@ -132,4 +132,9 @@ applications = [
 
   # Typst
   "typst",
+
+  # Lua
+  "lua-language-server", # Language server
+  "luacheck",            # Linter
+  "stylua",              # Formatter
 ]
