@@ -15,4 +15,7 @@ applications = [
 
   # Key mapper
   "keyd",
+
+  # Fonts
+  "ttf-firacode-nerd",
 ]
