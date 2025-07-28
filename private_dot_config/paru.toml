@@ -96,4 +96,19 @@ applications = [
   "lazydocker",      # Docker client
   "k9s",             # Kubernetes client
   "opencode-bin",    # AI agent
+
+  # GUIs
+  "walker-bin",        # Application launcher
+  "elephant-all-bin",  # Application launcher
+  "brave-bin",         # Browser
+  "browseros-bin",     # Browser
+  "xdg-terminal-exec", # Terminal
+  "ghostty",           # Terminal
+  "waveterm-bin",      # Terminal
+  "emacs",             # Text editor
+  "zed",               # Text editor
+  "void-bin",          # Text editor
+  "proton-pass-bin",   # Password manager
+  # TODO: Proton drive
+  # TODO: Proton VPN
 ]
