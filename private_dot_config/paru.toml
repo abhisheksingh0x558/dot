@@ -18,4 +18,69 @@ applications = [
 
   # Fonts
   "ttf-firacode-nerd",
+
+  # CLIs
+  "xdg-utils",         # XDG MIME application manager
+  "xdg-user-dirs",     # XDG user directory manager
+  "wl-clipboard-rs",   # Clipboard manager
+  "usage",             # UI toolkit
+  "gum",               # Specification for parsing arguments
+  "mise",              # Tool version manager
+  "git",               # VCS
+  "git-absorb",        # Git plugin
+  "git-flow-next",     # Git plugin
+  "just",              # Command runner
+  "chezmoi",           # Dotfile manager
+  "zoxide",            # Change directory
+  "eza",               # List files
+  "bat",               # View files
+  "bat-extras",        # Bat utilities
+  "fd",                # Find files
+  "ripgrep",           # Search files
+  "ripgrep-all",       # Ripgrep utilities
+  "git-delta",         # Compare files
+  "sd",                # Search and replace files
+  "choose",            # Extract text from files
+  "rust-parallel-bin", # Parse arguments and execute commands
+  "pueue",             # Background task executor
+  "watchexec",         # File watcher
+  "scc-bin",           # Code counter
+  "hyperfine",         # Benchmarking
+  "procs",             # View running processes
+  "ouch",              # Compress and decompress files
+  "age",               # Encryption
+  "sops",              # Configuration file encryption
+  "gojq-bin",          # JSON toolkit
+  "taplo",             # TOML toolkit
+  "go-yq",             # JSON, TOML, YAML, XML and CSV toolkit
+  # TODO: Enable this
+  # "precious",          # Linter and formatter
+  "lefthook-bin",    # Git hook manager
+  "tree-sitter-cli", # Treesitter parser generator
+  "xh",              # HTTP client
+  "less",            # Pager
+  "make",            # Build system
+  "gnupg",           # Encryption and signing
+  "task",            # To do manager
+  "timew",           # Time tracker
+  "beanquery",       # Beancount query tool
+  "mermaid-cli",     # Diagram as code
+  "marp-cli",        # Presentation as code
+  "rclone",          # Cloud storage
+  "github-cli",      # GitHub client
+  "podman",          # Containerization
+  "podman-compose",  # Podman plugin
+  "colima-bin",      # Containerization
+  "docker",          # Containerization
+  "docker-compose",  # Docker plugin
+  "docker-buildx",   # Docker plugin
+  "kubectl",         # Container orchestration
+  "helm",            # Kubernetes package manager
+  "stern",           # Kubernetes log explorer
+  "kubectx",         # Kubernetes context manager
+  "kubens",          # Kubernetes namespace manager
+  "postgresql",      # SQL database
+  "redis",           # Key value database
+  "ollama",          # Local LLM manager
+  "aider-chat",      # AI agent
 ]
