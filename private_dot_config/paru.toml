@@ -12,4 +12,7 @@ applications = [
 
   # Shells
   "bash",
+
+  # Key mapper
+  "keyd",
 ]
