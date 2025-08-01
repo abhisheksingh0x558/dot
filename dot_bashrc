@@ -30,3 +30,7 @@ command -v rg &>/dev/null && export RIPGREP_CONFIG_PATH=~/.config/rg/config     
 command -v docker &>/dev/null && export DOCKER_BUILDKIT=1                           # Enable docker buildkit plugin # TODO: Remove this
 command -v sops &>/dev/null && export SOPS_AGE_KEY_FILE="$HOME/.config/age/key.txt" # Sops age keys
 command -v starship &>/dev/null && eval "$(starship init bash)"                     # Shell prompt
+
+# Autocompletion
+command -v carapace &>/dev/null && eval "$(carapace _carapace bash)" # Autocompletion
+command -v pay-respects &>/dev/null && eval "$(pay-respects bash)"   # Autocorrection
