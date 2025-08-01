@@ -70,5 +70,8 @@ fi
 command -v zoxide &>/dev/null && eval "$(zoxide init bash)" # Change directory
 command -v atuin &>/dev/null && eval "$(atuin init bash)"   # History
 
+# Environment manager
+command -v direnv &>/dev/null && eval "$(direnv hook bash)"
+
 # Line editor
 [[ ! ${BLE_VERSION-} ]] || ble-attach
