@@ -1,9 +1,50 @@
 # Source run commands only for interactive shells
 [[ "$-" != *i* ]] && return
 
+# Line editor
+source -- "$(brew --prefix my/local/blesh)/ble.sh" --attach=none
+
 # Plugin manager
 command -v sheldon &>/dev/null && eval "$(sheldon source)" # Load plugin manager
 
 # Key mappings
 # Vi mode
 set -o vi
+
+# UI/UX
+# TODO: Configure history settings
+HISTFILE=~/.bash_history                                  # File where history is stored
+HISTSIZE=5000                                             # Number of entries to load from history file into shell memory
+HISTFILESIZE=100000                                       # Number of entries stored in history file
+command -v ghostty &>/dev/null && export TERMINAL=ghostty # Default terminal
+# Default editor
+if command -v nvim &>/dev/null; then
+	export EDITOR=nvim
+	export VISUAL="$EDITOR"
+fi
+# Default browser
+if [[ "$(uname -s)" == "Linux" ]]; then
+	command -v zen &>/dev/null && export BROWSER=zen
+elif [[ "$(uname -s)" == "Darwin" ]]; then
+	[[ -x /Applications/Zen.app/Contents/MacOS/Zen ]] && export BROWSER='open -a Zen'
+fi
+# Delta
+if command -v delta &>/dev/null; then
+	export DELTA_FEATURES=line-numbers # Features to enable
+	# TODO: Enable this
+	# export DELTA_PAGER=builtin         # Pager
+fi
+command -v difft &>/dev/null && export DFT_DISPLAY=inline                   # Display style for difftastic
+command -v just &>/dev/null && export JUST_UNSTABLE=1                       # Enable unstable just features # TODO: Remove this
+command -v rg &>/dev/null && export RIPGREP_CONFIG_PATH=~/.config/rg/config # Ripgrep settings
+command -v docker &>/dev/null && export DOCKER_BUILDKIT=1                   # Enable docker buildkit plugin # TODO: Remove this
+# Sops age keys
+if command -v sops &>/dev/null; then
+	export SOPS_AGE_KEY_FILE="$HOME/.config/age/key.txt"
+	SOPS_AGE_RECIPIENTS="$(age-keygen -y "$SOPS_AGE_KEY_FILE")"
+	export SOPS_AGE_RECIPIENTS
+fi
+command -v starship &>/dev/null && eval "$(starship init bash)" # Shell prompt
+
+# Line editor
+[[ ! ${BLE_VERSION-} ]] || ble-attach
