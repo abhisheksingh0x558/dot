@@ -34,3 +34,23 @@ command -v starship &>/dev/null && eval "$(starship init bash)"                 
 # Autocompletion
 command -v carapace &>/dev/null && eval "$(carapace _carapace bash)" # Autocompletion
 command -v pay-respects &>/dev/null && eval "$(pay-respects bash)"   # Autocorrection
+
+# Fuzzy finder
+# Fzf
+if command -v fzf &>/dev/null; then
+	export FZF_DEFAULT_OPTS_FILE=~/.config/fzf/config                       # Settings
+	export FZF_DEFAULT_COMMAND='fd --hidden --no-ignore-vcs --type file'    # Find files
+	export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"                        # Find files
+	export FZF_ALT_C_COMMAND='fd --hidden --no-ignore-vcs --type directory' # Find directories
+	# Find files
+	_fzf_compgen_path() {
+		fd --hidden --no-ignore-vcs . "$1"
+	}
+	# Find directories
+	_fzf_compgen_dir() {
+		fd --hidden --no-ignore-vcs --type directory . "$1"
+	}
+	eval "$(fzf --bash)"
+fi
+command -v zoxide &>/dev/null && eval "$(zoxide init bash)" # Change directory
+command -v atuin &>/dev/null && eval "$(atuin init bash)"   # History
