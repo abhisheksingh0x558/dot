@@ -46,5 +46,9 @@ if command -v sops &>/dev/null; then
 fi
 command -v starship &>/dev/null && eval "$(starship init bash)" # Shell prompt
 
+# Autocompletion
+command -v carapace &>/dev/null && eval "$(carapace _carapace bash)" # Autocompletion
+command -v pay-respects &>/dev/null && eval "$(pay-respects bash)"   # Autocorrection
+
 # Line editor
 [[ ! ${BLE_VERSION-} ]] || ble-attach
