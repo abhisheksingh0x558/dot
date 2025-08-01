@@ -14,5 +14,6 @@
                                  ("private_dot_gnupg/gpg-agent.conf.tmpl" (conf-space-mode))
                                  ("private_dot_zprofile" (sh-mode))
                                  ("private_dot_zshenv" (sh-mode))
-                                 ("private_dot_zshrc" (sh-mode)))))
+                                 ("private_dot_zshrc" (sh-mode))
+                                 ("private_dot_bash_profile" (sh-mode)))))
                            nil t)))))
