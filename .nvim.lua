@@ -23,6 +23,8 @@ vim.api.nvim_create_autocmd({ "BufRead", "BufNewFile" }, {
 			vim.bo.filetype = "zsh"
 		elseif file == "private_dot_zshrc" then
 			vim.bo.filetype = "zsh"
+		elseif file == "private_dot_bash_profile" then
+			vim.bo.filetype = "bash"
 		end
 	end,
 })
