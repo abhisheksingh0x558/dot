@@ -3,3 +3,30 @@
 
 # Plugin manager
 command -v sheldon &>/dev/null && eval "$(sheldon source)" # Load plugin manager
+
+# UI/UX
+# TODO: Configure history file and settings
+command -v ghostty &>/dev/null && export TERMINAL=ghostty # Default terminal
+# Default editor
+if command -v nvim &>/dev/null; then
+	export EDITOR=nvim
+	export VISUAL="$EDITOR"
+fi
+# Default browser
+if [[ "$(uname -s)" == "Linux" ]]; then
+	command -v brave &>/dev/null && export BROWSER=brave
+elif [[ "$(uname -s)" == "Darwin" ]]; then
+	[[ -x "/Applications/Brave Browser.app/Contents/MacOS/Brave Browser" ]] && export BROWSER='open -a "Brave Browser"'
+fi
+# Delta
+if command -v delta &>/dev/null; then
+	export DELTA_FEATURES=line-numbers # Features to enable
+	# TODO: Enable this
+	# export DELTA_PAGER=builtin         # Pager
+fi
+command -v difft &>/dev/null && export DFT_DISPLAY=inline                           # Display style for difftastic
+command -v just &>/dev/null && export JUST_UNSTABLE=1                               # Enable unstable just features # TODO: Remove this
+command -v rg &>/dev/null && export RIPGREP_CONFIG_PATH=~/.config/rg/config         # Ripgrep settings
+command -v docker &>/dev/null && export DOCKER_BUILDKIT=1                           # Enable docker buildkit plugin # TODO: Remove this
+command -v sops &>/dev/null && export SOPS_AGE_KEY_FILE="$HOME/.config/age/key.txt" # Sops age keys
+command -v starship &>/dev/null && eval "$(starship init bash)"                     # Shell prompt
