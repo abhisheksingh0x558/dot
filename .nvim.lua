@@ -13,6 +13,8 @@ vim.api.nvim_create_autocmd({ "BufRead", "BufNewFile" }, {
 			vim.bo.filetype = "gitconfig"
 		elseif file == "private_dot_config/git/ignore" then
 			vim.bo.filetype = "gitignore"
+		elseif file == "dot_ssh/private_config" then
+			vim.bo.filetype = "sshconfig"
 		end
 	end,
 })

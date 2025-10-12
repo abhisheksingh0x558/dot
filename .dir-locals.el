@@ -9,5 +9,6 @@
                                  ("dot_editorconfig" (editorconfig-conf-mode))
                                  ("dot_Brewfile.tmpl" (ruby-ts-mode))
                                  ("private_dot_config/git/config" (gitconfig-mode))
-                                 ("private_dot_config/git/ignore" (gitignore-mode)))))
+                                 ("private_dot_config/git/ignore" (gitignore-mode))
+                                 ("dot_ssh/private_config" (conf-space-mode)))))
                            nil t)))))
