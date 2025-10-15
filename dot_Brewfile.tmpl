@@ -114,4 +114,16 @@ cask "protonvpn"    # VPN client
 cask "dropbox"      # Cloud storage
 cask "onedrive"     # Cloud storage
 cask "google-drive" # Cloud storage
+{{- else if eq .profile "cyberhaven" -}}
+# Cyberhaven profile
+
+# CLIs
+brew "qemu"                        # Virtualisation and emulation
+brew "lima"                        # Virtualisation
+brew "lima-additional-guestagents" # Virtualisation
+brew "sqlcmd"                      # MS SQL client
+brew "awscli"                      # AWS client
+brew "azure-cli"                   # Azure client
+# Proprietary
+cask "gcloud-cli"                  # Google Cloud client
 {{- end }}
