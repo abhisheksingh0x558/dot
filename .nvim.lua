@@ -33,6 +33,8 @@ vim.api.nvim_create_autocmd({ "BufRead", "BufNewFile" }, {
 			vim.bo.filetype = "sshconfig"
 		elseif file == "dot_docker/private_config.json.tmpl" then
 			vim.bo.filetype = "json"
+		elseif file == "create_private_dot_netrc" then
+			vim.bo.filetype = "netrc"
 		end
 	end,
 })
