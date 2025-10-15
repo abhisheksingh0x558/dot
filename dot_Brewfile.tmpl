@@ -95,6 +95,14 @@ cask "raycast" # Application launcher
 # WUIs
 brew "fava" # Beancount client
 
+# Shell utilities
+brew "starship" # Prompt
+brew "atuin"    # History
+brew "carapace" # Autocompletion
+# Autocorrection # TODO: Add to official registry
+tap "timescam/tap"
+brew "timescam/tap/pay-respects"
+
 {{ if eq .profile "default" -}}
 # Default profile
 
