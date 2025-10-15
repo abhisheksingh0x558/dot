@@ -19,5 +19,6 @@
                                  ("private_dot_bashrc" (sh-mode))
                                  ("private_dot_config/git/cyberhaven" (gitconfig-mode))
                                  ("dot_colima/create_private_ssh_config" (conf-space-mode))
-                                 ("dot_docker/private_config.json.tmpl" (json-mode)))))
+                                 ("dot_docker/private_config.json.tmpl" (json-mode))
+                                 ("create_private_dot_netrc" (authinfo-mode)))))
                            nil t)))))
