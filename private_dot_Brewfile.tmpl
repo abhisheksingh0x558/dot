@@ -225,6 +225,16 @@ brew "delve"          # Debugger
 brew "mockery"        # Mock generator
 brew "golang-migrate" # Migration manager
 
+# JavaScript
+brew "node"
+brew "deno"
+# TODO: Add to official registry
+tap "oven-sh/bun"
+brew "oven-sh/bun/bun"
+brew "pnpm"  # Version manager, package manager, project manager, command runner and binary installer
+brew "vite"  # Build tool
+brew "biome" # Language server, linter and formatter
+
 {{ if eq .profile "default" -}}
 # Default profile
 
