@@ -18,3 +18,8 @@ url = "https://github.com/folke/lazy.nvim.git"
 [".local/share/nvim/lazy/hotpot.nvim"]
 type = "git-repo"
 url = "https://github.com/rktjmp/hotpot.nvim.git"
+
+# Doomemacs
+[".config/doomemacs"]
+type = "git-repo"
+url = "https://github.com/doomemacs/doomemacs.git"
