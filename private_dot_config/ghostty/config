@@ -1,0 +1,5 @@
+# UI/UX
+# Theme
+theme = TokyoNight
+# Automatically copy selected text to system clipboard
+copy-on-select = true
