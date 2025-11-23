@@ -3,6 +3,9 @@ eval "$(mise activate bash --shims)"
 
 # Environment
 export GOPATH=~/.go # Global Go directory
+# Cyberhave private modules
+# TODO: Check if this is required, if not remove it and rename file to not include tmpl extension
+export GOPRIVATE=github.com/CyberhavenInc
 
 # Path
 # TODO: Enforce de-duplication of path elements
