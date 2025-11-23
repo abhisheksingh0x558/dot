@@ -27,6 +27,10 @@ if command -v go &>/dev/null; then
 fi
 export PATH
 
+# Environment
+export XDG_CONFIG_HOME=~/.config # TODO: Check if this is required for Linux otherwise add a guard to set only for MacOS
+export GOPATH=~/.go              # Global Go directory
+
 # Source run commands
 rc_file=~/.bashrc
 [[ -f "$rc_file" ]] && source "$rc_file"
