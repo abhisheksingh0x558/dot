@@ -4,6 +4,8 @@
 /LICENSE
 # Installation script
 /install
+# Fennel language server
+/flsproject.fnl
 
 {{ if ne .chezmoi.os "linux" }}
 # Arch Linux only includes
