@@ -1,0 +1,4 @@
+# Fennel language server
+[".local/share/fennel-ls/docsets/nvim.lua"]
+type = "file"
+url = "https://git.sr.ht/~micampe/fennel-ls-nvim-docs/blob/main/nvim.lua"
