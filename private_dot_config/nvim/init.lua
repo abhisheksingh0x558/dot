@@ -9,6 +9,7 @@ require("my.core.spell")
 require("my.core.fold")
 require("my.core.ts")
 require("my.core.lsp")
+require("my.core.lint")
 
 -- Setup plugins
 lazy.setup({
