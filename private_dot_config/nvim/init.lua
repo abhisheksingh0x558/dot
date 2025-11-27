@@ -17,6 +17,7 @@ lazy.setup({
 	{ import = "my.spec.fuzzy" },
 	{ import = "my.spec.vcs" },
 	{ import = "my.spec.note" },
+	{ import = "my.spec.file" },
 })
 
 -- Load plugin modules
