@@ -12,4 +12,8 @@ lazy.setup({
 	{ import = "my.spec.lib" },
 	{ import = "my.spec.transpile" },
 	{ import = "my.spec.keymap" },
+	{ import = "my.spec.ui" },
 })
+
+-- Load plugin modules
+require("my.plug.ui")
