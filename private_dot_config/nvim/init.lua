@@ -11,4 +11,5 @@ require("my.core.spell")
 lazy.setup({
 	{ import = "my.spec.lib" },
 	{ import = "my.spec.transpile" },
+	{ import = "my.spec.keymap" },
 })
