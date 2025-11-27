@@ -19,6 +19,7 @@ lazy.setup({
 	{ import = "my.spec.note" },
 	{ import = "my.spec.file" },
 	{ import = "my.spec.term" },
+	{ import = "my.spec.repl" },
 })
 
 -- Load plugin modules
