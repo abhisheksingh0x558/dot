@@ -38,6 +38,7 @@ lazy.setup({
 	{ import = "my.spec.ai" },
 	{ import = "my.spec.dot" },
 	{ import = "my.spec.rest" },
+	{ import = "my.spec.github" },
 })
 
 -- Load plugin modules
