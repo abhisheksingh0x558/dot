@@ -8,4 +8,6 @@ require("my.core.ui")
 require("my.core.spell")
 
 -- Setup plugins
-lazy.setup()
+lazy.setup({
+	{ import = "my.spec.lib" },
+})
