@@ -27,6 +27,7 @@ lazy.setup({
 	{ import = "my.spec.fold" },
 	{ import = "my.spec.outline" },
 	{ import = "my.spec.ts" },
+	{ import = "my.spec.lsp" },
 })
 
 -- Load plugin modules
