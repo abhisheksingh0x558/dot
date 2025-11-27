@@ -22,6 +22,7 @@ lazy.setup({
 	{ import = "my.spec.term" },
 	{ import = "my.spec.repl" },
 	{ import = "my.spec.exec" },
+	{ import = "my.spec.fold" },
 })
 
 -- Load plugin modules
