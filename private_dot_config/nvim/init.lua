@@ -1,5 +1,6 @@
 -- Load plugin manager
 vim.opt.runtimepath:prepend(vim.fs.normalize("~/.local/share/nvim/lazy/lazy.nvim"))
+vim.opt.runtimepath:prepend(vim.fs.normalize("~/.local/share/nvim/lazy/hotpot.nvim")) -- TODO: Remove this
 local lazy = require("lazy")
 
 -- Load core modules
@@ -8,6 +9,8 @@ require("my.core.ui")
 require("my.core.spell")
 
 -- Setup plugins
+require("hotpot") -- TODO: Remove this
 lazy.setup({
 	{ import = "my.spec.lib" },
+	{ import = "my.spec.transpile" },
 })
