@@ -18,6 +18,7 @@ lazy.setup({
 	{ import = "my.spec.vcs" },
 	{ import = "my.spec.note" },
 	{ import = "my.spec.file" },
+	{ import = "my.spec.term" },
 })
 
 -- Load plugin modules
