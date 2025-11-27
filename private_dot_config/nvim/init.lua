@@ -15,6 +15,7 @@ lazy.setup({
 	{ import = "my.spec.ui" },
 	{ import = "my.spec.cmp" },
 	{ import = "my.spec.fuzzy" },
+	{ import = "my.spec.vcs" },
 })
 
 -- Load plugin modules
