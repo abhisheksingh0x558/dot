@@ -14,6 +14,7 @@ lazy.setup({
 	{ import = "my.spec.keymap" },
 	{ import = "my.spec.ui" },
 	{ import = "my.spec.cmp" },
+	{ import = "my.spec.fuzzy" },
 })
 
 -- Load plugin modules
