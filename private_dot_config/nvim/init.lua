@@ -33,6 +33,7 @@ lazy.setup({
 	{ import = "my.spec.lsp" },
 	{ import = "my.spec.lint" },
 	{ import = "my.spec.format" },
+	{ import = "my.spec.test" },
 })
 
 -- Load plugin modules
