@@ -13,4 +13,5 @@ require("hotpot") -- TODO: Remove this
 lazy.setup({
 	{ import = "my.spec.lib" },
 	{ import = "my.spec.transpile" },
+	{ import = "my.spec.keymap" },
 })
