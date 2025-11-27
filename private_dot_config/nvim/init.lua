@@ -10,4 +10,5 @@ require("my.core.spell")
 -- Setup plugins
 lazy.setup({
 	{ import = "my.spec.lib" },
+	{ import = "my.spec.transpile" },
 })
