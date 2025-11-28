@@ -19,3 +19,4 @@ lazy.setup({
 
 -- Load plugin modules
 require("my.plug.ui")
+require("my.plug.fuzzy")
