@@ -4,6 +4,7 @@ local lazy = require("lazy")
 
 -- Load core modules
 require("my.core.keymap")
+require("my.core.ui")
 
 -- Setup plugins
 lazy.setup()
