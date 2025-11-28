@@ -7,6 +7,7 @@ require("my.core.keymap")
 require("my.core.ui")
 require("my.core.spell")
 require("my.core.fold")
+require("my.core.ts")
 
 -- Setup plugins
 lazy.setup({
