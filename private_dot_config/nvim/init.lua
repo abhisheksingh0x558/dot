@@ -9,6 +9,7 @@ require("my.core.ui")
 require("my.core.spell")
 require("my.core.fold")
 require("my.core.ts")
+require("my.core.lsp")
 
 -- Setup plugins
 require("hotpot") -- TODO: Remove this
