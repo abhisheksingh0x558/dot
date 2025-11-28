@@ -24,3 +24,4 @@ lazy.setup({
 require("my.plug.ui")
 require("my.plug.fuzzy")
 require("my.plug.vcs")
+require("my.plug.file")
