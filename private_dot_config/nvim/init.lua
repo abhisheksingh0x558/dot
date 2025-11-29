@@ -7,6 +7,7 @@ local lazy = require("lazy")
 require("my.core.keymap")
 require("my.core.ui")
 require("my.core.spell")
+require("my.core.fold")
 
 -- Setup plugins
 require("hotpot") -- TODO: Remove this
