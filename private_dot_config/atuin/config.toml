@@ -1,0 +1,5 @@
+# Key mappings
+enter_accept = true # Execute the command on pressing enter
+
+# UI/UX
+invert = true # Invert the TUI
