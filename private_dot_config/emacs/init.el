@@ -39,3 +39,4 @@
 (require 'my-pkg-keymap)
 (require 'my-pkg-ui)
 (require 'my-pkg-fuzzy)
+(require 'my-pkg-vcs)
