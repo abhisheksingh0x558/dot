@@ -32,3 +32,4 @@
 
 ;; Load package modules
 (require 'my-pkg-keymap)
+(require 'my-pkg-ui)
