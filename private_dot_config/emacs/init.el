@@ -22,6 +22,9 @@
   (leaf-keywords-init))
 (elpaca-wait)
 
+;; Load core modules
+(require 'my-core-ui)
+
 ;; Setup packages
 (require 'my-spec-keymap)
 (elpaca-wait)
