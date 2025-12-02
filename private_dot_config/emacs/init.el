@@ -54,3 +54,4 @@
 (require 'my-pkg-note)
 (require 'my-pkg-ts)
 (require 'my-pkg-lsp)
+(require 'my-pkg-lint)
