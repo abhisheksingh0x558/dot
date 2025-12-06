@@ -39,6 +39,13 @@ local languages = {
 		linters = { "statix" },
 		formatters = { "nixfmt" },
 	},
+
+	-- Beancount
+	beancount = {
+		language_server = "beancount",
+		linters = { "bean_check" },
+		formatters = { "bean-format" },
+	},
 }
 
 -- Setup language tools
