@@ -120,4 +120,9 @@ applications = [
   "atuin",            # History
   "carapace-bin",     # Autocompletion
   "pay-respects-bin", # Autocorrection
+
+  # Bash
+  "bash-language-server", # Language server
+  "shellcheck",           # Linter
+  "shfmt",                # Formatter
 ]
