@@ -159,4 +159,13 @@ applications = [
 
   # WUIs
   "fava", # Beancount client
+
+  # Shell utilities
+  "sheldon",          # Bash and Zsh plugin manager
+  "zinit",            # Zsh plugin manager
+  "starship",         # Prompt
+  "atuin",            # History
+  "blesh",            # Line editor
+  "carapace-bin",     # Autocompletion
+  "pay-respects-bin", # Autocorrection
 ]
