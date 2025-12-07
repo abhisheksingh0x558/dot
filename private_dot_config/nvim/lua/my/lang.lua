@@ -46,6 +46,9 @@ local languages = {
 		linters = { "bean_check" },
 		formatters = { "bean-format" },
 	},
+
+	-- Typst
+	typst = {},
 }
 
 -- Setup language tools
