@@ -129,4 +129,7 @@ applications = [
   # Beancount
   "beancount",                 # Linter and formatter
   "beancount-language-server", # Language server
+
+  # Typst
+  "typst",
 ]
