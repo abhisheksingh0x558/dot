@@ -114,4 +114,10 @@ applications = [
 
   # WUIs
   "fava", # Beancount client
+
+  # Shell utilities
+  "starship",         # Prompt
+  "atuin",            # History
+  "carapace-bin",     # Autocompletion
+  "pay-respects-bin", # Autocorrection
 ]
