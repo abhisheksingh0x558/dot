@@ -125,4 +125,8 @@ applications = [
   "bash-language-server", # Language server
   "shellcheck",           # Linter
   "shfmt",                # Formatter
+
+  # Beancount
+  "beancount",                 # Linter and formatter
+  "beancount-language-server", # Language server
 ]
