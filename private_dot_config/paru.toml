@@ -154,4 +154,13 @@ applications = [
   "rust",
   "cargo-binstall", # Binary installer
   "rust-analyzer",  # Language server
+
+  # Go
+  "go",
+  "gopls",       # Language server
+  "staticcheck", # Linter
+  "gofumpt",     # Formatter
+  "delve",       # Debugger
+  "mockery-bin", # Mock generator
+  "migrate",     # Migration manager
 ]
