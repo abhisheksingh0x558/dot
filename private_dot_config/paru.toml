@@ -163,4 +163,12 @@ applications = [
   "delve",       # Debugger
   "mockery-bin", # Mock generator
   "migrate",     # Migration manager
+
+  # JavaScript
+  "nodejs",
+  "deno",
+  "bun-bin",
+  "pnpm",    # Version manager, package manager, project manager, command runner and binary installer
+  "vite",    # Build tool
+  "biome",   # Language server, linter and formatter
 ]
