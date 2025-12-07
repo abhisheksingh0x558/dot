@@ -177,4 +177,10 @@ applications = [
   "uv",     # Version manager, package manager, project manager, command runner and binary installer
   "ty-bin", # Type checker and language server
   "ruff",   # Linter and formatter
+
+  # Protobuf
+  "protobuf",
+  "protoc-gen-go-bin",      # Go transpiler
+  "protoc-gen-go-grpc-bin", # Go transpiler
+  "buf",                    # Language server, linter and formatter
 ]
