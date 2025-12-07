@@ -1,0 +1,2 @@
+# Pager
+--pager='moor --no-linenumbers --quit-if-one-screen --no-clear-on-exit'
