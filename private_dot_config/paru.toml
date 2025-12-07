@@ -189,4 +189,9 @@ applications = [
   "claude-code",        # AI agent
   "cursor-cli",         # AI agent
   "claude-desktop-bin", # AI agent
+
+  # Bash
+  "bash-language-server", # Language server
+  "shellcheck",           # Linter
+  "shfmt",                # Formatter
 ]
