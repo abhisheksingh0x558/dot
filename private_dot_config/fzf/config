@@ -1,0 +1,4 @@
+# Invert the TUI
+--reverse
+# Previewer
+--preview='bat --number --color=always {}'
