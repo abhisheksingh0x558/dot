@@ -42,4 +42,9 @@
 
 ;; TODO: Hook to cleanup extra blank lines at end of file
 
+;; Just support
+;; TODO: Remove these
+(leaf just-mode)
+(leaf just-ts-mode)
+
 (provide 'my-lang)
