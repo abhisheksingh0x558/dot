@@ -171,4 +171,10 @@ applications = [
   "pnpm",    # Version manager, package manager, project manager, command runner and binary installer
   "vite",    # Build tool
   "biome",   # Language server, linter and formatter
+
+  # Python
+  "python",
+  "uv",     # Version manager, package manager, project manager, command runner and binary installer
+  "ty-bin", # Type checker and language server
+  "ruff",   # Linter and formatter
 ]
