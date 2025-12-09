@@ -22,6 +22,8 @@
 /.bin/keyd-init
 # Hyprland settings
 /.config/hypr/
+# Systemd units
+/.config/systemd/
 {{ end }}
 
 {{ if ne .chezmoi.os "darwin" }}
