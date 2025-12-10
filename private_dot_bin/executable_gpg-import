@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+
+set -o errexit
+set -o nounset
+set -o pipefail
+
+# Import GPG key
+main() {
+	# TODO: Implement this
+	return
+}
+
+main "$@"
