@@ -1,0 +1,29 @@
+#!/usr/bin/env bash
+
+set -o errexit
+set -o nounset
+set -o pipefail
+
+# Generate GPG key
+main() {
+	local user="Abhishek Singh <abhisheksingh0x558@proton.me>"
+	local expiry=1y
+	while [[ "$#" -gt 0 ]]; do
+		case "$1" in
+		-u | --user)
+			user="$2"
+			shift 2
+			;;
+		-e | --expiry)
+			expiry="$2"
+			shift 2
+			;;
+		*)
+			shift
+			;;
+		esac
+	done
+	gpg --quick-generate-key "$user" default default "$expiry"
+}
+
+main "$@"
