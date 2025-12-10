@@ -14,6 +14,8 @@
 /.bin/paru-refresh
 /.bin/paru-sync
 /.bin/paru-upgrade
+# Paru applications
+/.config/paru.toml
 {{ end }}
 
 {{ if ne .chezmoi.os "darwin" }}
