@@ -1,0 +1,40 @@
+#!/usr/bin/env bash
+
+set -o errexit
+set -o nounset
+set -o pipefail
+
+# Export GPG key
+main() {
+	local email="abhisheksingh0x558@proton.me"
+	local dest_dir="${XDG_DESKTOP_DIR:-$HOME/Desktop}"
+	while [[ "$#" -gt 0 ]]; do
+		case "$1" in
+		-e | --email)
+			email="$2"
+			shift 2
+			;;
+		-d | --directory)
+			dest_dir="$2"
+			shift 2
+			;;
+		*)
+			shift
+			;;
+		esac
+	done
+	local gpg_dir
+	gpg_dir="$(mktemp --directory)"
+	trap 'rm -r "$gpg_dir"' RETURN
+	cd "$gpg_dir"
+	gpg --export --armour --output public.asc "$email"
+	gpg --export-secret-key --armour --output private.asc "$email"
+	gpg_archive=gpg-keys.tar.gz
+	ouch compress ./*.asc "$gpg_archive"
+	gpg_enc_archive=gpg-keys.tar.gz.age
+	age --passphrase --output "$gpg_enc_archive" "$gpg_archive"
+	mv "$gpg_enc_archive" "$dest_dir"
+	cd -
+}
+
+main "$@"
