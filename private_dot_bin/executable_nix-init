@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+
+set -o errexit
+set -o nounset
+set -o pipefail
+
+# Install Nix
+main() {
+	command -v nix &>/dev/null &&
+		curl --fail --silent --location --show-error https://install.determinate.systems/nix |
+		bash -s -- install --determinate
+}
+
+main "$@"
