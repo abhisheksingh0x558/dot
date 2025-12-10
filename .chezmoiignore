@@ -24,6 +24,9 @@
 /.config/hypr/
 # Systemd units
 /.config/systemd/
+# XDG settings
+/.config/user-dirs.dirs
+/.config/user-dirs.locale
 {{ end }}
 
 {{ if ne .chezmoi.os "darwin" }}
