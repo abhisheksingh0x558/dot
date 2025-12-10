@@ -1,0 +1,31 @@
+#!/usr/bin/env bash
+
+set -o errexit
+set -o nounset
+set -o pipefail
+
+# Generate SSH key
+main() {
+	local email=abhisheksingh0x558@proton.me
+	local file=~/.ssh/default/auth_git_forge
+	while [[ "$#" -gt 0 ]]; do
+		case "$1" in
+		-e | --email)
+			user="$2"
+			shift 2
+			;;
+		-f | --file)
+			expiry="$2"
+			shift 2
+			;;
+		*)
+			shift
+			;;
+		esac
+	done
+	gpg --quick-generate-key "$user" default default "$expiry"
+	mkdir -p "$(dirname "$file")"
+	ssh-keygen -t ed25519 -C "$email" -f "$file"
+}
+
+main "$@"
