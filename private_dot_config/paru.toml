@@ -1,0 +1,12 @@
+applications = [
+  # System
+  "linux",                       # Kernel
+  "linux-firmware",              # Firmware
+  "base",                        # Core utilities
+  "sddm",                        # Display manager
+  "hyprland",                    # Wayland compositor
+  "uwsm",                        # Wayland compositor manager
+  "xorg-xwayland",               # X11 compatibility layer for Wayland
+  "xdg-desktop-portal",          # XDG desktop portal
+  "xdg-desktop-portal-hyprland", # XDG desktop portal
+]
