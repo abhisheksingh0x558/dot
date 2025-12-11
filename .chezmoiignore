@@ -46,4 +46,6 @@
 /.config/karabiner/
 # MacOS application settings
 /Library/Application Support/
+# Doomemacs scripts
+/.bin/doomemacs-init
 {{ end }}
