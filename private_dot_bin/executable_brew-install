@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+
+set -o errexit
+set -o nounset
+set -o pipefail
+
+# Install Homebrew applications
+main() {
+	local -a brew_apps
+	if [[ "$#" -gt 0 ]]; then
+		brew_apps=("$@")
+	else
+		{
+			brew search --formula .
+			brew search --cask .
+		} |
+			fzf --multi --preview 'brew info {}' |
+			mapfile brew_apps
+	fi
+	brew install "${brew_apps[@]}"
+}
+
+main "$@"

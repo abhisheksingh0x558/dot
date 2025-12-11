@@ -13,3 +13,14 @@
 /.bin/paru-sync
 /.bin/paru-upgrade
 {{ end }}
+
+{{ if ne .chezmoi.os "darwin" }}
+# MacOS only includes
+# Hombrew scripts
+/.bin/brew-init
+/.bin/brew-install
+/.bin/brew-prune
+/.bin/brew-refresh
+/.bin/brew-sync
+/.bin/brew-upgrade
+{{ end }}

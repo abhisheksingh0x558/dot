@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+
+set -o errexit
+set -o nounset
+set -o pipefail
+
+# Prune Homebrew applications
+main() {
+	[[ -f ~/.Brewfile ]] || return
+	brew bundle cleanup --global --zap --force
+	brew autoremove                  # TODO: See if this is required and if possible run this in background
+	brew cleanup --prune=all --scrub # TODO: See if this is required and if possible run this in background
+}
+
+main "$@"
