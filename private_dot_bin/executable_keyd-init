@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+
+set -o errexit
+set -o nounset
+set -o pipefail
+
+# Keyd key mappings
+main() {
+	local keyd_conf=~/.config/keyd/default.conf
+	[[ -f "$keyd_conf" ]] || return
+	local keyd_dir=/etc/keyd
+	[[ -d "$keyd_dir" ]] || sudo mkdir -p "$keyd_dir"
+	local keyd_file="$keyd_dir/default.conf"
+	[[ -f "$keyd_file" ]] || sudo cp "$keyd_conf" "$keyd_file"
+	sudo systemctl restart keyd
+}
+
+main "$@"

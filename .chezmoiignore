@@ -18,6 +18,8 @@
 /.config/paru.toml
 # Keyd settings
 /.config/keyd/
+# Keyd scripts
+/.bin/keyd-init
 {{ end }}
 
 {{ if ne .chezmoi.os "darwin" }}
