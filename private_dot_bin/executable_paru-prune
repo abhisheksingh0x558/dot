@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+
+set -o errexit
+set -o nounset
+set -o pipefail
+
+# Prune Paru applications
+main() {
+	local paru_file=~/.config/paru.toml
+	[[ -f "$paru_file" ]] || return
+	comm -23 \
+		<(paru --query --quiet | sort) \
+		<(yq '.applications[]' "$paru_file" | sort) |
+		paru --remove --unneeded --recursive --nosave --noconfirm -
+}
+
+main "$@"
