@@ -44,4 +44,6 @@
 /.Brewfile
 # Karabiner settings
 /.config/karabiner/
+# Doomemacs scripts
+/.bin/doomemacs-init
 {{ end }}
