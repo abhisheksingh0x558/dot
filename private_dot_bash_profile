@@ -34,6 +34,10 @@ if command -v go &>/dev/null; then
 	[[ -d "$go_bin" ]] && PATH="$go_bin:$PATH"
 	unset go_bin
 fi
+# Doomemacs binaries
+doomemacs_bin=~/.config/doomemacs/bin
+[[ -d "$doomemacs_bin" ]] && PATH="$doomemacs_bin:$PATH"
+unset doomemacs_bin
 export PATH
 
 # Source run commands
