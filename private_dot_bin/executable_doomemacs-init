@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+
+set -o errexit
+set -o nounset
+set -o pipefail
+
+# Link Doomemacs GUI
+main() {
+	[[ "$(uname -s)" == "Darwin" ]] &&
+		echo 'do shell script "open -na Emacs.app --args --init-directory=~/.config/doomemacs"' |
+		osacompile -o /Applications/Doomemacs.app
+}
+
+main "$@"
