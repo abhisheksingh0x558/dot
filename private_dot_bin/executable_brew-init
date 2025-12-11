@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+
+set -o errexit
+set -o nounset
+set -o pipefail
+
+# Install MacOS package manager
+main() {
+	command -v brew &>/dev/null || return
+	sudo --validate
+	curl --fail --silent --location --show-error https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh | bash
+}
+
+main "$@"
