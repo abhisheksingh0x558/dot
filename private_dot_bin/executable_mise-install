@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+
+set -o errexit
+set -o nounset
+set -o pipefail
+
+# Install Mise tool
+main() {
+	local -a mise_tools
+	if [[ "$#" -gt 0 ]]; then
+		mise_tools=("$@")
+	else
+		mise plugin list-all |
+			fzf --multi --preview 'mise tool {}' |
+			mapfile mise_tools
+	fi
+	mise use --global "${mise_tools[@]}"
+}
+
+main "$@"
