@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+
+set -o errexit
+set -o nounset
+set -o pipefail
+
+# Upgrade Emacs package manager and its registry
+main() {
+	emacs --batch --load=~/.config/emacs/init.el --eval='(progn (elpaca-pull elpaca) (elpaca-wait))'
+}
+
+main "$@"
