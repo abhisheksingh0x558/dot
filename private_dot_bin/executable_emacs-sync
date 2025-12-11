@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+
+set -o errexit
+set -o nounset
+set -o pipefail
+
+# Install Emacs packages
+main() {
+	emacs --batch --load=~/.config/emacs/init.el --eval='(elpaca-wait)'
+}
+
+main "$@"
