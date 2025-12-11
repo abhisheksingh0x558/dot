@@ -2,3 +2,14 @@
 /README.md
 # License
 /LICENSE
+
+{{ if ne .chezmoi.os "linux" }}
+# Arch Linux only includes
+# Paru scripts
+/.bin/paru-init
+/.bin/paru-install
+/.bin/paru-prune
+/.bin/paru-refresh
+/.bin/paru-sync
+/.bin/paru-upgrade
+{{ end }}

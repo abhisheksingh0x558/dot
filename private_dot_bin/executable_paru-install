@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+
+set -o errexit
+set -o nounset
+set -o pipefail
+
+# Install Paru applications
+main() {
+	local -a paru_apps
+	if [[ "$#" -gt 0 ]]; then
+		paru_apps=("$@")
+	else
+		pacman --sync --list --quiet |
+			fzf --multi --preview 'pacman --sync --info {}' |
+			mapfile paru_apps
+	fi
+	paru --sync --needed --noconfirm "${paru_apps[@]}"
+}
+
+main "$@"
