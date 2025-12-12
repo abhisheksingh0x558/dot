@@ -36,6 +36,7 @@ lazy.setup({
 	{ import = "my.spec.test" },
 	{ import = "my.spec.debug" },
 	{ import = "my.spec.ai" },
+	{ import = "my.spec.dot" },
 })
 
 -- Load plugin modules
