@@ -48,6 +48,7 @@
 (require 'my-spec-debug)
 (require 'my-spec-ai)
 (require 'my-spec-dot)
+(require 'my-spec-rest)
 (elpaca-wait)
 
 ;; Load package modules
