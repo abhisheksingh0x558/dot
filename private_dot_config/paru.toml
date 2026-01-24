@@ -111,4 +111,7 @@ applications = [
   "proton-pass-bin",   # Password manager
   # TODO: Proton drive
   # TODO: Proton VPN
+
+  # WUIs
+  "fava", # Beancount client
 ]
