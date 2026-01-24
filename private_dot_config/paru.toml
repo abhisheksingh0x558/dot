@@ -138,4 +138,7 @@ applications = [
   "postman-bin",            # API client
   "slack",                  # Instant messenger
   "zoom",                   # Video caller
+
+  # WUIs
+  "fava", # Beancount client
 ]
