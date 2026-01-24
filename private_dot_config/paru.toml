@@ -155,4 +155,7 @@ applications = [
   "slack",                  # Instant messenger
   "whatsapp-for-linux",     # Instant messenger
   "zoom",                   # Video caller
+
+  # WUIs
+  "fava", # Beancount client
 ]
