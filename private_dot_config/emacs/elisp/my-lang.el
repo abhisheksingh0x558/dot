@@ -6,7 +6,13 @@
      (nix-ts-mode
        :language-server nix-nil
        :linters (statix)
-       :formatters (nixfmt))))
+       :formatters (nixfmt))
+
+     ;; Beancount
+     (beancount-mode
+       :language-server beancount-ls
+       :linters nil ; TODO: Add linters
+       :formatters (bean-format))))
 
 ;; Setup language tools
 ;; TODO: Fix check the executable as not all executable are named as the config name
@@ -56,5 +62,10 @@
 ;; TODO: Remove these
 (leaf nix-mode)
 (leaf nix-ts-mode)
+
+;; Beancount support
+;; TODO: Remove these
+(leaf beancount)
+;; TODO: Setup beancount treesitter mode
 
 (provide 'my-lang)
