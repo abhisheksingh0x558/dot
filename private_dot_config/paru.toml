@@ -142,4 +142,11 @@ applications = [
   "fennel",
   "fennel-ls", # Language server
   "fnlfmt",    # Formatter
+
+  # Haskell
+  "ghc",
+  "stack",                   # Version manager, package manager, project manager, command runner and binary installer
+  "haskell-language-server", # Language server
+  "hlint",                   # Linter
+  "haskell-fourmolu",        # Formatter
 ]
