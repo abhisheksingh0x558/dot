@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+
+set -o errexit
+set -o nounset
+set -o pipefail
+
+# Generate Age key
+main() {
+	local file=~/.config/age/key.txt
+	mkdir -p "$(dirname "$file")"
+	age-keygen --output "$file"
+}
+
+main "$@"
