@@ -31,6 +31,8 @@ vim.api.nvim_create_autocmd({ "BufRead", "BufNewFile" }, {
 			vim.bo.filetype = "gitconfig"
 		elseif file == "dot_colima/create_private_ssh_config" then
 			vim.bo.filetype = "sshconfig"
+		elseif file == "dot_docker/private_config.json.tmpl" then
+			vim.bo.filetype = "json"
 		end
 	end,
 })
