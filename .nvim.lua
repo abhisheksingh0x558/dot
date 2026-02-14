@@ -29,6 +29,8 @@ vim.api.nvim_create_autocmd({ "BufRead", "BufNewFile" }, {
 			vim.bo.filetype = "bash"
 		elseif file == "private_dot_config/git/cyberhaven" then
 			vim.bo.filetype = "gitconfig"
+		elseif file == "dot_colima/create_private_ssh_config" then
+			vim.bo.filetype = "sshconfig"
 		end
 	end,
 })
