@@ -17,5 +17,6 @@
                                  ("private_dot_zshrc" (sh-mode))
                                  ("private_dot_bash_profile" (sh-mode))
                                  ("private_dot_bashrc" (sh-mode))
-                                 ("private_dot_config/git/cyberhaven" (gitconfig-mode)))))
+                                 ("private_dot_config/git/cyberhaven" (gitconfig-mode))
+                                 ("dot_colima/create_private_ssh_config" (conf-space-mode)))))
                            nil t)))))
