@@ -57,3 +57,10 @@ command -v atuin &>/dev/null && eval "$(atuin init bash)"   # History
 
 # Environment manager
 command -v direnv &>/dev/null && eval "$(direnv hook bash)"
+
+# Secret manager
+secret_file=~/.secret.env
+if [[ -f "$secret_file" ]] && command -v sops &>/dev/null; then
+	eval "$(sops decrypt --output-type dotenv "$secret_file")"
+fi
+unset secret_file
