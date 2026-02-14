@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+
+set -o errexit
+set -o nounset
+set -o pipefail
+
+# Generate GPG key
+main() {
+	local file=~/.config/age/key.txt
+	[[ -z "$profile" ]] && profile="$1"
+	mkdir -p "$(dirname "$file")"
+	age --output "$file"
+}
+
+main "$@"
