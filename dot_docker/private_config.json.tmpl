@@ -1,0 +1,9 @@
+{
+  "auths": {},
+  "cliPluginsExtraDirs": [
+    {{ if (eq .chezmoi.os "darwin") -}}
+    "{{ env "HOMEBREW_PREFIX" }}/lib/docker/cli-plugins"
+    {{- end }}
+  ],
+  "currentContext": "colima"
+}
