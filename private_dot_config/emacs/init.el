@@ -42,3 +42,4 @@
 (require 'my-pkg-ui)
 (require 'my-pkg-fuzzy)
 (require 'my-pkg-vcs)
+(require 'my-pkg-note)
