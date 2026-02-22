@@ -43,6 +43,7 @@
 (require 'my-spec-outline)
 (require 'my-spec-ts)
 (require 'my-spec-lsp)
+(require 'my-spec-lint)
 (elpaca-wait)
 
 ;; Load package modules
