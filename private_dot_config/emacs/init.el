@@ -25,6 +25,7 @@
 ;; Load core modules
 (require 'my-core-ui)
 (require 'my-core-spell)
+(require 'my-core-cmp)
 
 ;; Setup packages
 (require 'my-spec-keymap)
