@@ -52,3 +52,4 @@
 (require 'my-pkg-vcs)
 (require 'my-pkg-note)
 (require 'my-pkg-ts)
+(require 'my-pkg-lsp)
