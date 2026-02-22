@@ -26,6 +26,7 @@
 (require 'my-core-ui)
 (require 'my-core-spell)
 (require 'my-core-cmp)
+(require 'my-core-note)
 
 ;; Setup packages
 (require 'my-spec-keymap)
