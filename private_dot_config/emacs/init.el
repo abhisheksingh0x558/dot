@@ -56,3 +56,4 @@
 (require 'my-pkg-ts)
 (require 'my-pkg-lsp)
 (require 'my-pkg-lint)
+(require 'my-pkg-format)
