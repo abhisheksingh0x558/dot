@@ -60,3 +60,4 @@
 (require 'my-pkg-lsp)
 (require 'my-pkg-lint)
 (require 'my-pkg-format)
+(require 'my-pkg-dot)
