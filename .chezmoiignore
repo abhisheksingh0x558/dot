@@ -6,6 +6,7 @@
 /install
 # Fennel language server
 /flsproject.fnl
+/wip/
 
 {{ if ne .chezmoi.os "linux" }}
 # Arch Linux only includes
