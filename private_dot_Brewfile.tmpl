@@ -159,6 +159,25 @@ brew "my/local/blesh"
 tap "timescam/tap"
 brew "timescam/tap/pay-respects"
 
+# AI utilities
+brew "rtk"                               # LLM token reducer
+brew "ollama", restart_service: :changed # Local LLM manager
+brew "aichat"                            # AI agent
+brew "aider"                             # AI agent
+brew "opencode"                          # AI agent
+brew "gemini-cli"                        # AI agent
+cask "copilot-cli"                       # AI agent
+cask "codex"                             # AI agent
+# AI agent # TODO: Add to official registry
+cask "my/local/openwork-desktop"
+cask "anythingllm"      # AI agent
+cask "opencode-desktop" # AI agent
+cask "t3-code"          # AI agent
+# Proprietary
+cask "claude-code" # AI agent
+cask "cursor-cli"  # AI agent
+cask "claude"      # AI agent
+
 {{ if eq .profile "default" -}}
 # Default profile
 
