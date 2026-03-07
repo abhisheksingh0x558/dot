@@ -150,4 +150,21 @@ applications = [
   "blesh",            # Line editor
   "carapace-bin",     # Autocompletion
   "pay-respects-bin", # Autocorrection
+
+  # AI utilities
+  "ollama",                  # Local LLM manager
+  "aider-chat",              # AI agent
+  "opencode-bin",            # AI agent
+  "gemini-cli",              # AI agent
+  "github-copilot-cli",      # AI agent
+  "openai-codex-bin",        # AI agent
+  "openwork",                # AI agent
+  "anythingllm-desktop-bin", # AI agent
+  "opencode-desktop-bin ",   # AI agent
+  "t3-code-bin",             # AI agent
+  # Proprietary
+  "lmstudio-beta",      # AI agent TODO: Upgrade from beta
+  "claude-code",        # AI agent
+  "cursor-cli",         # AI agent
+  "claude-desktop-bin", # AI agent
 ]
