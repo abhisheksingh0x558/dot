@@ -249,4 +249,7 @@ applications = [
   "protoc-gen-go-bin",      # Go transpiler
   "protoc-gen-go-grpc-bin", # Go transpiler
   "buf",                    # Language server, linter and formatter
+
+  # OpenTofu
+  "opentofu",
 ]
