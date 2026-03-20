@@ -1,0 +1,26 @@
+#!/usr/bin/env bash
+
+set -o errexit
+set -o nounset
+set -o pipefail
+
+# TODO: Add this to official registry
+# TODO: move this to a bash script in ~/.bin directory
+
+# Hash: {{ $dir := joinPath .chezmoi.destDir ".config/brew" }}{{ if stat $dir }}{{ $files := glob (joinPath .chezmoi.destDir ".config/brew/**/*.rb") }}{{ if $files }}{{ range $files }}{{ include . | sha256sum }}{{ end }}{{ else }}undefined (no files){{ end }}{{ else }}undefined (no directory){{ end }}
+
+# Initialize local Homebrew tap on MacOS
+main() {
+	[[ "$(uname -s)" == "Darwin" ]] || return
+	local brew_dir=~/.config/brew
+	cd "$brew_dir"
+	[[ ! -d "$brew_dir/.git" ]] && git init
+	git add --all
+	if ! git-show-root &>/dev/null; then
+		git commit --message "initialize local brew tap"
+	else
+		git commit --amend --no-edit
+	fi
+}
+
+main "$@"
