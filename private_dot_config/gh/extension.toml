@@ -1,0 +1,3 @@
+extensions = [
+  "dlvhdr/gh-dash", # TUI client
+]
