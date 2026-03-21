@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+
+set -o errexit
+set -o nounset
+set -o pipefail
+
+# Sync GitHub CLI extensions
+main() {
+	local gh_ext_file=~/.config/gh/extension.toml
+	[[ -f "$gh_ext_file" ]] &&
+		yq '.extensions[]' "$gh_ext_file" |
+		rust-parallel gh extension install
+}
+
+main "$@"
