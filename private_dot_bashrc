@@ -7,5 +7,9 @@ source -- "$(brew --prefix my/local/blesh)/ble.sh" --attach=none
 # Plugin manager
 command -v sheldon &>/dev/null && eval "$(sheldon source)" # Load plugin manager
 
+# Key mappings
+# Vi mode
+set -o vi
+
 # Line editor
 [[ ! ${BLE_VERSION-} ]] || ble-attach
