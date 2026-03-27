@@ -74,3 +74,10 @@ fi
 
 # Environment manager
 (( $+commands[direnv] )) && source <(direnv hook zsh)
+
+# Secret manager
+secret_file=~/.secret.env
+if [[ -f "$secret_file" ]] && (( $+commands[sops] )); then
+	source <(sops decrypt --output-type dotenv "$secret_file")
+fi
+unset secret_file
