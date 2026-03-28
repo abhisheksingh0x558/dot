@@ -1,0 +1,5 @@
+# UI/UX
+git:
+  # Default pager
+  pagers:
+    - pager: delta --paging=never # Paging is handled by Lazygit itself
