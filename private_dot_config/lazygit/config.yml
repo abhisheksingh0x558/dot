@@ -1,0 +1,8 @@
+# UI/UX
+promptToReturnFromSubprocess: false
+git:
+  # Default pager
+  diffRenderers:
+    - command: delta --paging=never --line-numbers --hyperlinks --hyperlinks-file-link-format='lazygit-edit://{path}:{line}' # Paging is handled by Lazygit itself
+    - command: difft
+      type: extDiff
