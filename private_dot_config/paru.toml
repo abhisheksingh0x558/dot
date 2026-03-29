@@ -121,6 +121,9 @@ applications = [
   "zed",                       # Text editor
   "void-bin",                  # Text editor
   "logseq",                    # Note taker
+  "element-desktop",           # Instant messenger
+  "signal-desktop",            # Instant messenger
+  "telegram-desktop",          # Instant messenger
   "proton-pass-bin",           # Password manager
   "bruno",                     # API client
   "dbeaver",                   # DB client
@@ -136,7 +139,9 @@ applications = [
   "obsidian",               # Note taker
   "notion-app-electron",    # Note taker
   "postman-bin",            # API client
+  "discord",                # Instant messenger
   "slack",                  # Instant messenger
+  "whatsapp-for-linux",     # Instant messenger
   "zoom",                   # Video caller
 
   # WUIs
