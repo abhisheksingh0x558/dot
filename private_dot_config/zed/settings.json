@@ -1,0 +1,5 @@
+{
+  // Key mappings
+  "base_keymap": "Emacs",
+  "vim_mode": true
+}
