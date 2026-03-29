@@ -2,4 +2,4 @@
 git:
   # Default pager
   pagers:
-    pager: delta
+    - pager: delta
