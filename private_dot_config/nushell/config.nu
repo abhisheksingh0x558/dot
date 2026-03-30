@@ -98,3 +98,7 @@ if (which sops | is-not-empty) {
 	$env.SOPS_AGE_RECIPIENTS = (age-keygen -y $env.SOPS_AGE_KEY_FILE)
 }
 (which starship | is-not-empty); starship init nu | save --force ($vendor_autoload_dir | path join 'starship.nu') # Shell prompt
+
+# Autocompletion
+(which carapace | is-not-empty); carapace _carapace nushell | save --force ($vendor_autoload_dir | path join 'carapace.nu')
+(which pay-respects | is-not-empty); pay-respects nushell | save --force ($vendor_autoload_dir | path join 'pay-respects.nu') # Autocorrection
