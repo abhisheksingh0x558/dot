@@ -49,3 +49,7 @@ if (which go | is-not-empty) {
 let doomemacs_bin = ($nu.home-dir | path join '.config/doomemacs/bin')
 $doomemacs_bin | path exists; path add $doomemacs_bin
 $env.PATH = ($env.PATH | uniq) # De-duplicate path elements
+
+# Environment
+$env.XDG_CONFIG_HOME = ($nu.home-dir | path join '.config') # TODO: Check if this is required for Linux otherwise add a guard to set only for MacOS
+$env.GOPATH = ($nu.home-dir | path join '.go')              # Global Go directory
