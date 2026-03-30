@@ -102,3 +102,44 @@ starship init nu | save --force ($vendor_autoload_dir | path join 'starship.nu')
 # Autocompletion
 carapace _carapace nushell | save --force ($vendor_autoload_dir | path join 'carapace.nu')
 pay-respects nushell | save --force ($vendor_autoload_dir | path join 'pay-respects.nu') # Autocorrection
+
+# Fuzzy finder
+# TODO: Enable television
+# tv init nu | save --force ($vendor_autoload_dir | path join 'tv.nu')
+def tv_smart_autocomplete [] {
+    let line = (commandline)
+    let cursor = (commandline get-cursor)
+    let lhs = ($line | str substring 0..$cursor)
+    let rhs = ($line | str substring $cursor..)
+    let output = (tv --no-status-bar --inline --autocomplete-prompt $lhs | str trim)
+    if ($output | str length) > 0 {
+        let needs_space = not ($lhs | str ends-with " ")
+        let lhs_with_space = if $needs_space { $"($lhs) " } else { $lhs }
+        let new_line = $lhs_with_space + $output + $rhs
+        let new_cursor = ($lhs_with_space + $output | str length)
+        commandline edit --replace $new_line
+        commandline set-cursor $new_cursor
+    }
+}
+$env.config.keybindings = ($env.config.keybindings | append [
+		{
+			name: tv_completion,
+			modifier: Control,
+			keycode: char_t,
+			mode: [vi_normal, vi_insert, emacs],
+			event: {
+				send: executehostcommand,
+				cmd: "tv_smart_autocomplete"
+			}
+		}
+	]
+)
+if (which fzf | is-not-empty) {
+	$env.FZF_DEFAULT_OPTS_FILE = ($nu.home-dir | path join '.config/fzf/config') # Settings
+	$env.FZF_DEFAULT_COMMAND = 'fd --hidden --no-ignore-vcs --type file'      # Find files
+	$env.FZF_CTRL_T_COMMAND = $env.FZF_DEFAULT_COMMAND                           # Find files
+	$env.FZF_ALT_C_COMMAND = 'fd --hidden --no-ignore-vcs --type directory'   # Find directories
+	# TODO: Configure fzf to make ** work
+}
+(which zoxide | is-not-empty); zoxide init nushell | save --force ($vendor_autoload_dir | path join 'zoxide.nu') # Change directory
+(which atuin | is-not-empty); atuin init nu | save --force ($vendor_autoload_dir | path join 'atuin.nu')         # History
