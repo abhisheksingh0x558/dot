@@ -1,5 +1,8 @@
 use std 'path add'
 
+let vendor_autoload_dir  = ($nu.vendor-autoload-dirs | last)
+mkdir $vendor_autoload_dir
+
 # Path
 # Custom scripts
 let local_bin = ($nu.home-dir | path join '.bin')
@@ -53,3 +56,6 @@ $env.PATH = ($env.PATH | uniq) # De-duplicate path elements
 # Environment
 $env.XDG_CONFIG_HOME = ($nu.home-dir | path join '.config') # TODO: Check if this is required for Linux otherwise add a guard to set only for MacOS
 $env.GOPATH = ($nu.home-dir | path join '.go')              # Global Go directory
+
+# Version manager
+(which mise | is-not-empty); mise activate nu | save --force ($vendor_autoload_dir | path join 'mise.nu')
