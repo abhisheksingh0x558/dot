@@ -1,0 +1,11 @@
+[user]
+name = "Abhishek Singh"
+email = "abhisheksingh0x558@proton.me"
+
+[revset-aliases]
+"immutable_heads()" = "none()"
+
+[signing]
+backend = "gpg"
+key = "0B9ADEA0F3E21BFC"
+behavior = "own"
