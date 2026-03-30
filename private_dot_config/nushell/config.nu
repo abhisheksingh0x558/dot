@@ -147,3 +147,54 @@ if (which fzf | is-not-empty) {
 # TODO: Environment manager
 
 # TODO: Secret manager
+
+# TODO: Aliases
+if (uname | get kernel-name) == 'Linux' {
+	alias p = paru
+} else if (uname | get kernel-name) == 'Darwin' {
+	alias b = brew
+}
+# Mise
+alias m = mise
+# Just
+alias j = just
+alias jc = just --choose
+alias jl = just --list
+alias jg = just --global-justfile
+alias jgc = just --global-justfile --choose
+alias jgl = just --global-justfile --list
+# Chezmoi
+alias cz = chezmoi
+alias cza = chezmoi add
+alias czy = chezmoi apply
+alias czd = chezmoi diff
+alias czg = chezmoi git
+alias czi = chezmoi init
+# Git
+alias g = git
+# Zoxide
+alias l = z -
+alias h = z
+alias r = z (git rev-parse --show-toplevel)
+# Eza
+alias eza = eza --all --ignore-glob=.git
+# Fd
+alias fd = fd --hidden --no-ignore-vcs
+# Kubernetes
+alias k = kubectl
+# Kubernetes get
+alias kg = kubectl get
+alias kgd = kubectl get deployments
+alias kgp = kubectl get pods
+alias kgs = kubectl get services
+# Kubernetes describe
+alias kd = kubectl describe
+alias kdd = kubectl describe deployments
+alias kdp = kubectl describe pods
+alias kds = kubectl describe services
+# Emacs
+alias emacs = emacs --no-window-system
+# Doomemacs
+alias doomemacs = emacs --no-window-system --init-directory=~/.config/doomemacs
+# LazyVim
+alias lazyvim = with-env { NVIM_APPNAME: "lazyvim" } { nvim }
