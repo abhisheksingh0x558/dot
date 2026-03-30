@@ -143,3 +143,5 @@ if (which fzf | is-not-empty) {
 }
 (which zoxide | is-not-empty); zoxide init nushell | save --force ($vendor_autoload_dir | path join 'zoxide.nu') # Change directory
 (which atuin | is-not-empty); atuin init nu | save --force ($vendor_autoload_dir | path join 'atuin.nu')         # History
+
+# TODO: Environment manager
