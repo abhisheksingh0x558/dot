@@ -145,3 +145,5 @@ if (which fzf | is-not-empty) {
 (which atuin | is-not-empty); atuin init nu | save --force ($vendor_autoload_dir | path join 'atuin.nu')         # History
 
 # TODO: Environment manager
+
+# TODO: Secret manager
