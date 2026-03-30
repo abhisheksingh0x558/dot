@@ -56,6 +56,9 @@ $env.PATH = ($env.PATH | uniq) # De-duplicate path elements
 # Environment
 $env.XDG_CONFIG_HOME = ($nu.home-dir | path join '.config') # TODO: Check if this is required for Linux otherwise add a guard to set only for MacOS
 $env.GOPATH = ($nu.home-dir | path join '.go')              # Global Go directory
+# Cyberhave private modules
+# TODO: Check if this is required, if not remove it and rename file to not include tmpl extension
+$env.GOPRIVATE = 'github.com/CyberhavenInc'
 
 # Version manager
 (which mise | is-not-empty); mise activate nu | save --force ($vendor_autoload_dir | path join 'mise.nu')
