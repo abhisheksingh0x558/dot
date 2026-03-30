@@ -137,3 +137,14 @@ if (which fzf | is-not-empty) {
 (which atuin | is-not-empty); atuin init nu | save --force ($vendor_autoload_dir | path join 'atuin.nu')         # History
 
 # TODO: Environment manager
+
+# Secret manager
+let secret_file = ($nu.home-dir | path join '.secret.env')
+if ($secret_file | path exists) and (which sops | is-not-empty) {
+	sops decrypt --output-type json $secret_file
+	| from json
+	| transpose key value
+	| update key { str replace --regex '^export ' '' }
+	| transpose --header-row --as-record
+	| load-env
+}
