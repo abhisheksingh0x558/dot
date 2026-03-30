@@ -1,0 +1,20 @@
+set shell := ["bash", "-o", "errexit", "-o", "nounset", "-o", "pipefail", "-o", "xtrace", "-c"]
+set script-interpreter := ["bash", "-o", "errexit", "-o", "nounset", "-o", "pipefail", "-o", "xtrace", "-c"]
+
+mod bash
+mod brew
+mod chezmoi
+mod doomemacs
+mod emacs
+mod gpg
+mod keyd
+mod mise
+mod nix
+mod nvim
+mod paru
+mod ssh
+mod zsh
+
+# Install Just
+init:
+    curl --fail --silent --location --show-error https://just.systems/install.sh | bash -s -- --to=~/.local/bin
