@@ -13,3 +13,8 @@ url = "https://github.com/progfolio/elpaca.git"
 [".local/share/nvim/lazy/lazy.nvim"]
 type = "git-repo"
 url = "https://github.com/folke/lazy.nvim.git"
+# Lua transpiler
+# TODO: Remove this
+[".local/share/nvim/lazy/hotpot.nvim"]
+type = "git-repo"
+url = "https://github.com/rktjmp/hotpot.nvim.git"
