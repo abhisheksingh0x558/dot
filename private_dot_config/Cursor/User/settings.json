@@ -1,0 +1,4 @@
+{
+    // Key mappings
+    "vim.useSystemClipboard": true
+}
