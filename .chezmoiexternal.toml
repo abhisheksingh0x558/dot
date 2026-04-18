@@ -4,7 +4,7 @@ type = "file"
 url = "https://git.sr.ht/~micampe/fennel-ls-nvim-docs/blob/main/nvim.lua"
 
 # Emacs package manager
-[".config/emacs/elpaca/sources/elpaca"]
+[".config/emacslegacy/elpaca/sources/elpaca"]
 type = "git-repo"
 url = "https://github.com/progfolio/elpaca.git"
 
