@@ -10,12 +10,12 @@ url = "https://github.com/progfolio/elpaca.git"
 
 # Neovim
 # Plugin manager
-[".local/share/nvim/lazy/lazy.nvim"]
+[".local/share/nvimlegacy/lazy/lazy.nvim"]
 type = "git-repo"
 url = "https://github.com/folke/lazy.nvim.git"
 # Lua transpiler
 # TODO: Remove this
-[".local/share/nvim/lazy/hotpot.nvim"]
+[".local/share/nvimlegacy/lazy/hotpot.nvim"]
 type = "git-repo"
 url = "https://github.com/rktjmp/hotpot.nvim.git"
 

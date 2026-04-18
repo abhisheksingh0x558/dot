@@ -1,6 +1,6 @@
 -- Load plugin manager
-vim.opt.runtimepath:prepend(vim.fs.normalize("~/.local/share/nvim/lazy/lazy.nvim"))
-vim.opt.runtimepath:prepend(vim.fs.normalize("~/.local/share/nvim/lazy/hotpot.nvim")) -- TODO: Remove this
+vim.opt.runtimepath:prepend(vim.fs.normalize("~/.local/share/nvimlegacy/lazy/lazy.nvim"))
+vim.opt.runtimepath:prepend(vim.fs.normalize("~/.local/share/nvimlegacy/lazy/hotpot.nvim")) -- TODO: Remove this
 local lazy = require("lazy")
 
 -- Load core modules
