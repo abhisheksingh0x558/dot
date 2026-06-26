@@ -2,6 +2,7 @@
 vim.opt.runtimepath:prepend(vim.fs.normalize("~/.local/share/nvimlegacy/lazy/lazy.nvim"))
 vim.opt.runtimepath:prepend(vim.fs.normalize("~/.local/share/nvimlegacy/lazy/hotpot.nvim")) -- TODO: Remove this
 local lazy = require("lazy")
+require("hotpot") -- TODO: Remove this
 
 -- Load core modules
 require("my.core.keymap")
@@ -13,7 +14,6 @@ require("my.core.lsp")
 require("my.core.lint")
 
 -- Setup plugins
-require("hotpot") -- TODO: Remove this
 lazy.setup({
 	{ import = "my.spec.lib" },
 	{ import = "my.spec.transpile" },

@@ -5,15 +5,15 @@ my.spec.note.note_directory = "~/Documents/note" -- Org directory
 my.spec.note.zettelkasten_note_directory = my.spec.note.note_directory .. "/zettelkasten" -- Org roam directory
 
 return {
-	{
-		"nvim-neorg/neorg",
-		opts = {
-			load = {
-				["core.defaults"] = {},
-				["core.concealer"] = {}, -- Convert markup to icons
-			},
-		},
-	},
+	-- {
+	-- 	"nvim-neorg/neorg",
+	-- 	opts = {
+	-- 		load = {
+	-- 			["core.defaults"] = {},
+	-- 			["core.concealer"] = {}, -- Convert markup to icons
+	-- 		},
+	-- 	},
+	-- },
 
 	{
 		"nvim-orgmode/orgmode",

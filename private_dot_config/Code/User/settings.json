@@ -1,4 +1,22 @@
 {
-    // Key mappings
-    "vim.useSystemClipboard": true
+	// Key mappings
+	"vim.useSystemClipboard": true,
+	"editor.tabSize": 2,
+	"workbench.editor.showTabs": "none",
+	"gitlens.ai.model": "vscode",
+	"gitlens.ai.vscode.model": "copilot:gpt-4.1",
+	"workbench.iconTheme": "material-icon-theme",
+	"github.copilot.nextEditSuggestions.enabled": true,
+	"diffEditor.renderSideBySide": false,
+	"editor.fontFamily": "'FiraCode Nerd Font', Monaco, 'Courier New', monospace",
+	"terminal.integrated.fontLigatures.enabled": true,
+	"editor.fontLigatures": true,
+	"editor.minimap.enabled": false,
+	"errorLens.enabled": false,
+	"cSpell.enabled": false,
+	"go.formatTool": "gofumpt",
+	"workbench.colorTheme": "Tokyo Night AltSynt",
+	"chat.viewSessions.orientation": "stacked",
+	"claudeCode.preferredLocation": "sidebar",
+	"continue.enableTabAutocomplete": false
 }
