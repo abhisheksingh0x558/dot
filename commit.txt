@@ -1,0 +1,320 @@
+- [x] 8ea4324 dot: initialize
+- [x] 39ef5a7 chezmoi: configure settings
+- [ ] a8d421e just: define chezmoi commands
+- [ ] e9717a6 bin: define chezmoi scripts
+- [ ] c7f15b2 just: define mise commands
+- [ ] 06f86a5 bin: define mise scripts
+- [ ] 2b28902 just: define paru commands
+- [ ] 16fe03f bin: define paru scripts
+- [ ] bd3f4f5 just: define brew commands
+- [ ] 6b69f50 bin: define brew scripts
+- [ ] edb6fc9 just: define nix commands
+- [ ] 3cefb31 bin: define nix scripts
+- [ ] 5c964ae dot: define install script
+- [x] e08afa7 mise: configure settings
+- [x] be2fd8c editorconfig: configure default properties
+- [x] 66ba205 editorconfig: configure elisp overrides
+- [x] 560bf3a editorconfig: configure just overrides
+- [x] 1ad4bc5 editorconfig: configure rust overrides
+- [x] fedcb00 editorconfig: configure python overrides
+- [x] 9f8ec3b editorconfig: configure org overrides
+- [ ] 78bdff5 paru: install system applications
+- [ ] a4b8b08 paru: install shells
+- [ ] 74cb516 paru: install key mapper
+- [ ] 9f5fb24 paru: install fonts
+- [ ] 9a6e3c6 paru: install clis
+- [ ] 3749098 paru: install tuis
+- [ ] d4bb36e paru: install guis
+- [ ] 2877a96 paru: install wuis
+- [ ] b22a044 paru: install shell utilities
+- [ ] 72c0a14 paru: install ai utilities
+- [x] d007ce6 brew: install shells
+- [x] 818f722 brew: install key mapper
+- [x] f0133f5 brew: install fonts
+- [x] e8e6571 brew: install clis
+- [x] 1f86490 brew: install tuis
+- [x] 1b4df1c brew: install guis
+- [x] 4a8ece6 brew: install wuis
+- [x] 4aa5dad brew: install shell utilities
+- [x] 2c106d5 brew: install ai utilities
+- [ ] dc6f7ad dot: define brew scripts
+- [x] c12a966 brew: install work clis
+- [x] d123edf brew: install work ai utilities
+- [ ] f4f71ab kanata: configure key mappings
+- [ ] 6459d81 chezmoi: configure settings
+- [x] c369222 jj: configure settings
+- [ ] a2f88ab git: configure settings
+- [ ] 29a9ca2 ssh: configure settings
+- [ ] 655d231 just: define ssh commands
+- [ ] cd77e3a bin: define ssh scripts
+- [ ] 20eb630 gpg: configure settings
+- [ ] 26fc5f4 just: define gpg commands
+- [ ] c71086c bin: define gpg scripts
+- [ ] 4630258 just: define age commands
+- [ ] fea802c bin: define age scripts
+- [x] 161d18e hyprland: configure key mappings
+- [x] dbbd5fd systemd: configure elephant unit
+- [x] 7b0eb9d systemd: configure walker unit
+- [ ] f79daa0 xdg: configure user directories
+- [ ] a43e545 nu: configure path
+- [ ] 4513b7a nu: configure environment
+- [ ] 1153394 nu: setup version manager
+- [ ] 82589c2 nu: configure key mappings
+- [ ] 423dadb nu: configure ui and ux settings
+- [ ] 74ecb6f nu: setup autocompletion
+- [ ] ce5700b nu: setup fuzzy finder
+- [ ] aaf4e8f nu: setup environment manager
+- [ ] 74876d6 nu: setup secret manager
+- [ ] 5afe576 zsh: configure path
+- [ ] ee469e7 zsh: configure environment
+- [ ] 88c00f9 zsh: setup plugin manager
+- [ ] 7878d56 just: define zsh commands
+- [ ] 9ec7bb3 bin: define zsh scripts
+- [ ] 5765d7f zsh: setup version manager
+- [ ] f339330 zsh: configure key mappings
+- [ ] 32bb798 zsh: configure ui and ux settings
+- [ ] 7eb44da zsh: setup autocompletion
+- [ ] bb94568 zsh: setup fuzzy finder
+- [ ] 010ff92 zsh: setup environment manager
+- [ ] ebad916 zsh: setup secret manager
+- [ ] 61e697e bash: configure path
+- [ ] 93e35a2 bash: configure environment
+- [ ] 09e30ee bash: setup plugin manager
+- [ ] 1a5a681 bash: setup version manager
+- [ ] e0f06b6 bash: configure key mappings
+- [ ] 3691ac9 bash: configure ui and ux settings
+- [ ] cbfb8ac bash: setup autocompletion
+- [ ] e951797 bash: setup fuzzy finder
+- [ ] dd088f1 bash: setup environment manager
+- [ ] 012a7de bash: setup secret manager
+- [ ] 87c56b8 bin: define git scripts
+- [ ] 68cb350 git: configure aliases
+- [ ] c44de37 nu: configure aliases
+- [ ] 7e1676f zsh: configure aliases
+- [ ] 7a8cd13 bash: configure aliases
+- [ ] 865bd68 bat: configure settings
+- [ ] 81a4ec7 fd: configure settings
+- [ ] 81a3311 rg: configure settings
+- [ ] 668a4dc fzf: configure settings
+- [ ] 098600f atuin: configure settings
+- [ ] 5c24625 zellij: configure settings
+- [ ] da536c1 lazygit: configure settings
+- [ ] f4666ee wezterm: configure settings
+- [ ] d5b92e6 ghostty: configure settings
+- [ ] 2163ea3 starship: configure settings
+- [ ] df66479 git: configure work settings
+- [ ] 390a2e9 nu: configure work environment
+- [ ] 18fccdd zsh: configure work environment
+- [ ] 9ed64dc bash: configure work environment
+- [ ] 4e3dddb colima: configure ssh settings
+- [ ] cff6dd8 docker: configure settings
+- [ ] daa2750 netrc: configure settings
+- [ ] 7b41274 ssh: configure work settings
+- [ ] 8e0556c ssh: configure colima settings
+- [ ] 0b01abe just: define gh commands
+- [ ] 97d7e37 bin: define gh scripts
+- [ ] 04f5ff5 gh: install extensions
+- [ ] f5b481e paru: install bash tools
+- [ ] e8f1234 paru: install beancount tools
+- [ ] c88dc1f paru: install typst tools
+- [ ] e462706 paru: install lua tools
+- [ ] 224a106 paru: install fennel tools
+- [ ] 0aad168 paru: install haskell tools
+- [ ] bbc962f paru: install rust tools
+- [ ] 518c54d paru: install go tools
+- [ ] cb5d277 paru: install javascript tools
+- [ ] 6535097 paru: install python tools
+- [ ] 28c0e48 paru: install protobuf tools
+- [ ] 1436405 paru: install opentofu tools
+- [ ] 2ab0607 brew: install bash tools
+- [ ] 402aeb9 brew: install beancount tools
+- [ ] 5d0b149 brew: install typst tools
+- [ ] ed0e7e5 brew: install lua tools
+- [ ] 500e5e9 brew: install fennel tools
+- [ ] a991acf brew: install haskell tools
+- [ ] 519cb37 brew: install rust tools
+- [ ] 6b12429 brew: install go tools
+- [ ] 70fe73c brew: install javascript tools
+- [ ] 5cf3cd8 brew: install python tools
+- [ ] 148c2e5 brew: install protobuf tools
+- [ ] 2b631bd brew: install opentofu tools
+- [ ] 0fc6c07 chezmoi: install fennel tools
+- [ ] b55e5cd dot: configure lua tools
+- [ ] 416e402 dot: configure fennel tools
+- [ ] e6568a1 chezmoi: install emacs package manager
+- [ ] 6bc3eff emacs: configure elisp path
+- [ ] fd6c0cb emacs: setup package manager
+- [ ] 5985faf just: define emacs commands
+- [ ] 6d1589f bin: define emacs scripts
+- [ ] ec604d5 emacs: setup key mapping packages
+- [ ] dfb8964 emacs: configure key mapping packages
+- [ ] d8b58f6 emacs: configure ui and ux settings
+- [ ] 794428e emacs: setup ui and ux packages
+- [ ] 767aca5 emacs: configure ui and ux packages
+- [ ] da31c28 emacs: configure spell checker settings
+- [ ] 1db2d88 emacs: configure autocompletion settings
+- [ ] 3408a35 emacs: setup autocompletion packages
+- [ ] bcc3c76 emacs: configure autocompletion packages
+- [ ] 6854955 emacs: setup fuzzy finder packages
+- [ ] e16776a emacs: configure fuzzy finder packages
+- [ ] 8b44370 emacs: setup vcs packages
+- [ ] 1504880 emacs: configure vcs packages
+- [ ] 9c8a8f5 emacs: configure note taker settings
+- [ ] 52bbad1 emacs: setup note taker packages
+- [ ] e647022 emacs: configure note taker packages
+- [ ] f97d3d1 emacs: setup file system packages
+- [ ] 7bd957b emacs: setup terminal packages
+- [ ] 0888e59 emacs: setup repl packages
+- [ ] d0f3aff emacs: setup snippet executor packages
+- [ ] 3fff88b emacs: setup folding packages
+- [ ] c951db0 emacs: setup outliner packages
+- [ ] 3631e9c emacs: setup treesitter packages
+- [ ] bebe91a emacs: configure treesitter packages
+- [ ] 99b1282 emacs: setup lsp packages
+- [ ] 78671e9 emacs: configure lsp packages
+- [ ] 2bb5572 emacs: setup linter packages
+- [ ] 3431f96 emacs: configure linter packages
+- [ ] e545414 emacs: setup formatter packages
+- [ ] c067b04 emacs: configure formatter packages
+- [ ] 848fd7d emacs: setup debugger packages
+- [ ] a92c560 emacs: setup ai packages
+- [ ] 0e17ead emacs: setup dotfile packages
+- [ ] f840be0 emacs: configure dotfile packages
+- [ ] d7ba449 emacs: setup rest packages
+- [ ] 5702356 emacs: setup github packages
+- [ ] 1c03464 emacs: define language utilities
+- [ ] 3d8b3af emacs: configure just support
+- [ ] d8fce9a emacs: configure nix support
+- [ ] e9a91a6 emacs: configure beancount support
+- [ ] 0d4571a emacs: configure haskell support
+- [ ] 5284656 emacs: configure rust support
+- [ ] 37ac4bd emacs: configure go support
+- [ ] e76251e emacs: configure scala support
+- [ ] 947fcd7 emacs: configure purescript support
+- [ ] 7d31b4d emacs: configure cpp support
+- [ ] f36bd51 chezmoi: install nvim plugin manager
+- [ ] eb23037 nvim: setup plugin manager
+- [ ] 880b7d2 just: define nvim commands
+- [ ] 1a292d0 bin: define nvim scripts
+- [ ] 3a60b60 nvim: configure key mappings
+- [ ] c5a006e nvim: configure ui and ux settings
+- [ ] 8745eee nvim: configure spell checker settings
+- [ ] a139ff1 nvim: setup lua libraries
+- [ ] c86eeb5 chezmoi: install nvim lua transpiler
+- [ ] 859b82e nvim: setup lua transpiler
+- [ ] ce11459 nvim: setup key mapping plugins
+- [ ] 4c848a0 nvim: setup ui and ux plugins
+- [ ] 22b8f81 nvim: configure ui and ux plugins
+- [ ] 81b58ba nvim: setup autocompletion plugins
+- [ ] 936f6bf nvim: setup fuzzy finder plugins
+- [ ] 5533698 nvim: configure fuzzy finder plugins
+- [ ] 635c4c1 nvim: setup vcs plugins
+- [ ] f2e2e9a nvim: configure vcs plugins
+- [ ] 8099596 nvim: setup note taker plugins
+- [ ] dee7733 nvim: configure note taker plugins
+- [ ] 2b6ed85 nvim: setup file system plugins
+- [ ] 25fe431 nvim: configure file system plugins
+- [ ] cb8b15e nvim: setup terminal plugins
+- [ ] 9b3a403 nvim: configure terminal plugins
+- [ ] 1e9258b nvim: setup repl plugins
+- [ ] f365fbe nvim: setup snippet executor plugins
+- [ ] 7b3eda3 nvim: configure folding settings
+- [ ] 3182621 nvim: setup folding plugins
+- [ ] 5c45abd nvim: setup outliner plugins
+- [ ] 43c8ba0 nvim: configure outliner plugins
+- [ ] f91c9a5 nvim: configure treesitter settings
+- [ ] 5464adf nvim: setup treesitter plugins
+- [ ] 5550b3f nvim: configure treesitter plugins
+- [ ] 74d83a0 nvim: configure lsp settings
+- [ ] 196b8f3 nvim: setup lsp plugins
+- [ ] 4d28e3e nvim: configure linter settings
+- [ ] ba4e77b nvim: setup linter plugins
+- [ ] cd42f25 nvim: configure linter plugins
+- [ ] 6ea9d42 nvim: setup formatter plugins
+- [ ] ee47963 nvim: configure formatter plugins
+- [ ] 6339abf nvim: setup test runner plugins
+- [ ] 8a2fd5b nvim: setup debugger plugins
+- [ ] b2f7a30 nvim: setup ai plugins
+- [ ] b3919cc nvim: setup dotfile plugins
+- [ ] 0780ba5 nvim: configure dotfile plugins
+- [ ] 12c9d2f nvim: setup rest plugins
+- [ ] fb2e307 nvim: setup github plugins
+- [ ] 84f9462 nvim: define language utilities
+- [ ] 4172a6c nvim: configure nushell support
+- [ ] 530348f nvim: configure zsh support
+- [ ] d85052e nvim: configure bash support
+- [ ] 5d3c599 nvim: configure just support
+- [ ] 1a982c2 nvim: configure make support
+- [ ] d19b70b nvim: configure nix support
+- [ ] 7d82848 nvim: configure beancount support
+- [ ] bdc6f0a nvim: configure typst support
+- [ ] 678acdc nvim: configure lua support
+- [ ] 3faf8d2 nvim: configure fennel support
+- [ ] 60709fa nvim: configure haskell support
+- [ ] a86f71e nvim: configure lisp support
+- [ ] 5184fa3 nvim: configure zig support
+- [ ] 54c0010 nvim: configure rust support
+- [ ] 8d4e0d0 nvim: configure racket support
+- [ ] 9b55a78 nvim: configure go support
+- [ ] a529e1a nvim: configure scala support
+- [ ] a641979 nvim: configure clojure support
+- [ ] a7b28b9 nvim: configure kotlin support
+- [ ] 68bd4e8 nvim: configure javascript support
+- [ ] b88cc9e nvim: configure purescript support
+- [ ] e4842af nvim: configure typescript support
+- [ ] 4e8fdbb nvim: configure cpp support
+- [ ] 4fd0980 nvim: configure python support
+- [ ] 1dada18 nvim: configure protobuf support
+- [ ] 8176138 nvim: configure graphql support
+- [ ] 59b19b7 nvim: configure json support
+- [ ] 8f90f68 nvim: configure toml support
+- [ ] 3aeed66 nvim: configure yaml support
+- [ ] a2ff2aa nvim: configure csv support
+- [ ] d716c58 nvim: configure sql support
+- [ ] 0af0760 chezmoi: install doomemacs
+- [ ] b162c98 doomemacs: setup framework
+- [ ] da9c46f bash: configure path
+- [ ] 31b7c04 just: define doomemacs commands
+- [ ] 11902c8 bin: define doomemacs scripts
+- [ ] 0172c89 doomemacs: configure ui and ux settings
+- [ ] 9aa714d doomemacs: configure treesitter settings
+- [ ] c72e1f9 doomemacs: configure lsp settings
+- [ ] e665e61 doomemacs: configure formatter settings
+- [ ] 7ef57e7 doomemacs: configure debugger settings
+- [ ] dc4db54 doomemacs: configure note taker settings
+- [ ] 7792d07 doomemacs: setup note taker packages
+- [ ] 25e2e4d doomemacs: configure rest settings
+- [ ] 6c2543a doomemacs: configure ai settings
+- [ ] cd7437f doomemacs: configure go support
+- [ ] 8a6f1ec doomemacs: configure javascript and typescript support
+- [ ] 3ebb318 doomemacs: configure python support
+- [ ] 6a84331 lazyvim: setup framework
+- [ ] 1a2ae36 just: define lazyvim commands
+- [ ] 6242b88 lazynvim: configure test runner settings
+- [ ] d08d189 lazynvim: configure debugger settings
+- [ ] 9622c35 lazyvim: configure rest settings
+- [ ] 633260b lazyvim: configure ai settings
+- [ ] c87b2b7 lazyvim: configure go support
+- [ ] 07adbe2 lazyvim: configure javascript and typescript support
+- [ ] 7cbaa6b lazyvim: configure python support
+- [x] 0980ec8 hx: configure ui and ux settings
+- [ ] 4af5cfc aider: configure settings
+- [x] f196ca6 opencode: configure settings
+- [x] a6d0294 opencode: configure instructions
+- [ ] a2a2e7f pi: configure settings
+- [ ] 2811e2a pi: configure instructions
+- [ ] 7fea5d5 codex: configure settings
+- [ ] b054135 codex: configure instructions
+- [ ] f812cbe gemini: configure settings
+- [ ] aa0baaf gemini: configure instructions
+- [x] 1e1d4d5 claude: configure settings
+- [x] c50d282 claude: configure instructions
+- [ ] ea1cb1f zed: configure key mappings
+- [ ] 2663f55 zed: configure ui and ux settings
+- [ ] 9d51252 vscode: configure key mappings
+- [ ] 460d57e cursor: configure key mappings
+- [ ] d82b494 nvimlegacy: wip
+- [ ] 47427a3 emacslegacy: wip
+- [ ] dbc448c nvim: wip
+- [ ] 0fc5d09 emacs: wip
+- [ ] a1e2ea5 wip

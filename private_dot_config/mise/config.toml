@@ -1,2 +1,5 @@
 [settings]
 experimental = true # TODO: Remove this
+
+[tools]
+"go:github.com/guyfedwards/nom/cmd/nom" = "latest"
