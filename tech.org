@@ -1,0 +1,242 @@
+* Tech
+
+** TODO Setup [0/53]
+- [ ] aerospace
+- [ ] paneru
+- [ ] ante
+- [ ] crit
+- [ ] curlie
+- [ ] difit
+- [ ] dua
+- [ ] dysk
+- [ ] entr
+- [ ] gdu
+- [ ] gitui
+- [ ] gmime
+- [ ] gpgme
+- [ ] grist
+- [ ] harlequin
+- [ ] hazel
+- [ ] httpie
+- [ ] hunk
+- [ ] hurl
+- [ ] hwatch
+- [ ] hyperformula
+- [ ] ironcalc
+- [ ] janky borders
+- [ ] kitty
+- [ ] lazyjj
+- [ ] macbar
+- [ ] notmuch
+- [ ] openchamber
+- [ ] openwebui
+- [ ] opus
+- [ ] ponytail
+- [ ] posting
+- [ ] rustfava
+- [ ] sfsexp
+- [ ] sheetsui
+- [ ] simple bar
+- [ ] skim
+- [ ] superfile
+- [ ] talloc
+- [ ] tmux
+- [ ] tokei
+- [ ] univer
+- [ ] venom
+- [ ] viddy
+- [ ] watchman
+- [ ] wechat
+- [ ] wiff
+- [ ] xapian
+- [ ] xplr
+- [ ] zettelkasten
+- [ ] roughdraft
+- [ ] kanata
+- [ ] sol
+
+** TODO Configure [0/43]
+- [ ] Add tab completion popup to ghostty and nushell like that in warp
+- [ ] Fix ghostty ssh integration
+- [ ] Forgecode and pi.dev with nushell
+- [ ] Prefer builtin packages in neovim and emacs, remove extra redundant fancy packages
+- [ ] Replace nvim-lint and conform.nvim with lsp alternatives provided lsp has async features as well and also check lsp servers like efm and todo, indent and folding with tree sitter alternatives
+- [ ] Extract out a task repo and dir from note
+- [ ] Add post run hook to chezmoi to compile neovim Lua files
+- [ ] Marksman and markdown-oxide lsp, markdown and similar format edit mode and preview mode toggle in editors with multimedia support
+- [ ] Zen mode for writing in editors and reading in browsers
+- [ ] Beancount TUI and CLI queries
+- [ ] Prefer native neovim and eMacs packages like eglot
+- [ ] Auto load all packages in eMacs and neovim with short circuit for skipping those but think how to manage core plug-ins like evil and hotpot
+- [ ] Obsidian for neovim and eMacs via plug-ins like obsidian or denote or via LSP
+- [ ] zettel and emannote CLI and similar, use zk for daily roam notes and journal as well
+- [ ] Task warrior and time warrior CLI and TUI and alternatives like tsk and nb
+- [ ] Migrate to fennel config
+- [ ] slack-cli and discord-cli
+- [ ] Create project and buffer level navigation and search commands for neovim and eMacs
+- [ ] posting, hurl
+- [ ] AST-grep, fabric, mods, gum, glamour, bubble tea, oatmeal, parrot, smartcat, llm py, plz-cli, cmdh, skity notes, todo.txt, keyoxide, hurl
+- [ ] Few shot prompt, chain of thought, structured output, system prompt, manual memory, manual validation, manual summarization, manual embedding, manual indexing, manual verification, RAG
+- [ ] simple bar, katana, janky borders, hazel, better touch tools, keyboard maestro
+- [ ] Setup something like warp terminal inline chats in ghostty
+- [ ] Install Orion browser
+- [ ] Check tab syncing or reading list tools like raindrop, linkwarden, wallabag, also check bookmark syncing tools
+- [ ] RSS tools like freshrss, miniflux, tiny tiny rss, feeder, newsboat, nom, turfed, comrak, quarto
+- [ ] Cobalt downloader
+- [ ] Remove utm and similar software
+- [ ] Switch to eMacs in terminal but keep the desktop app and also install neovide
+- [ ] Configure startup applications like browser and terminal (with zellij) on both macOS and Linux
+- [ ] Configure eMacs and neovim daemons
+- [ ] Install kakoune editor, passage, gopass, vault warden, 2faas, proton pass cli, Bitwarden cli rbw, t1 chat, oatmeal, hurl, ddlab, watch, entr, viddy, watchman, hwatch
+- [ ] Install kalker, qalc, rsync, keybase, keyoxide, gitea, forgejo, lgtm stack, excalidraw, codeberg, stalwart, garage, rclone crypt, wireguard, mullavad, tailscale, headscale, radicale, calcurse, weechat, mpd, ffmpeg, pandoc, bc, yt dlp, halloy, hitter, redlib, lemmy, discordo, slac-term, sc-im, visdata, lnav, tailspin, logdy, angle grinder, fb log, Victoria metrics, mosh
+- [ ] Install Albert, yabai, skhd, shottr, carbonyl, browsh
+- [ ] DuckDuckGo bang patterns
+- [ ] Modify helium keybinds
+- [ ] Pipe video stream out of browsers and install proton meet or other open source alternatives
+- [ ] Install tmux, entr, gh dash, gh enhance, gitui, xplr, superfile, tokei, skim, etc, yabai, aerospace and pin all packages
+- [ ] Split brew and paru files based on domain like neovim and emacs instead of the current tool type based distinction (cli, tui, etc.)
+- [ ] Macos capslock light is not working with kanata
+- [ ] Neovim, Emacs, Hyprland keep everything in single config files each
+- [ ] Replace Hyprland with Niri or Mango
+- [ ] Macos hide dock, spotlight, and status bar permanently
+
+** TODO Install [0/139]
+- [ ] OpenShell agent
+- [ ] Understand Anything graph gen tool
+- [ ] Warp Agent CLI
+- [ ] OpenWarp
+- [ ] Mirage
+- [ ] Codeburn
+- [ ] GitNexus
+- [ ] Qmd search
+- [ ] Voxtype
+- [ ] Wisper Flow
+- [ ] Superwhisper
+- [ ] Cmux
+- [ ] Supacode
+- [ ] CLI-Anything
+- [ ] Graphify
+- [ ] Semble
+- [ ] CodeGraph
+- [ ] Open design/codesign
+- [ ] Gstack
+- [ ] Claude Code Caveman
+- [ ] BMAD method
+- [ ] OpenSpace
+- [ ] OpenCLI
+- [ ] Claude superpowers
+- [ ] Claude channels and remote control open source alternatives in opencode or openwork
+- [ ] GSD-framework
+- [ ] PAUL-framework
+- [ ] Deep Research
+- [ ] OpenSkills
+- [ ] Lessloss
+- [ ] Terse
+- [ ] Preduce
+- [ ] Smithery
+- [ ] Skill-get
+- [ ] Skillkit
+- [ ] OpenArtifacts
+- [ ] OpenInterpreter
+- [ ] OpenRAG
+- [ ] LightRAG
+- [ ] RAG Anything
+- [ ] Kuse
+- [ ] OpenNotebook
+- [ ] AnythingLLM
+- [ ] Eigent
+- [ ] SurfSense
+- [ ] PageLM
+- [ ] LM Studio
+- [ ] LocalAI
+- [ ] Claude Cowork
+- [ ] Manus
+- [ ] OpenManus
+- [ ] Pupeeteer
+- [ ] Playwright CLI
+- [ ] Firecrawl Cralwer CLI
+- [ ] Spider Cralwer CLI
+- [ ] Colly Cralwer CLI
+- [ ] Katana Cralwer CLI
+- [ ] Slack CLI
+- [ ] Trae AI
+- [ ] Tabby Agent
+- [ ] Cline
+- [ ] SearXNG
+- [ ] Continue
+- [ ] SWE-agent
+- [ ] Open WebUI Desktop
+- [ ] Open WebUI Webapp
+- [ ] Agent Seek
+- [ ] Windsurf
+- [ ] Codium
+- [ ] Traefik
+- [ ] Promtail
+- [ ] Tailscale
+- [ ] ZeroClaw
+- [ ] NanoClaw
+- [ ] PicoClaw
+- [ ] OpenClaw
+- [ ] OpenClaw CLI
+- [ ] Hermes agent
+- [ ] Hermes bench
+- [ ] Meta harness
+- [ ] Terminal bench agent benchmarks
+- [ ] N8N
+- [ ] Kestra
+- [ ] T3Code
+- [ ] Oh-My-OpenAgent
+- [ ] Oh-My-Pi
+- [ ] Codex
+- [ ] Codex CLI
+- [ ] Gemini CLI
+- [ ] NotebookLM
+- [ ] NanoBanana
+- [ ] Gamma
+- [ ] OpenHands
+- [ ] Devin
+- [ ] OpenDevin
+- [ ] Goose
+- [ ] Devika
+- [ ] CrewAI
+- [ ] FridayAI
+- [ ] LangChain
+- [ ] LangGraph
+- [ ] Atlas Browser
+- [ ] Comet Browser
+- [ ] Antigravity CLI
+- [ ] Antigravity Editor
+- [ ] Supermaven in Cursor
+- [ ] Supermaven Editor
+- [ ] ShellGPT
+- [ ] ChatGPT Chatbot App
+- [ ] ChatGPT Chatbot CLI
+- [ ] Claude Chatbot CLI
+- [ ] Gemini Chatbot App
+- [ ] Gemini Chatbot CLI
+- [ ] Grok Chatbot App
+- [ ] Perplexity Chatbot App
+- [ ] T3 Chatbot App
+- [ ] Thom Chatbot App
+- [ ] Supermaven
+- [ ] LM Studio
+- [ ] OpenRouter
+- [ ] OpenRouter Playground
+- [ ] BigPickle
+- [ ] GLM model and CLI
+- [ ] Mistral model and CLI
+- [ ] LLama model and CLI
+- [ ] Qwen model and CLI
+- [ ] Kimi model and CLI
+- [ ] Deepseek model and CLI
+- [ ] Zen model and CLI
+- [ ] Composer model and CLI
+- [ ] Oz model and CLI
+- [ ] Neovim plugins
+  - [ ] fff.nvim
+  - [ ] agentic.nvim
+  - [ ] ai-terminals.nvim
+  - [ ] codecompanion.nvim
+  - [ ] mcphub.nvim
+  - [ ] sidekick.nvim
+  - [ ] supermaven-nvim

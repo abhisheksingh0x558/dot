@@ -1,0 +1,60 @@
+#!/usr/bin/env bash
+
+set -o errexit
+set -o nounset
+set -o pipefail
+
+# Rebuild and register the hx:// URL-scheme handler for delta hyperlinks in helix
+main() {
+	case "$(uname -s)" in
+	Darwin)
+		local app="$HOME/Applications/hx-open.app"
+		local src plist pb lsreg
+		src="$(mktemp -t hx-open-XXXX).applescript"
+		cat >"$src" <<'EOF'
+on open location this_URL
+	do shell script "$HOME/.bin/hx-open " & quoted form of this_URL
+end open location
+EOF
+		mkdir -p "$HOME/Applications"
+		rm -rf "$app"
+		osacompile -o "$app" "$src"
+		rm -f "$src"
+
+		plist="$app/Contents/Info.plist"
+		pb=/usr/libexec/PlistBuddy
+		"$pb" -c "Add :CFBundleURLTypes array" "$plist" 2>/dev/null || true
+		"$pb" -c "Add :CFBundleURLTypes:0 dict" "$plist"
+		"$pb" -c "Add :CFBundleURLTypes:0:CFBundleURLName string hx-open" "$plist"
+		"$pb" -c "Add :CFBundleURLTypes:0:CFBundleURLSchemes array" "$plist"
+		"$pb" -c "Add :CFBundleURLTypes:0:CFBundleURLSchemes:0 string hx" "$plist"
+		"$pb" -c "Add :LSUIElement bool true" "$plist" 2>/dev/null || true
+
+		lsreg="/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister"
+		"$lsreg" -f "$app"
+		echo "hx:// handler installed at $app"
+		;;
+	Linux)
+		local apps="$HOME/.local/share/applications"
+		local desktop="$apps/hx-open.desktop"
+		mkdir -p "$apps"
+		cat >"$desktop" <<EOF
+[Desktop Entry]
+Type=Application
+Name=hx-open
+Exec=$HOME/.bin/hx-open %u
+NoDisplay=true
+MimeType=x-scheme-handler/hx;
+EOF
+		xdg-mime default hx-open.desktop x-scheme-handler/hx
+		update-desktop-database "$apps" 2>/dev/null || true
+		echo "hx:// handler installed at $desktop"
+		;;
+	*)
+		echo "unsupported OS: $(uname -s)" >&2
+		exit 1
+		;;
+	esac
+}
+
+main "$@"

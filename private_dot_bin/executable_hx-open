@@ -1,0 +1,32 @@
+#!/usr/bin/env bash
+
+set -o errexit
+set -o nounset
+set -o pipefail
+
+# Open hx://<abs-path>:<line> URLs emitted by delta hyperlinks in helix
+main() {
+	local url="${1:-}"
+	local target="${url#hx://}"
+	local term="${TERMINAL:-}"
+
+	# Reject anything that isn't the documented <abs-path>:<line> shape so an
+	# untrusted hx:// URL can never be parsed as an hx flag (argument injection).
+	if [[ ! "$target" =~ ^/.+:[0-9]+$ ]]; then
+		exit 1
+	fi
+
+	if [[ -z "$term" ]] || ! command -v "$term" &>/dev/null; then
+		if command -v ghostty &>/dev/null; then
+			term=ghostty
+		elif [[ -x /Applications/Ghostty.app/Contents/MacOS/ghostty ]]; then
+			term=/Applications/Ghostty.app/Contents/MacOS/ghostty
+		else
+			exit 1
+		fi
+	fi
+
+	nohup "$term" -e hx -- "$target" &>/dev/null &
+}
+
+main "$@"

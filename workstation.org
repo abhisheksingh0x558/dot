@@ -1,0 +1,324 @@
+** Workstation Setup [0/323]
+- [ ] Framework laptop with nixos and arch linux
+- [ ] Starlite tab
+- [ ] Odysee
+- [ ] Twitch
+- [ ] OBS Studio
+- [ ] Pixel with graphene and fdroid
+- [ ] Comet
+- [ ] Codeberg
+- [ ] Gitea
+- [ ] Forgejo
+- [ ] LBRY/odysee
+- [ ] Fleet
+- [ ] Amazon Code editor
+- [ ] Google Stitch
+- [ ] Google Anti gravity
+- [ ] AutoGPT
+- [ ] Autogen
+- [ ] Haystack
+- [ ] Kiro
+- [ ] Httpie GUI
+- [ ] Neovide and lazyvim
+- [ ] Doom
+- [ ] Pass
+- [ ] Kakoune
+- [ ] Rectangle
+- [ ] Chrome with Google Search and Google Maps and Search enhancements and Onenote clipper
+- [ ] Anydesk
+- [ ] Spotlight
+- [ ] Outlook and Teams with Calendar, Contacts, Todos
+- [ ] Airmail
+- [ ] Canary Mail
+- [ ] Thunderbird
+- [ ] Hoppscotch
+- [ ] NocoDB
+- [ ] Supabase
+- [ ] Surreal DB
+- [ ] Onenote
+- [ ] Google Finance and News
+- [ ] Google AI studio
+- [ ] Onedrive
+- [ ] Google Drive
+- [ ] Dropbox
+- [ ] Seafile
+- [ ] Microsoft Password Manager and Authenticator
+- [ ] Microsoft 365 on Chrome (Excel, Word, Powerpoint, Lists, Loop, Whiteboard, Visio)
+- [ ] Reddit
+- [ ] Medium
+- [ ] Hacker news
+- [ ] Bluesky
+- [ ] ORCID
+- [ ] Twitter
+- [ ] Gitter
+- [ ] Stack Overflow and Stack Exchange
+- [ ] Terraspace
+- [ ] Openspace
+- [ ] Containerd
+- [ ] Systemd
+- [ ] Rancher
+- [ ] Haskell with Stack and Cabal
+- [ ] Atuin desktop
+- [ ] Git LFS
+- [ ] Yaml
+- [ ] Tex and LaTex with Beamer
+- [ ] UML and PlantUML
+- [ ] Graphviz
+- [ ] Archimate
+- [ ] Mathjax
+- [ ] MathML
+- [ ] Markmap
+- [ ] Markdown
+- [ ] Github
+- [ ] Gitlab
+- [ ] Gerrit
+- [ ] AWS
+- [ ] Azure
+- [ ] Amazon Kindle with Kindle unlimited
+- [ ] PS5 with PS Plus, EA, GTA+
+- [ ] Xbox X with game pass
+- [ ] Steam
+- [ ] Firestick
+- [ ] Echo dot
+- [ ] Google Books
+- [ ] GCP
+- [ ] Firebase
+- [ ] PostgreSQL
+- [ ] MongoDB
+- [ ] Redis
+- [ ] Valkey
+- [ ] RabbitMQ
+- [ ] FIDO2
+- [ ] OpenSearch
+- [ ] Apple Messages and Facetime and Contacts
+- [ ] Gemini
+- [ ] Glean
+- [ ] Fluent bit
+- [ ] Groundcover
+- [ ] Microsoft Copilot
+- [ ] Grok
+- [ ] Github Copilot
+- [ ] DiagramGPT and Eraser IO
+- [ ] Bolt
+- [ ] Neobrowser
+- [ ] Replit
+- [ ] Lovable
+- [ ] Whisper
+- [ ] Codeium
+- [ ] FreshRSS
+- [ ] Tiny Tiny RSS
+- [ ] RSS Guard
+- [ ] Codex
+- [ ] LocalAI
+- [ ] Open-codex
+- [ ] Perplexica
+- [ ] Tabnine
+- [ ] Drafts
+- [ ] Notability
+- [ ] Goodnotes
+- [ ] Concepts
+- [ ] Excalidraw
+- [ ] Draw.io
+- [ ] Vimcal
+- [ ] Mindnode
+- [ ] DevTo
+- [ ] Alexa
+- [ ] Siri
+- [ ] Numi
+- [ ] Things
+- [ ] Bear
+- [ ] Bartender
+- [ ] Noir
+- [ ] Unclutter
+- [ ] App Cleaner
+- [ ] Pocket
+- [ ] Swish
+- [ ] Keychain
+- [ ] KeypassXC
+- [ ] Hazel
+- [ ] Keysmith
+- [ ] Authy
+- [ ] Grammarly
+- [ ] Caffeinate
+- [ ] Numbers, Keynote, Pages, Textedit
+- [ ] DevTo
+- [ ] Snippet
+- [ ] Xcp
+- [ ] Onivim
+- [ ] Unarchiver
+- [ ] 2FAS
+- [ ] Proton mail, calendar, pass keep, drive
+- [ ] Devin & Devika
+- [ ] Langchain
+- [ ] Appflowy
+- [ ] Affine
+- [ ] Anytype
+- [ ] Mattermost
+- [ ] Jitsi and Bigbluebutton
+- [ ] Joplin
+- [ ] Trilium Notes
+- [ ] Focalboard
+- [ ] Nextcloud
+- [ ] System monitoring GUIs/webapps
+- [ ] Cron modern alternative
+- [ ] Plane
+- [ ] Discourse
+- [ ] Xournal
+- [ ] Nebo
+- [ ] Saber
+- [ ] Rnote
+- [ ] Loose Leaf
+- [ ] Amp
+- [ ] Lapce
+- [ ] Rim
+- [ ] uBlock Origin
+- [ ] Pandoc
+- [ ] Slidev
+- [ ] Reveal.js
+- [ ] Poppler
+- [ ] Puppeteer
+- [ ] Ghostscript
+- [ ] Chef/Puppet/Ansible/Saltstack
+- [ ] Penpot
+- [ ] Elest.io
+- [ ] Plasmic
+- [ ] OpenID
+- [ ] Qemu
+- [ ] UTM
+- [ ] Wine and Proton
+- [ ] Darling
+- [ ] VirtualBox
+- [ ] VMware
+- [ ] Coroot
+- [ ] Vault secret manager
+- [ ] Wireguard and teleport
+- [ ] Table Plus
+- [ ] Tabby
+- [ ] Termius
+- [ ] RSS reader
+- [ ] Mailing list
+- [ ] IRC chat
+- [ ] Public file and code sharing tools
+- [ ] Gritql
+- [ ] Hydra
+- [ ] Mastodon
+- [ ] Bazaar
+- [ ] AST grep
+- [ ] Viddy
+- [ ] Pomodoro, Kanban, Zettelkasten, Roam, Second Brain and Getting things done (GTD), PARA, ACE, ACCESS
+- [ ] Codespell
+- [ ] Agra
+- [ ] Clean architecture
+- [ ] Clean code
+- [ ] Dart
+- [ ] Design patterns
+- [ ] System Design
+- [ ] Portainer
+- [ ] DSA
+- [ ] Elm
+- [ ] Excel
+- [ ] FFI
+- [ ] Git with flow and conventional commits
+- [ ] GraphQL
+- [ ] GRPC
+- [ ] Rest with OData
+- [ ] Idris
+- [ ] Kafka
+- [ ] Temporal
+- [ ] Knative
+- [ ] Kubeless
+- [ ] OpenFaaS
+- [ ] K3s
+- [ ] Kotlin
+- [ ] Kubernetes
+- [ ] Mongo
+- [ ] Cassandra
+- [ ] Postgres
+- [ ] Influx
+- [ ] Prolog
+- [ ] Purescript
+- [ ] Clojurescript
+- [ ] RabbitMQ
+- [ ] Redis
+- [ ] Julia
+- [ ] Scheme
+- [ ] TCP
+- [ ] UDP
+- [ ] Samba/SMB
+- [ ] Kerberos
+- [ ] Typescript
+- [ ] OpenShift
+- [ ] OpenStack
+- [ ] Terraspace
+- [ ] Terramate
+- [ ] Istio
+- [ ] Saily - esim
+- [ ] LocalStack
+- [ ] AWS
+- [ ] Azure
+- [ ] GCP
+- [ ] Minikube
+- [ ] Kind
+- [ ] Memcached
+- [ ] Elasticsearch
+- [ ] Airflow
+- [ ] Hadoop
+- [ ] Prometheus
+- [ ] Thanos
+- [ ] Grafana
+- [ ] Loki
+- [ ] Tempo
+- [ ] Mimir
+- [ ] Pyroscope
+- [ ] Logstash
+- [ ] Kibana
+- [ ] Opentelemetry
+- [ ] Opentracing
+- [ ] Message queue
+- [ ] Message broker
+- [ ] Event bus
+- [ ] Event stream
+- [ ] Pub sub
+- [ ] Signoz
+- [ ] Statsd
+- [ ] Htmx
+- [ ] Hyperscript
+- [ ] Qodo
+- [ ] Sdkman
+- [ ] Fnm
+- [ ] Parcel
+- [ ] Vercel
+- [ ] Cockpit
+- [ ] Technical documentation with Diátaxis
+- [ ] Guile
+- [ ] Guix
+- [ ] Ledger CLI or alternatives
+- [ ] Beancount
+- [ ] Mixpanel
+- [ ] Openpanel
+- [ ] Webhook.site
+- [ ] Codesign
+- [ ] Jekyll/Hexo/Pelican
+- [ ] Install Intellij and Pycharm community editions and other jetbrains ides
+- [ ] Install GitHub desktop
+- [ ] LocalSend
+- [ ] mpv
+- [ ] Kdenlie
+- [ ] Pinta
+- [ ] Think of ETL and warehouse tools as well
+- [ ] Store configs in github -> dropbox -> cloud -> 3p cloud
+- [ ] DeepWiki
+- [ ] OpenAPI and Swagger
+- [ ] Obsidian CLI
+- [ ] zAI
+- [ ] Apex
+- [ ] Paperclip
+- [ ] Otter AI
+- [ ] Graphite
+- [ ] Coderabbit
+- [ ] Garage
+- [ ] DeltaDB
+- [ ] Codeburn
+- [ ] Doppler
+- [ ] Zennotes
+- [ ] Acpx

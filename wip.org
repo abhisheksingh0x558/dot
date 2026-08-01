@@ -1,0 +1,600 @@
+* TODO WIP
+  - [ ] For all agents: Choose lighter model for planning and heavier model for building/agentic mode. Keep default mode
+    as chat or plan instead of build or agent. Enable effort (maybe for thinking), thinking, reasoning, planning, reflection, decision making. Enable
+    exteneded thinking, reasoning, planning, reflection, decision making. Use and enhance memory by updating
+    instructions for common mistakes. Prepare a plan before execution. Use to do lists during execution. Use background
+    and parallel agents, agent teams and subagents if required. Ask the user as many questions as essential for clarity. Use web
+    search tool for research. Review after execution. Setup context, rules, prompts, tools, agents agent teams, subagents, plugins,
+    commands, scripts, skills, assistants, integrations, hooks, MCP servers, stdio, composeio, MCP lang servers, Chrome DevTools MCP . Setup inline editing, inline suggestions,
+    next edit suggestions, natural editing system, ACP and agent harness. Setup RAGs and Ralph loops and loop engineering. Use agent loops,
+    reminders, autoresearch, automode, dream, init, channels, remote control, and schedules. Use auto research, visualizer, and context mode. Use multi agents view
+  - [ ] Aider, Continue, Cline, Ollama global config and instructions
+  - [ ] Configure helix as git diff and merge tool
+  - [ ] Use sequential thinking, rtk, context7, serena, glean and chain of thought prompts with LLMs
+  - [ ] Claude grill me and handoff skill and goal command
+  - [ ] Andrej Karpathy CLAUDE.md, skills and LLM wiki
+  - [ ] Learn spec driven development and prompt, content and harness engineering
+  - [ ] Setup autocomplete copilot plugins for all editors
+  - [ ] Learn prompt engineering and its frameworks like COSTAR, CLEAR, RACE, CRAFT, APE, CoT, etc. along with prompt genereators
+  - [ ] Remove redundant comments from code and add more where required
+  - [ ] Install gh dash extension and add a way to track gh and kubectl extensions
+  - [ ] Add a way to track brew and paru local packages
+  - [ ] Delete all chats from Claude.ai
+  - [ ] Migrate from org mode
+  - [ ] Remove lazyvim, doomemacs, and omarchy
+  - [ ] Switch back to kanata on macos
+  - [ ] Track gh config
+  - [ ] Delete all third party sites logins configured for apple common via appleid.com
+  - [ ] Remove all repos from GitHub and move to Codeberg
+  - [ ] Move .dot, ledger and note repos to jj
+  - [ ] Way to store shell history in a cross shell manner
+  - [ ] Way to store browser extensions, bookmarks, history, tab groups, passwords and auto fill info in a cross browser manner
+  - [ ] Way to store editor extensions and settings in a cross editor manner
+  - [ ] Remove project specific agent files and do not use them
+  - [ ] Atuin configure global setting to discover all commands
+  - [x] Delete anthropic account created by mistake against proton email after checking it accounts can be recreated or not
+  - [ ] Reset org warning deadline days variable in emacs
+  - [ ] Use org-habit, org-journal, org-super-agenda, org-pomodoro, org-modern, org-re-reveal, org-present, org-tree-slide, .+, ++, /
+  - [ ] Create autocommit process for note, ledger and splitwise.py dir
+  - [ ] Remove docs from overdocumented code pieces in dotfiles
+  - [ ] Spec files of neovim and emacs should only have names of plugins and packages respectively and they should also be independent of lazy and leaf respectively
+  - [ ] Breakdown bashrc and bash_profile into domains like emacs and neovim configs
+  - [ ] Use emacs mail client or some similar tui/cli tool
+  - [ ] Neovim/Emacs support ghost text suggestions, nes suggestions, and ai suggestions in autocompletion popup, and inline edits
+  - [ ] Support slash command in neovim and emacs like obsidian and notion
+  - [ ] Move away from netrc if possible as that is not encrypted
+  - [ ] Add local domains to point to fava, excalidraw, loki, graphana, etc.
+  - [ ] Set XDG config, date, etc., dirs on macos
+  - [ ] Add passkeys for all websites
+  - [ ] Move google drive, onedrive, apple icloud, and dropbox items to proton drive
+  - [ ] Move fava to docker or some other daemon/process manager instead of direct cli
+  - [ ] Add docker script for excalidraw, fava, and LGTM stack
+  - [ ] Add script to symlink note directory in document directory
+  - [ ] Install all corresponding neovim/emacs plugins/packages for all installed tuis
+  - [ ] Restrict Amazon website access and only allows access to Prime. Do something similar for Proton mail and VPN
+  - [ ] Extract fd, eza, fzf, rg, bat into common utils to avoid duplicating options
+  - [ ] Use gum and usage to refactor bash scripts
+  - [ ] Use vim keybinds in bash, less, lazygit, fzf, etc
+  - [ ] Put note dir in env var and get dotfile dir from chezmoi command
+  - [ ] Store name, email, paru path, and brew path in env vars and refer those everywhere
+  - [ ] Install omarchy and configure a switcher to alternate between vanilla arch and omarchy without affecting the settings of each other
+  - [ ] Remove tmpl files
+  - [ ] Set all fonts to FiraCode Nerd Font Mono and uniform size
+  - [ ] Setup font ligatures (perhaphs via fira code and nerd fonts)
+  - [ ] Sync zsh and nushell settings with bash
+  - [ ] Try zed as an alternative editor
+  - [ ] Try thom.chat as chatgpt alternative
+  - [ ] Try fennel as lua alternative
+  - [ ] Arch linux - impala, bluetui, fastfetch, tuigreet, ufw, runapp, app2unit, brave kde wallet, hypridle, hyprlock, hyprsunset, cliphist, chipvault
+  - [ ] Neovim and emacs move json, toml, yaml, and csv commits to before lang commits
+  - [ ] Install beancount tui and wui and excalidraw
+  - [ ] Neovim and emacs coverage, profiler, and benchmarking
+  - [ ] Metabase and Superset
+  - [ ] Docker Swarm and Podman alternative
+  - [ ] Add doomemacs app genereation script, post install commands and add it to path
+  - [ ] Add lazyvim app genereation script, post install commands and add it to path
+  - [ ] Replace gpg emacs encryption with age
+  - [ ] Transfer all items to open source alternatives
+  - [ ] Archive/Delete all apple mails
+  - [ ] Track karabiner and raycast config as symlink
+  - [ ] Setup org mode extensions for emacs
+  - [ ] Add docs for setting up apple devices
+  - [ ] Add command guard for aliases
+  - [ ] Add command guards to shell dotfiles and other file existense guards as well to other files
+  - [ ] Use gpg keychain integration on MacOS
+  - [ ] Instead of mise use individual version managers
+  - [ ] Have separate mise, paru and brewfile configs for each machine
+  - [ ] Store gpg and age keys back in cloud or somewhere else privately
+  - [ ] Script to setup /etc/shells
+  - [ ] Git-delta integration in neovim, emacs, lazygit and gitui
+  - [ ] Install xdelta, multipatch on macos
+  - [ ] Install Delta, Ares, Retroarch, Desmume, Mgba, Openemu on all apple devices
+  - [ ] Emacs/Neovim allow multiple language servers for a single file
+  - [ ] Zoxide should hijact cd
+  - [ ] Proton authenticator, wallet, lumo, simple login, standard notes
+  - [ ] Use email aliases
+  - [ ] Lazy, Elpaca, Zinit, Sheldon - lazy loading, async download, async loading, byte compilation, self byte compilation, versioning, pinning, download from source, ui, disable package loading dynamically, cleanup uunused packages, try packages temp
+  - [ ] Sheldon add just commands
+  - [ ] Build my site/portfolio using github pages or any other alternative
+  - [ ] Update github readme
+  - [ ] Update notion resume
+  - [ ] Use extended regex for bash, zsh, vim and emacs
+  - [ ] Emacs/Neovim - elvish
+  - [ ] Create scripts for work Warp terminal workflows
+  - [ ] Add mise.toml for dotfiles with rust python javascript go aqua ubi vfox
+  - [ ] Set diff.tool and merge.tool in git, maybe difftastic
+  - [ ] Neovim/Emacs handle 3 way merges, inline as well
+  - [ ] Arch Linux fix pacman.conf, iwd/main.conf and resolv.conf in /etc
+  - [ ] Enable autoupdate of apple app store applications
+  - [ ] Install macos applications on ios and ipados
+  - [ ] Sync apple devices widgets and desktop icons and folders
+  - [ ] Delete icloud, gmail, outlook and proton newsletter mails and remove their subscriptions
+  - [ ] Enable hyperlinks for git-delta
+  - [ ] Git grep use ripgrep
+  - [ ] Git ls-files use fd
+  - [ ] Atuin pager direction and keymaps
+  - [ ] Check if shell history config is required since atuin is used now, only usecase might be warp terminal
+  - [ ] Brew and paru compare system generated files with tracked ones
+  - [ ] Enable syntax highlight on git-delta
+  - [ ] Set git blame pager to bat
+  - [ ] Set diff and diff conflict algorithm for git
+  - [ ] Configure filetype for bat, delta, fd, rg, lazygit, gitui
+  - [ ] Install an alternative pager to less and configure delta and bat to use it
+  - [ ] Allow smart case search in bat's pager
+  - [ ] Install rust/go alternatives for head and tail
+  - [ ] Check what got messed up in MacOS Message app
+  - [ ] Replace dd, cut, tr, comm
+  - [ ] Add alias for du, df, top
+  - [ ] Optimize chezmoi external git clones
+  - [ ] Enable vim.loader for neovim and similar setting for emacs
+  - [ ] Install appimage
+  - [ ] Check if lazy, elpaca, zinit bytecompile themselves
+  - [ ] Fix script to remove stale, squashed branches
+  - [ ] Ripgrep conf, .env, .rc, .profile, paru set ft and mode
+  - [ ] Ripgrep settings like --max-columns=150, --max-columns-preview, smart case not working
+  - [ ] Add settings for core utilities configured in aliases
+  - [ ] Secretive, darcs, slides, pet, taskwarrior, vit, tmux with tpm, fzf-tab, clipboard, kubetui, oxker, xplr, superfile, lf, ranger, midnight commander
+  - [ ] rsync, tree, torrent, youtube dl, ffmpeg, croc, diceware, perl-Image-Exiftool, pwgen, qalculate, qrencode, zbar, locate, plocate, tre, fpp
+  - [ ] Lnav, Rdiff-backup, kopia, bup, restic, autorestic, crestic, dysk, hyfetch
+  - [ ] Gitui vim bindings
+  - [ ] Use private browser as default browser and disable autofill for these
+  - [ ] Neovim Fix gitsigns redrawing and show staged commits
+  - [ ] Setup gnu pass or alternative cli pass manager like gopass or passage and setup sync between password managers
+  - [ ] Forward all mail to proton
+  - [ ] Shell completions for all clis
+  - [ ] Shell completions for hidden dirs/files
+  - [ ] Replace cp and rm
+  - [ ] Linux clis aliases
+  - [ ] Set podman compose env var
+  - [ ] Explore keybase modern alternative like sigstore
+  - [ ] Linux PAM
+  - [ ] PDF merge, split, encrypt, decrypt
+  - [ ] Install diff-so-fancy and diff-highlight
+  - [ ] License and gitignore generator
+  - [ ] Shebang line -S arguement and multi line shebang
+  - [ ] Git background fetch operations
+  - [ ] Git highlight ws errors
+  - [ ] Git add diff aliases for word diff and ignore white space
+  - [ ] Git remove unused and overly complex aliases
+  - [ ] Git alias git gc --prune=now --aggressive
+  - [ ] Git alias for neogit fixup commit options
+  - [ ] Git alias for -- suffix
+  - [ ] Git alias for merge commit mappings like reset, revert, restore, etc
+  - [ ] Git alias create root branch
+  - [ ] Git alias snapshot stash
+  - [ ] Git alias push --all, --prune, --delete (:)
+  - [ ] Git alias push all remotes
+  - [ ] Git alias show summary, stat
+  - [ ] Git alias remote --prune
+  - [ ] Git alias rev-parse, rev-list, reflog, describe, remote, fsck, pull and push with and without stash, clone --depth --filter tree:0 --filter blob:none, push --progress
+  - [ ] Git alias tag -l, remote -v, commit --fixup
+  - [ ] Git alias blame -w -M -C -C -C, log -G -S --grep, clean -d -f -x -X, sparse-checkout, clone --single-branch --sparse --branch, branch --remotes, clone --mirror
+  - [ ] Git alias submodule, subtree, subrepo
+  - [ ] Git commit message generator
+  - [ ] Semver CLI
+  - [ ] Fix vim global linter issue
+  - [ ] Torrent clients, cli, tui, gui
+  - [ ] Add shell directive to fix shellcheck errors
+  - [ ] Move language tools and clis from paru/brew to mise
+  - [ ] Git rebase allow working without opening editor
+  - [ ] Alias to define shebang for neovim and emacs
+  - [ ] Mise use pnpm instead of npm
+  - [ ] Neovim/Emacs add undo break-points in insert mode with . , ; :
+  - [ ] Neovim/Emacs fix flash mappings
+  - [ ] Neovim/Emacs better indenting in visual mode
+  - [ ] Neovim/Emacs saner n and N search and same for , and ;
+  - [ ] Neovim/Emacs fix visual line movement and enable wrapping
+  - [ ] Neovim/Emacs allow subword movement
+  - [ ] Neovim/Emacs setup paredit or sexp
+  - [ ] Neovim/Emacs easier search for word and symbol mappings
+  - [ ] Neovim/Emacs easier search for word and symbol in buffer and project
+  - [ ] Neovim/Emacs treesitter install all parser when required async
+  - [ ] Emacs no littering
+  - [ ] Emacs open file in other window mappings
+  - [ ] Emacs highligh word under cursor using lsp
+  - [ ] Emacs goto next/previous occurrence of current word
+  - [ ] Add neovim and emacs clients for common clis/tuis/guis
+  - [ ] Git stash always include untracked files
+  - [ ] Fix neovim and emacs mode for zshrc, zshenv, zprofile
+  - [ ] Resolve brew arch todos
+  - [ ] Do not show root indent in neovim
+  - [ ] Setup editorconfig as per language formatters
+  - [ ] Git diff ignore whitespace and enable word diff
+  - [ ] Neovim enable lazy plugins
+  - [ ] Neovim gitsigns not working properly
+  - [ ] Neovim diffview opens for conflicts
+  - [ ] Neovim diffview use inline diffs
+  - [ ] Neovim diagnostics not working on start
+  - [ ] Neovim/Emacs goto next usage of word under cursor
+  - [ ] Setup textobject and motion for todos, indents and comments in emacs
+  - [ ] Setup trouble and snacks keymaps for neovim and something similar for emacs
+  - [ ] Install all emacs treesitter parsers eagerly when setting up and check for updates as well
+  - [ ] Enable inlay hints and code lens for emacs and neovim lsp
+  - [ ] Install Neo browser, OpenAI browser, Comet browser, SigmaOS, BrowserOS, Vivaldi, Tor browser
+  - [ ] Install Folx, Transmission, qBittorrent, Deluge, JDownloader, Motrix
+  - [ ] Install Notesnook, Joplin
+  - [ ] Install cosign
+  - [ ] Install TmuxAI, Gemini CLI terminals
+  - [ ] Setup fzf with bat, fd and ripgrep
+  - [ ] Setup bat to use builtin pager instead of less
+  - [ ] Setup delta to to use bat as pager instead of less
+  - [ ] Setup PAGER env var
+  - [ ] Add pnpm, uv, etc. global bin dirs to path
+  - [ ] Think of a better way to manage keyd
+  - [ ] Manage vscode and forks settings in dotfiles perhaphs via hombrew
+  - [ ] Manage brave and forks settings in dotfiles perhaphs via hombrew
+  - [ ] Replace fourmolu with ormolu
+  - [ ] Improve brew interface such that taps can be taken care of and --formulae is not required while arch and os are accepted as args
+  - [ ] Use apple keychain for ssh keys on macos and track ssh dotfiles
+  - [ ] Arch set hostname, locale and timezone
+  - [ ] Copy gpg files to work macbook
+  - [ ] Remove indents from gitconfig and other dotfiles
+  - [ ] Align commments for dotfiles
+  - [ ] Emacs/Neovim/Zinit use git clone --depth 1 --filter blob:none
+  - [ ] Run git cleanup on dotfiles
+  - [ ] Setup lang specific plugins for neovim
+  - [ ] Define LANG, LC_TYPE env vars
+  - [ ] Fix visual indent mappings, and add goto error and warning diagnostics mappings
+  - [ ] Fix nushell xdg issue in nixpkgs
+  - [ ] Install perplexity
+  - [ ] Install git-modes and add filetype headers to dotfiles both for git dotfils for emacs
+  - [ ] Add filetype headers to chezmoi (and any other pending) dotfils for both emacs and neovim
+  - [ ] Add treesitter support for chezmoi (and any other pending) dotfils for both emacs and neovim
+  - [ ] Neovim port default lsp mappings and copy those to emacs as well
+  - [ ] Setup linters as formatters as well for autofixing
+  - [ ] Commitlint with conventional commits, gitflow
+  - [ ] Setup editorconfig, gitattributes, justfile, mise, precious (formatter and linter), direnv, lefthook for dotfiles
+  - [ ] Keep readme, license, justfile, mise, gitignore, editorconfig, gitattributes, precious/treefmt (formatter and linter), language config, language server config, formatter config, linter config, lefthook/pre-commit, docker/podman and direnv in every project
+  - [ ] Install bazel, argocd, eartly/pants/dagger, grafana, pulumi, kubernetes, cri-o stack, supervisor
+  - [ ] Install git-crypt, agenix, sops-nix, redis, postgres, kafka, temporal
+  - [ ] Install clis for encoding and hashing
+  - [x] Encrypt .env file with sops age
+  - [ ] Setup llm language server, llm based refactoring
+  - [ ] Setup excalidraw, typst, mermaid, marp, markdown, org/neorg on emacs and neovim
+  - [ ] Setup emacs and neovim like cursor ai
+  - [ ] Enable git maintainence for all repos
+  - [ ] Add homebrew and pacman registry to mise and remove homebrew and pacman
+  - [ ] Consult extensions
+  - [ ] Enable autocompletion doc popup for neovim and emacs
+  - [ ] Defer with leaf
+  - [ ] Emacs highlight with treesitter
+  - [ ] Fix emacs formatter for elisp
+  - [ ] Enable spell and grammar check for commits and code and comments
+  - [ ] Setup ubi, aqua, asdf, vfox, lume, vagrant, arkade, devenv, flox, spack, webi, niv, devshell, devbox
+  - [ ] Setup gomod treesitter for neovim
+  - [ ] Use nushell sql history mode
+  - [ ] Install both non-treesitter and treesitter majors modes in emacs
+  - [ ] Install chezmoi plugins both for emacs and neovim
+  - [ ] Port all evil-unimpaired and vim-unimpaired mappings to emacs and neovim repsectively
+  - [ ] Port all Comment.nvim to emacs and neovim
+  - [ ] Difftastic as diff.tool, difftool.prompt, pager.difftool, interactive.diffFilter
+  - [ ] Use emacs and neovim daemon
+  - [ ] Setup fzf for nushell
+  - [ ] Track xdg files on nixos and macos
+  - [ ] Use xdg default files in lower case
+  - [ ] Install lua, luajit, fennel and elisp
+  - [ ] Enable ligatures for wezterm
+  - [ ] Install apple command line tools and arch base package via brew/paru
+  - [ ] Install moreutils, awk, frawk
+  - [ ] Zsh, emacs, neovim filter history
+  - [ ] Setup build language server
+  - [ ] Setup model context server
+  - [ ] Setup treesitter, lsp, linter, formatter, ts indentor, inc selector, ts text object, refactor, repl, snippet runner, command runner
+  - [ ] Switch to mastadon, signal
+  - [ ] Pin neovim, emacs, and zsh plugins
+  - [ ] Lazy load zsh plugins
+  - [ ] Bytecompile lua, zsh and elisp
+  - [ ] Reformat and add comments to karabiner.json and create my own commands
+  - [ ] Use fast-tags for haskell, and other tags for other langs
+  - [ ] Disable neovim font level in gutter
+  - [ ] Disable neovim todo hints in gutter
+  - [ ] Emacs put nerd-icon-install-fonts into init.el
+  - [ ] Track gh cli config
+  - [ ] Install file watchers for all languages
+  - [ ] Enable XDG for both macos and nixos specially for nushell and zsh
+  - [ ] Install xcode cmdline tools, rosetta and base-devel via install script
+  - [ ] Enable homebrew autoupdate and other options
+  - [ ] Add location and i18n and console settings by referring to nixos configuration
+  - [ ] Add github read:project token via nix
+  - [ ] Copy nixos system setting to macos system settings
+  - [ ] Track scroll settings for macos and nixos
+  - [ ] Install corresponding packages for macos on linux
+  - [ ] Check cmdline completion via noice/nvim-cmp
+  - [ ] Split large neovim and emacs commits and configure conventional commits modules and add module scope to existing commits
+  - [ ] Add script to clone all github repos
+  - [ ] Remove cosmic default applications
+  - [ ] Make brave, neovim and wezterm (with zellij) as default programs
+  - [ ] Extract fonts, themes, etc. to config file for all terminals, etc.
+  - [ ] Install debug adapters for all languages
+  - [ ] Install test suites for all languages
+  - [ ] Enable nushell integration for zellij
+  - [ ] Configure pre commit hooks
+  - [ ] Highlight injected sql
+  - [ ] Make brave, alacritty, etc transparent
+  - [ ] Rename boot loader
+  - [ ] Since nix store is world readable, encrypt secure files in it
+  - [ ] Encrypt netrc and make it private
+  - [ ] Use age/sops/git crypt/bitwarden/keybase
+  - [ ] Validate if no secrets were commited to dotfiles repo ever
+  - [ ] Install mail client, rss feed reader, iirc, etc. clients (gui, tui, cli)
+  - [ ] Migrate to neovim 0.11 native lsp config, completion, native snippet engine, only use snippets templates
+  - [ ] Migrate to neovim terminal, project manager, file explorer, formatter, folder, linter and any other native features
+  - [ ] Migrate to emacs tempel from yasnippet once it is stable
+  - [ ] Gdrive, Onedrive, Dropbox, etc.
+  - [ ] Kubernetes, aws, gcp, azure, gh, wireguard, teleport
+  - [ ] Add named directories to zsh
+  - [ ] Fzf keymaps
+  - [ ] Fzf ordering
+  - [ ] Git lfs
+  - [ ] Git merge multiple repos
+  - [ ] Git smudge and clean filters
+  - [ ] Git attributes
+  - [ ] Neovim/Emacs - manage scratch buffers
+  - [ ] Neovim/Emacs - manager terminals and repls
+  - [ ] Neovim/Emacs - emmet
+  - [ ] Neovim/Emacs - blamer
+  - [ ] Neovim/Emacs - git blame mappings for current line instead of entire buffer
+  - [ ] Neovim/Emacs - Completion previous both in in-buffer and mini-buffer modes
+  - [ ] Neovim/Emacs - add LSP capabilities for neovim blink.cmp and lsp-snippet for emacs
+  - [ ] Neovim/Emacs - add autocompletion to terminals
+  - [ ] Neovim/Emacs - auto add bracets to autocompleted functions/methods
+  - [ ] Neovim/Emacs - Setup support for ron and kdl files
+  - [ ] Neovim/Emacs - Configure treesitter plugin to update parsers
+  - [ ] Neovim - treesitter enable incremental_selection, indent, folding, textobjects select, textobjects swap, textobjects move, textobjects lsp_interop, pairs, locals, injections
+  - [ ] Emacs - marginalia
+  - [ ] Emacs - restclient
+  - [ ] Emacs - treesit-auto
+  - [ ] Emacs - embark
+  - [ ] Emacs - projectile
+  - [ ] Emacs - ein
+  - [ ] Emacs - dabbrev
+  - [ ] Emacs - corfu-history
+  - [ ] Emacs - eldoc-mode
+  - [ ] Emacs - eglot-mode
+  - [ ] Emacs - repeat-mode
+  - [ ] Emacs - dape-mode
+  - [ ] Emacs - fido-vertical-mode
+  - [ ] Emacs - icomplete-vertical-mode
+  - [ ] Emacs - herculus
+  - [ ] Application consideration: Apple > 3P > Neovim > Emacs, GUI > TUI > CLI, Free > Paid
+  - [ ] Do not enable OAuth for any platform unless no other option is available
+  - [ ] Keep Apple, Google and Microsoft password in Apple password manager and all other passwords in Google password manager
+  - [ ] For Google and Microsoft mails login from respective IDs instead of Icloud ID
+  - [ ] Enable cloud sync for all applications that support it
+  - [ ] Enable MFA for platforms using Google password manager if supported by the platform
+  - [ ] Migrate to Microsoft mail from Apple mail
+  - [ ] Migrate to Google password manager from Apple password manager
+  - [ ] Recheck 2FA and OAuth for Google, Microsoft and Apple
+  - [ ] Add schedule for all password resets and reset all passwords
+  - [ ] Migrate to Chrome from Safari
+  - [ ] Prefer American English everywhere
+  - [ ] Use API keys to interact with 3p applications instead of oauth
+  - [ ] Prefer working without login unless necessary in any application
+  - [ ] Prefer not sharing diagnostics or usage data from any application
+  - [ ] Support for texinfo and man-pages files
+  - [ ] Replace sudo with sudo-rs
+  - [ ] Emacs languages - Bash/Sh
+  - [ ] Emacs languages - C++
+  - [ ] Emacs languages - CSS
+  - [ ] Emacs languages - Clojure
+  - [ ] Emacs languages - Common Lisp
+  - [ ] Emacs languages - Conf/Gitconf
+  - [ ] Emacs languages - Docker/compose
+  - [ ] Emacs languages - Podman/compose
+  - [ ] Emacs languages - Elisp
+  - [ ] Emacs languages - HTML
+  - [ ] Emacs languages - Fennel
+  - [ ] Emacs languages - Java
+  - [ ] Emacs languages - Javascript
+  - [ ] Emacs languages - Json
+  - [ ] Emacs languages - Julia
+  - [ ] Emacs languages - Justfile
+  - [ ] Emacs languages - Kotlin
+  - [ ] Emacs languages - Latex
+  - [ ] Emacs languages - Lua
+  - [ ] Emacs languages - Makefile
+  - [ ] Emacs languages - Markdown
+  - [ ] Emacs languages - Neorg
+  - [ ] Emacs languages - Nix
+  - [ ] Emacs languages - Nu
+  - [ ] Emacs languages - Obsidian
+  - [ ] Emacs languages - Org
+  - [ ] Emacs languages - Proto
+  - [ ] Emacs languages - Purescript
+  - [ ] Emacs languages - Python
+  - [ ] Emacs languages - Racket
+  - [ ] Emacs languages - Regex
+  - [ ] Emacs languages - Sass
+  - [ ] Emacs languages - Scheme
+  - [ ] Emacs languages - SCSS
+  - [ ] Emacs languages - Sql with dialects
+  - [ ] Emacs languages - Opentofu/terragrunt
+  - [ ] Emacs languages - Toml
+  - [ ] Emacs languages - Editorconfig
+  - [ ] Emacs languages - Typescript
+  - [ ] Emacs languages - Typst
+  - [ ] Emacs languages - XML
+  - [ ] Emacs languages - Yaml
+  - [ ] Emacs languages - Zig
+  - [ ] Emacs languages - Zsh
+  - [ ] Emacs languages - Ruby
+  - [ ] Emacs languages - PHP
+  - [ ] Neovim languages - Conf/Gitconf
+  - [ ] Neovim languages - Docker/compose
+  - [ ] Neovim languages - Podman/compose
+  - [ ] Neovim languages - Elisp
+  - [ ] Neovim languages - Java
+  - [ ] Neovim languages - JavaScript
+  - [ ] Neovim languages - Julia
+  - [ ] Neovim languages - Latex
+  - [ ] Neovim languages - Opentofu/terragrunt
+  - [ ] Neovim languages - Markdown
+  - [ ] Neovim languages - Neorg
+  - [ ] Neovim languages - Obsidian
+  - [ ] Neovim languages - Org
+  - [ ] Neovim languages - Elm
+  - [ ] Neovim languages - Regex
+  - [ ] Neovim languages - Sass
+  - [ ] Neovim languages - Scheme
+  - [ ] Neovim languages - Sql with dialects
+  - [ ] Neovim languages - Typescript
+  - [ ] Neovim languages - Typst
+  - [ ] Neovim languages - Editorconfig
+  - [ ] Neovim languages - XML
+  - [ ] Neovim languages - Ruby
+  - [ ] Neovim languages - PHP
+  - [ ] Neovim plugins - nvim-lsp-selection-range
+  - [ ] Neovim plugins - telescope-frecency
+  - [ ] Neovim plugins - snacks frecency
+  - [ ] Neovim plugins - nvim-spyder
+  - [ ] Neovim plugins - multicursors.nvim
+  - [ ] Neovim plugins - Yanky
+  - [ ] Neovim plugins - Marks
+  - [ ] Neovim plugins - nvim-treeclimber
+  - [ ] Neovim plugins - Undos
+  - [ ] Neovim plugins - HTML
+  - [ ] Neovim plugins - CSS
+  - [ ] Neovim plugins - SCSS
+  - [ ] Neovim plugins - Jumps
+  - [ ] Neovim plugins - Changes
+  - [ ] Neovim plugins - Harpoon
+  - [ ] Neovim plugins - Arrow
+  - [ ] Neovim plugins - Transient mode
+  - [ ] Neovim plugins - Rainbow mode for CSS
+  - [ ] Neovim plugins - PKM tools - obsidian, roam, etc.
+  - [ ] Emacs packages - Combobulate
+  - [ ] Emacs packages - magit-todos
+  - [ ] Emacs packages - dired-x, dired-aux, dired-plus
+  - [ ] Emacs packages - goto-chg.el
+  - [ ] Emacs packages - no-littering
+  - [ ] Emacs packages - lsp-booster
+  - [ ] Emacs packages - dump-jump
+  - [ ] Emacs packages - multicursors
+  - [ ] Emacs packages - hippie-expand
+  - [ ] Emacs packages - Try
+  - [ ] Emacs packages - Snippets
+  - [ ] Emacs packages - Auto pairs
+  - [ ] Emacs packages - Autocompletion
+  - [ ] Emacs packages - VCS
+  - [ ] Emacs packages - Treesitter plugins
+  - [ ] Emacs packages - LSP tools
+  - [ ] Emacs packages - Refactoring tools
+  - [ ] Emacs packages - Linter
+  - [ ] Emacs packages - Folding - Origami
+  - [ ] Emacs packages - Terminal manager
+  - [ ] Emacs packages - Filesystem manager - sidebar and buffer
+  - [ ] Emacs packages - Project manager
+  - [ ] Emacs packages - Code outliner
+  - [ ] Emacs packages - Task runner
+  - [ ] Emacs packages - Test runner
+  - [ ] Emacs packages - Code runner
+  - [ ] Emacs packages - REPL runner
+  - [ ] Emacs packages - thing-at-point
+  - [ ] Emacs packages - evil-textobj-tree-sitter
+  - [ ] Emacs packages - Debugger - realgud
+  - [ ] Emacs packages - PKM tools - obsidian, roam, etc.
+  - [ ] Emacs packages - Session manager
+  - [ ] Emacs packages - Text case
+  - [ ] Emacs packages - Inc/Dec operator
+  - [ ] Emacs packages - Split join
+  - [ ] Emacs packages - Move/duplicate operator
+  - [ ] Emacs packages - Find and replace
+  - [ ] Emacs packages - Text objects plain and treesitter based
+  - [ ] Emacs packages - Annotation generator
+  - [ ] Emacs packages - Alternate files
+  - [ ] Emacs packages - Scratch files
+  - [ ] Emacs packages - Transient mode
+  - [ ] Emacs packages - Rainbow mode
+  - [ ] Emacs packages - Icons
+  - [ ] Emacs packages - Tabline
+  - [ ] Emacs packages - Statusline
+  - [ ] Emacs packages - UI components
+  - [ ] Emacs packages - Highlight word under cursor
+  - [ ] Emacs packages - Virtual text to discover motions
+  - [ ] Emacs packages - Window layout manager
+  - [ ] Emacs packages - Yanky
+  - [ ] Emacs packages - Marks
+  - [ ] Emacs packages - Undos
+  - [ ] Emacs packages - Jumps
+  - [ ] Emacs packages - Changes
+  - [ ] Emacs packages - Harpoon
+  - [ ] Emacs packages - Arrow
+  - [ ] Emacs packages - Jinx
+  - [ ] Emacs packages - Taskrunner
+  - [ ] Emacs packages - Persp
+  - [ ] Emacs packages - Eat
+  - [ ] Emacs packages - Avy
+  - [ ] Neovim improvments - Fix neogit tab handling
+  - [ ] Neovim improvments - Add conflict marker mappings
+  - [ ] Neovim improvments - Fix neogit log buffer top line issue
+  - [ ] Neovim improvments - Fugitive with cloud integrations
+  - [ ] Neovim improvments - Targets
+  - [ ] Neovim improvments - Lion
+  - [ ] Neovim improvments - Render markdown
+  - [ ] Neovim improvments - Fix neogit rebase modify
+  - [ ] Neovim improvments - Fix neogit char wise diff
+  - [ ] Neovim improvments - Check paredit, parinfer, vim-sexp vs nvim-treesitter-sexp
+  - [ ] Neovim improvments - Check if refactoring plugings are required
+  - [ ] Neovim improvments - Mini
+  - [ ] Neovim improvments - Add ft filters to language plugins
+  - [ ] Configure boot loaded as systemd and check what nixos setting efi.canTouchEfiVariables does
+  - [ ] Wayland support in chromium and electron applications via environment.sessionVariables.NIXOS_OZONE_WL = "1";
+  - [ ] Emacs packages - UI/UX - doom-themes # Theme
+  - [ ] Emacs packages - UI/UX - nerd-icons # Icons
+  - [ ] Emacs packages - UI/UX - doom-modeline # Modeline
+  - [ ] Emacs packages - UI/UX - dashboard # Dashboard
+  - [ ] Emacs packages - Treesitter integration - treesit-grammars.with-all-grammars # Language grammars
+  - [ ] Emacs packages - Treesitter integration - tree-sitter-langs # Language queries
+  - [ ] Neovim plugins - Keymaps - dial-nvim # Increment and decrement operator
+  - [ ] Neovim plugins - Keymaps - treesj # Split and join operator
+  - [ ] Neovim plugins - Keymaps - nvim-gomove # Move and duplicate block operator
+  - [ ] Neovim plugins - Keymaps - nvim-various-textobjs # Text objects
+  - [ ] Neovim plugins - Keymaps - other-nvim # Alternative files
+  - [ ] Neovim plugins - Keymaps - neogen # Annotation generator
+  - [ ] Neovim plugins - Keymaps - scretch-nvim # Scratch files
+  - [ ] Neovim plugins - UI/UX - tabby-nvim # Tabline
+  - [ ] Neovim plugins - UI/UX - feline-nvim # Statusline
+  - [ ] Neovim plugins - UI/UX - dashboard-nvim # Dashboard
+  - [ ] Neovim plugins - UI/UX - nvim-notify # UI for notifications
+  - [ ] Neovim plugins - UI/UX - focus-nvim # Window layout manager
+  - [ ] Neovim plugins - UI/UX - edgy-nvim # Window layout manager
+  - [ ] Neovim plugins - Autocompletion - nvim-scissors # Manage snippets
+  - [ ] Neovim plugins - Treesitter integration - nvim-treesitter-textsubjects # Treesitter context aware text objects
+  - [ ] Neovim plugins - Treesitter integration - nvim-ts-autotag # Manipulate tag pairs
+  - [ ] Neovim plugins - Treesitter integration - nvim-treesitter-pairs # Manipulate pair objects
+  - [ ] Neovim plugins - Treesitter integration - nvim-treesitter-sexp # Manipulate S-expressions
+  - [ ] Neovim plugins - Treesitter integration - nvim-ts-context-commentstring # Manipulate comments
+  - [ ] Neovim plugins - Treesitter integration - nvim-paredit # Paredit implementation for neovim
+  - [ ] Neovim plugins - Refactoring - nvim-treesitter-refactor
+  - [ ] Neovim plugins - Refactoring - refactoring-nvim
+  - [ ] Neovim plugins - Refactoring - inc-rename-nvim
+  - [ ] Neovim plugins - Project manager - project-nvim
+  - [ ] Neovim plugins - Task runner - overseer-nvim
+  - [ ] Neovim plugins - Notebook runner - molten-nvim
+  - [ ] Neovim plugins - Session manager - persistence-nvim
+  - [ ] Emacs/Neovim - run as daemon
+  - [ ] Neovim - try plugins
+  - [ ] Neovim - kulala
+  - [ ] Neovim - lspsaga
+  - [ ] Option to show tab chars in neovim and emacs
+  - [ ] Themes - Brave
+  - [ ] Themes - Emacs
+  - [ ] Themes - Neovim
+  - [ ] Themes - Zellij
+  - [ ] Themes - Alacritty
+  - [ ] Themes - Hyprland
+  - [ ] Themes - Waybar
+  - [ ] Themes - Fzf
+  - [ ] Themes - Bat
+  - [ ] Themes - Lazygit
+  - [ ] Themes - Rofi
+  - [ ] Themes - Starship
+  - [ ] Themes - Nushell
+  - [ ] Themes - Difftastic
+  - [ ] Themes - Neovim feline
+  - [ ] Themes - Neovim tabby
+  - [ ] Themes - Cosmic
+  - [ ] Themes - Firefox
+  - [ ] Themes - Wezterm
+  - [ ] Arch linux dunst
+  - [ ] Use Matrix bridges to connect to all IM apps like Whatsapp, Discord, etc. or similar tools like Beeper, etc.

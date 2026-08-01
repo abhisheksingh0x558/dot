@@ -1,0 +1,75 @@
+** Logs [0/74]
+- [ ] emacs: configure spell checker
+- [ ] emacs: setup autocompletion
+- [ ] emacs: setup fuzzy finder
+- [ ] emacs: setup vcs integration
+- [ ] emacs: setup filesystem manager
+- [ ] emacs: setup terminal manager
+- [ ] emacs: setup repl manager
+- [ ] emacs: setup snippet executer
+- [ ] emacs: setup folding
+- [ ] emacs: setup outliner
+- [ ] emacs: setup treesitter integration
+- [ ] emacs: setup lsp integration
+- [ ] emacs: setup linter
+- [ ] emacs: setup formatter
+- [ ] emacs: setup debugger
+- [ ] emacs: setup ai integration
+- [ ] emacs: setup github client
+- [ ] emacs: add language utilities
+- [ ] emacs: setup nix support
+- [ ] emacs: setup haskell support
+- [ ] emacs: setup rust support
+- [ ] emacs: setup go support
+- [ ] emacs: setup scala support
+- [ ] emacs: setup purescript support
+- [ ] emacs: setup cpp support
+- [ ] nvim: configure spell checker
+- [ ] nvim: setup autocompletion
+- [ ] nvim: setup fuzzy finder
+- [ ] nvim: setup vcs integration
+- [ ] nvim: setup pkm tool
+- [ ] nvim: setup filesystem manager
+- [ ] nvim: setup terminal manager
+- [ ] nvim: setup repl manager
+- [ ] nvim: setup snippet executer
+- [ ] nvim: setup folding
+- [ ] nvim: setup outliner
+- [ ] nvim: setup treesitter integration
+- [ ] nvim: setup lsp integration
+- [ ] nvim: setup linter
+- [ ] nvim: setup formatter
+- [ ] nvim: setup test runner
+- [ ] nvim: setup debugger
+- [ ] nvim: setup ai integration
+- [ ] nvim: setup github client
+- [ ] nvim: add language utilities
+- [ ] nvim: setup nushell support
+- [ ] nvim: setup zsh support
+- [ ] nvim: setup bash support
+- [ ] nvim: setup just support
+- [ ] nvim: setup make support
+- [ ] nvim: setup nix support
+- [ ] nvim: setup lua support
+- [ ] nvim: setup fennel support
+- [ ] nvim: setup haskell support
+- [ ] nvim: setup lisp support
+- [ ] nvim: setup zig support
+- [ ] nvim: setup rust support
+- [ ] nvim: setup racket support
+- [ ] nvim: setup go support
+- [ ] nvim: setup scala support
+- [ ] nvim: setup clojure support
+- [ ] nvim: setup kotlin support
+- [ ] nvim: setup javascript support
+- [ ] nvim: setup purescript support
+- [ ] nvim: setup typescript support
+- [ ] nvim: setup cpp support
+- [ ] nvim: setup python support
+- [ ] nvim: setup protobuf support
+- [ ] nvim: setup graphql support
+- [ ] nvim: setup json support
+- [ ] nvim: setup toml support
+- [ ] nvim: setup yaml support
+- [ ] nvim: setup csv support
+- [ ] nvim: setup sql support

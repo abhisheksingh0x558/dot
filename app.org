@@ -1,0 +1,227 @@
+** .config/mise/config.legacy.toml
+#+begin_src
+[tools]
+# CLIs
+coreutils = "latest"                                                                 # Core utilities
+task = "latest"                                                                      # Command runner
+tokei = "latest"                                                                     # Code counter
+grex = "latest"                                                                      # Generate regular expressions
+"aqua:tealdeer-rs/tealdeer" = "latest"                                               # Cheatsheets # TODO: Add to official registry
+cheat = "latest"                                                                     # Cheatsheets
+"cargo:denisidoro/navi" = "latest"                                                   # Cheatsheets # TODO: Add to official registry
+dua = "latest"                                                                       # View disk usage
+gdu = "latest"                                                                       # View disk usage
+"aqua:solidiquis/erdtree" = "latest"                                                 # View disk usage
+"cargo:https://github.com/Canop/dysk" = "latest"                                     # View disk usage
+"aqua:ericchiang/pup" = "latest"                                                     # HTML toolkit # TODO: Add to official registry
+"go:github.com/sibprogrammer/xq" = "latest"                                          # XML and HTML toolkit # TODO: Add to official registry
+"aqua:01mf02/jaq" = "latest"                                                         # JSON toolkit # TODO: Add to official registry
+dasel = "latest"                                                                     # JSON, TOML, YAML, XML and CSV toolkit
+dprint = "latest"                                                                    # Formatter
+"aqua:numtide/treefmt" = "latest"                                                    # Formatter # TODO: Add to official registry
+"aqua:str4d/rage" = "latest"                                                         # Encryption # TODO: Add to official registry
+"cargo:https://github.com/jedisct1/rsign2" = "latest"                                # Signing # TODO: Add to official registry
+"cargo:https://github.com/gibbz00/rops" = { version = "latest", crate = "rops-cli" } # Configuration file encryption # TODO: Add to official registry
+curlie = "latest"                                                                    # HTTP client
+httpie-go = "latest"                                                                 # HTTP client
+grpcurl = "latest"                                                                   # gRPC client
+"aqua:fatedier/frp" = "latest"                                                       # Expose local web server to internet # TODO: Add to official registry
+"aqua:openziti/zrok" = "latest"                                                      # Expose local web server to internet # TODO: Add to official registry
+jq = "latest"                                                                        # JSON toolkit # TODO: Remove this
+pre-commit = "latest"                                                                # Git hook manager # TODO: Remove this
+"npm:@mermaid-js/mermaid-cli" = "latest"                                             # Diagram as code # TODO: Add to official registry
+pulumi = "latest"                                                                    # Infrastructure as code
+terragrunt = "latest"                                                                # Infrastructure as code
+kubergrunt = "latest"                                                                # Kubernetes integration with Helm and Terraform # TODO: Remove this
+
+# TUIs
+"aqua:skim-rs/skim" = "latest"       # Fuzzy finder # TODO: Add to official registry
+"go:github.com/akavel/up" = "latest" # Utility for writing pipes # TODO: Add to official registry
+gitui = "latest"                     # Git client
+"aqua:bvaisvil/zenith" = "latest"    # System monitor # TODO: Add to official registry
+"aqua:xxxserxxx/gotop" = "latest"    # System monitor # TODO: Add to official registry
+
+# Shell utilities
+"cargo:https://github.com/rossmacarthur/sheldon" = "latest"                                    # Plugin manager # TODO: Add to official registry
+direnv = "latest"                                                                              # Environment manager
+#+end_src
+
+** dot_Brewfile.legacy.tmpl
+#+begin_src
+# Homebrew extensions
+brew "whalebrew" # Docker image installer
+brew "mas"       # MacOS App Store application installer
+
+# Shells
+brew "elvish"
+brew "fish"
+
+# CLIs
+brew "uutils-findutils" # Find utilities
+brew "uutils-diffutils" # Diff utilities
+brew "nginx"            # Web server and reverse proxy
+brew "ykman"            # YubiKey client
+brew "grep"             # Search files # TODO: Remove this
+brew "entr"             # File watcher # TODO: Remove this
+brew "watchman"         # File watcher # TODO: Remove this
+brew "minisign"         # Signing # TODO: Remove this
+brew "httpie"           # HTTP client # TODO: Remove this
+brew "wget"             # HTTP client # TODO: Remove this
+brew "curl"             # HTTP client # TODO: Remove this
+brew "graphqurl"        # GraphQL client # TODO: Remove this
+cask "ngrok"            # Expose local web server to internet
+
+# TUIs
+brew "htop"    # System monitor # TODO: Remove this
+brew "btop"    # System monitor # TODO: Remove this
+brew "glances" # System monitor # TODO: Remove this
+
+# GUIs
+cask "firefox@developer-edition" # Browser
+cask "firefox"                   # Browser
+cask "alacritty"                 # Terminal
+cask "wezterm"                   # Terminal
+cask "iterm2"                    # Terminal
+cask "wave"                      # Terminal
+cask "vscodium"                  # Text editor
+cask "void"                      # Text editor
+cask "appflowy"                  # Note taker
+cask "keybase"                   # Instant messenger
+# cask "proton-mail"  # Mail # TODO: Enable this once free
+cask "insomnia"                  # API client
+cask "protonvpn"                 # VPN
+cask "mockoon"                   # Mock server
+cask "podman-desktop"            # Podman client
+cask "openlens"                  # Kubernetes client
+cask "yubico-authenticator"      # TOTP generator
+cask "arc"                       # Browser
+cask "windsurf"                  # Text editor
+cask "1password"                 # Password manager
+cask "readdle-spark"             # Mail
+cask "notion-mail"               # Mail
+cask "notion-calendar"           # Calendar
+cask "ticktick"                  # Reminder
+cask "linear-linear"             # Issue tracker
+cask "tableplus"                 # DB client
+cask "dropbox"                   # Cloud storage
+cask "nordvpn"                   # VPN
+mas "Saber", id: 1671523739      # Handwritten note taker # TODO: Move these to casks
+mas "Numbers", id: 409203825     # Spreadsheet # TODO: Move these to casks
+mas "Pages", id: 409201541       # Word processing # TODO: Move these to casks
+mas "Keynote", id: 409183694     # Presentation # TODO: Move these to casks
+mas "Goodnotes", id: 1444383602  # Handwritten note taker # TODO: Move these to casks
+mas "Notability", id: 360593530  # Handwritten note taker # TODO: Move these to casks
+mas "Perplexity", id: 6714467650 # GenAI # TODO: Move these to casks
+{{- if eq .chezmoi.arch "arm64" }}
+# TODO: Enable this for all architectures
+# ARM machine
+cask "thebrowsercompany-dia" # Browser
+{{- end }}
+{{- if eq .profile "cyberhaven" }}
+# TODO: Remove this
+# Cyberhaven workstation
+cask "microsoft-onenote"    # Note taker
+cask "microsoft-teams"      # Instant messenger
+cask "microsoft-outlook"    # Mail
+cask "microsoft-word"       # Word processing
+cask "microsoft-excel"      # Spreadsheet
+cask "microsoft-powerpoint" # Presentation
+cask "gitkraken"            # Git client
+cask "docker-desktop"       # Docker client
+cask "lens"                 # Kubernetes client
+cask "goland"               # IDE
+{{- end }}
+#+end_src
+
+** .config/paru.legacy.txt
+#+begin_src text
+# Shells
+elvish
+fish
+zsh
+
+# Key mapper
+keyd
+
+# CLIs
+uutils-findutils # Find utilities
+uutils-diffutils # Diff utilities
+nginx            # Web server and reverse proxy
+aws-cli-v2       # AWS client
+azure-cli        # Azure client
+yubikey-manager  # YubiKey client
+grep             # Search files # TODO: Remove this
+entr             # File watcher # TODO: Remove this
+watchman         # File watcher # TODO: Remove this
+minisign         # Signing # TODO: Remove this
+httpie           # HTTP client # TODO: Remove this
+wget             # HTTP client # TODO: Remove this
+curl             # HTTP client # TODO: Remove this
+graphqurl        # GraphQL client # TODO: Remove this
+ngrok            # Expose local web server to internet
+google-cloud-cli # Google Cloud client
+
+# TUIs
+htop    # System monitor # TODO: Remove this
+btop    # System monitor # TODO: Remove this
+glances # System monitor # TODO: Remove this
+
+# GUIs
+# pinentry-curses           # Passphrase dialog # TODO: Enable this
+firefox-developer-edition # Browser
+brave                     # Browser
+firefox                   # Browser
+alacritty                 # Terminal
+wezterm                   # Terminal
+# iterm                    # Terminal # TODO: Enable this
+waveterm                  # Terminal
+neovide                   # Text editor
+vscodium                  # Text editor
+void                      # Text editor
+logseq-desktop            # Note taker
+keybase-gui               # Instant messenger
+proton-mail               # Email
+insomnia                  # API client
+dbeaver                   # DB client
+# proton-drive              # Cloud storage # TODO: Enable this
+proton-vpn-gtk-app        # VPN
+mockoon                   # Mock server
+podman-desktop            # Podman client
+openlens-bin              # Kubernetes client
+yubico-authenticator      # TOTP generator
+# raycast                   # Application launcher # TODO: Enable this
+# thebrowsercompany-dia     # Browser # TODO: Enable this
+# arc                       # Browser # TODO: Enable this
+obsidian                  # Note taker
+notion-app-electron       # Note taker
+p3x-onenote               # Note taker
+windsurf                  # Text editor
+teams                     # Instant messenger
+1password                 # Password manager
+# readdle-spark             # Mail # TODO: Enable this
+# notion-mail               # Mail # TODO: Enable this
+notion-calendar-electron  # Calendar
+# outlook                   # Calendar # TODO: Enable this
+ticktick                  # Reminder
+linear-nativefier         # Issue tracker
+postman-bin               # API client
+tableplus                 # DB client
+dropbox                   # Cloud storage
+nordvpn-gui               # VPN
+figma-linux               # Design
+# word                      # Word processing # TODO: Enable this
+# excel                     # Spreadsheet # TODO: Enable this
+# powerpoint                # Presentation # TODO: Enable this
+gitkraken                 # Git client
+docker-desktop            # Docker client
+lens-bin                  # Kubernetes client
+goland                    # IDE
+chatgpt-desktop           # GenAI
+saber                     # Handwritten note taker
+# numbers                   # Spreadsheet # TODO: Enable this
+# pages                     # Word processing # TODO: Enable this
+# keynote                   # Presentation # TODO: Enable this
+# goodnotes                 # Handwritten note taker # TODO: Enable this
+# notability                # Handwritten note taker # TODO: Enable this
+perplexity-ai-app         # GenAI
+#+end_src
