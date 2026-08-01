@@ -1,0 +1,320 @@
+- [x] dot: initialize
+- [x] chezmoi: configure settings
+- [ ] just: define chezmoi commands
+- [ ] bin: define chezmoi scripts
+- [ ] just: define mise commands
+- [ ] bin: define mise scripts
+- [ ] just: define paru commands
+- [ ] bin: define paru scripts
+- [ ] just: define brew commands
+- [ ] bin: define brew scripts
+- [ ] just: define nix commands
+- [ ] bin: define nix scripts
+- [ ] dot: define install script
+- [x] mise: configure settings
+- [x] editorconfig: configure default properties
+- [x] editorconfig: configure elisp overrides
+- [x] editorconfig: configure just overrides
+- [x] editorconfig: configure rust overrides
+- [x] editorconfig: configure python overrides
+- [x] editorconfig: configure org overrides
+- [-] paru: install system applications
+- [-] paru: install shells
+- [-] paru: install key mapper
+- [-] paru: install fonts
+- [-] paru: install clis
+- [-] paru: install tuis
+- [-] paru: install guis
+- [-] paru: install wuis
+- [-] paru: install shell utilities
+- [-] paru: install ai utilities
+- [x] brew: install shells
+- [x] brew: install key mapper
+- [x] brew: install fonts
+- [x] brew: install clis
+- [x] brew: install tuis
+- [x] brew: install guis
+- [x] brew: install wuis
+- [x] brew: install shell utilities
+- [x] brew: install ai utilities
+- [ ] dot: define brew scripts
+- [x] brew: install work clis
+- [x] brew: install work ai utilities
+- [x] kanata: configure key mappings
+- [x] chezmoi: configure settings
+- [x] jj: configure settings
+- [x] git: configure settings
+- [x] ssh: configure settings
+- [ ] just: define ssh commands
+- [ ] bin: define ssh scripts
+- [x] gpg: configure settings
+- [ ] just: define gpg commands
+- [ ] bin: define gpg scripts
+- [ ] just: define age commands
+- [ ] bin: define age scripts
+- [x] hyprland: configure key mappings
+- [x] systemd: configure elephant unit
+- [x] systemd: configure walker unit
+- [-] xdg: configure user directories
+- [x] nu: configure path
+- [x] nu: configure environment
+- [x] nu: setup version manager
+- [x] nu: configure key mappings
+- [x] nu: configure ui and ux settings
+- [x] nu: setup autocompletion
+- [x] nu: setup fuzzy finder
+- [x] nu: setup environment manager
+- [x] nu: setup secret manager
+- [-] zsh: configure path
+- [-] zsh: configure environment
+- [-] zsh: setup plugin manager
+- [ ] just: define zsh commands
+- [ ] bin: define zsh scripts
+- [-] zsh: setup version manager
+- [-] zsh: configure key mappings
+- [-] zsh: configure ui and ux settings
+- [-] zsh: setup autocompletion
+- [-] zsh: setup fuzzy finder
+- [-] zsh: setup environment manager
+- [-] zsh: setup secret manager
+- [-] bash: configure path
+- [-] bash: configure environment
+- [-] bash: setup plugin manager
+- [-] bash: setup version manager
+- [-] bash: configure key mappings
+- [-] bash: configure ui and ux settings
+- [-] bash: setup autocompletion
+- [-] bash: setup fuzzy finder
+- [-] bash: setup environment manager
+- [-] bash: setup secret manager
+- [ ] bin: define git scripts
+- [-] git: configure aliases
+- [-] nu: configure aliases
+- [-] zsh: configure aliases
+- [-] bash: configure aliases
+- [-] bat: configure settings
+- [-] fd: configure settings
+- [-] rg: configure settings
+- [-] fzf: configure settings
+- [x] atuin: configure settings
+- [x] zellij: configure settings
+- [x] lazygit: configure settings
+- [-] wezterm: configure settings
+- [x] ghostty: configure settings
+- [-] starship: configure settings
+- [x] git: configure work settings
+- [x] nu: configure work environment
+- [-] zsh: configure work environment
+- [-] bash: configure work environment
+- [x] colima: configure ssh settings
+- [x] docker: configure settings
+- [x] netrc: configure settings
+- [x] ssh: configure work settings
+- [x] ssh: configure colima settings
+- [ ] just: define gh commands
+- [ ] bin: define gh scripts
+- [ ] gh: install extensions
+- [-] paru: install bash tools
+- [-] paru: install beancount tools
+- [-] paru: install typst tools
+- [-] paru: install lua tools
+- [-] paru: install fennel tools
+- [-] paru: install haskell tools
+- [-] paru: install rust tools
+- [-] paru: install go tools
+- [-] paru: install javascript tools
+- [-] paru: install python tools
+- [-] paru: install protobuf tools
+- [-] paru: install opentofu tools
+- [-] brew: install bash tools
+- [-] brew: install beancount tools
+- [-] brew: install typst tools
+- [-] brew: install lua tools
+- [-] brew: install fennel tools
+- [-] brew: install haskell tools
+- [-] brew: install rust tools
+- [-] brew: install go tools
+- [-] brew: install javascript tools
+- [-] brew: install python tools
+- [-] brew: install protobuf tools
+- [-] brew: install opentofu tools
+- [-] chezmoi: install fennel tools
+- [-] dot: configure lua tools
+- [-] dot: configure fennel tools
+- [-] chezmoi: install emacs package manager
+- [-] emacs: configure elisp path
+- [-] emacs: setup package manager
+- [ ] just: define emacs commands
+- [ ] bin: define emacs scripts
+- [-] emacs: setup key mapping packages
+- [-] emacs: configure key mapping packages
+- [-] emacs: configure ui and ux settings
+- [-] emacs: setup ui and ux packages
+- [-] emacs: configure ui and ux packages
+- [-] emacs: configure spell checker settings
+- [-] emacs: configure autocompletion settings
+- [-] emacs: setup autocompletion packages
+- [-] emacs: configure autocompletion packages
+- [-] emacs: setup fuzzy finder packages
+- [-] emacs: configure fuzzy finder packages
+- [-] emacs: setup vcs packages
+- [-] emacs: configure vcs packages
+- [-] emacs: configure note taker settings
+- [-] emacs: setup note taker packages
+- [-] emacs: configure note taker packages
+- [-] emacs: setup file system packages
+- [-] emacs: setup terminal packages
+- [-] emacs: setup repl packages
+- [-] emacs: setup snippet executor packages
+- [-] emacs: setup folding packages
+- [-] emacs: setup outliner packages
+- [-] emacs: setup treesitter packages
+- [-] emacs: configure treesitter packages
+- [-] emacs: setup lsp packages
+- [-] emacs: configure lsp packages
+- [-] emacs: setup linter packages
+- [-] emacs: configure linter packages
+- [-] emacs: setup formatter packages
+- [-] emacs: configure formatter packages
+- [-] emacs: setup debugger packages
+- [-] emacs: setup ai packages
+- [-] emacs: setup dotfile packages
+- [-] emacs: configure dotfile packages
+- [-] emacs: setup rest packages
+- [-] emacs: setup github packages
+- [-] emacs: define language utilities
+- [-] emacs: configure just support
+- [-] emacs: configure nix support
+- [-] emacs: configure beancount support
+- [-] emacs: configure haskell support
+- [-] emacs: configure rust support
+- [-] emacs: configure go support
+- [-] emacs: configure scala support
+- [-] emacs: configure purescript support
+- [-] emacs: configure cpp support
+- [-] chezmoi: install nvim plugin manager
+- [-] nvim: setup plugin manager
+- [ ] just: define nvim commands
+- [ ] bin: define nvim scripts
+- [-] nvim: configure key mappings
+- [-] nvim: configure ui and ux settings
+- [-] nvim: configure spell checker settings
+- [-] nvim: setup lua libraries
+- [-] chezmoi: install nvim lua transpiler
+- [-] nvim: setup lua transpiler
+- [-] nvim: setup key mapping plugins
+- [-] nvim: setup ui and ux plugins
+- [-] nvim: configure ui and ux plugins
+- [-] nvim: setup autocompletion plugins
+- [-] nvim: setup fuzzy finder plugins
+- [-] nvim: configure fuzzy finder plugins
+- [-] nvim: setup vcs plugins
+- [-] nvim: configure vcs plugins
+- [-] nvim: setup note taker plugins
+- [-] nvim: configure note taker plugins
+- [-] nvim: setup file system plugins
+- [-] nvim: configure file system plugins
+- [-] nvim: setup terminal plugins
+- [-] nvim: configure terminal plugins
+- [-] nvim: setup repl plugins
+- [-] nvim: setup snippet executor plugins
+- [-] nvim: configure folding settings
+- [-] nvim: setup folding plugins
+- [-] nvim: setup outliner plugins
+- [-] nvim: configure outliner plugins
+- [-] nvim: configure treesitter settings
+- [-] nvim: setup treesitter plugins
+- [-] nvim: configure treesitter plugins
+- [-] nvim: configure lsp settings
+- [-] nvim: setup lsp plugins
+- [-] nvim: configure linter settings
+- [-] nvim: setup linter plugins
+- [-] nvim: configure linter plugins
+- [-] nvim: setup formatter plugins
+- [-] nvim: configure formatter plugins
+- [-] nvim: setup test runner plugins
+- [-] nvim: setup debugger plugins
+- [-] nvim: setup ai plugins
+- [-] nvim: setup dotfile plugins
+- [-] nvim: configure dotfile plugins
+- [-] nvim: setup rest plugins
+- [-] nvim: setup github plugins
+- [-] nvim: define language utilities
+- [-] nvim: configure nushell support
+- [-] nvim: configure zsh support
+- [-] nvim: configure bash support
+- [-] nvim: configure just support
+- [-] nvim: configure make support
+- [-] nvim: configure nix support
+- [-] nvim: configure beancount support
+- [-] nvim: configure typst support
+- [-] nvim: configure lua support
+- [-] nvim: configure fennel support
+- [-] nvim: configure haskell support
+- [-] nvim: configure lisp support
+- [-] nvim: configure zig support
+- [-] nvim: configure rust support
+- [-] nvim: configure racket support
+- [-] nvim: configure go support
+- [-] nvim: configure scala support
+- [-] nvim: configure clojure support
+- [-] nvim: configure kotlin support
+- [-] nvim: configure javascript support
+- [-] nvim: configure purescript support
+- [-] nvim: configure typescript support
+- [-] nvim: configure cpp support
+- [-] nvim: configure python support
+- [-] nvim: configure protobuf support
+- [-] nvim: configure graphql support
+- [-] nvim: configure json support
+- [-] nvim: configure toml support
+- [-] nvim: configure yaml support
+- [-] nvim: configure csv support
+- [-] nvim: configure sql support
+- [-] chezmoi: install doomemacs
+- [-] doomemacs: setup framework
+- [-] bash: configure path
+- [-] just: define doomemacs commands
+- [-] bin: define doomemacs scripts
+- [-] doomemacs: configure ui and ux settings
+- [-] doomemacs: configure treesitter settings
+- [-] doomemacs: configure lsp settings
+- [-] doomemacs: configure formatter settings
+- [-] doomemacs: configure debugger settings
+- [-] doomemacs: configure note taker settings
+- [-] doomemacs: setup note taker packages
+- [-] doomemacs: configure rest settings
+- [-] doomemacs: configure ai settings
+- [-] doomemacs: configure go support
+- [-] doomemacs: configure javascript and typescript support
+- [-] doomemacs: configure python support
+- [-] lazyvim: setup framework
+- [-] just: define lazyvim commands
+- [-] lazynvim: configure test runner settings
+- [-] lazynvim: configure debugger settings
+- [-] lazyvim: configure rest settings
+- [-] lazyvim: configure ai settings
+- [-] lazyvim: configure go support
+- [-] lazyvim: configure javascript and typescript support
+- [-] lazyvim: configure python support
+- [x] hx: configure ui and ux settings
+- [-] aider: configure settings
+- [x] opencode: configure settings
+- [x] opencode: configure instructions
+- [-] pi: configure settings
+- [-] pi: configure instructions
+- [-] codex: configure settings
+- [-] codex: configure instructions
+- [-] gemini: configure settings
+- [-] gemini: configure instructions
+- [x] claude: configure settings
+- [x] claude: configure instructions
+- [-] zed: configure key mappings
+- [-] zed: configure ui and ux settings
+- [-] vscode: configure key mappings
+- [-] cursor: configure key mappings
+- [-] nvimlegacy: wip
+- [-] emacslegacy: wip
+- [-] nvim: wip
+- [-] emacs: wip
+- [x] wip

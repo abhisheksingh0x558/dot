@@ -1,45 +1,47 @@
 # Documentation
-/README.md
+README.md
 # License
-/LICENSE
+LICENSE
 # Installation script
-/install
+install
 # Fennel language server
-/flsproject.fnl
+flsproject.fnl
+commit.txt
+brew.txt
 
 {{ if ne .chezmoi.os "linux" }}
 # Arch Linux only includes
 # Paru scripts
-/.bin/paru-init
-/.bin/paru-install
-/.bin/paru-prune
-/.bin/paru-refresh
-/.bin/paru-sync
-/.bin/paru-upgrade
+.bin/paru-init
+.bin/paru-install
+.bin/paru-prune
+.bin/paru-refresh
+.bin/paru-sync
+.bin/paru-upgrade
 # Paru applications
-/.config/paru.toml
+.config/paru.toml
 # Hyprland settings
-/.config/hypr/
+.config/hypr/
 # Systemd units
-/.config/systemd/
+.config/systemd/
 # XDG settings
-/.config/user-dirs.dirs
-/.config/user-dirs.locale
+.config/user-dirs.dirs
+.config/user-dirs.locale
 {{ end }}
 
 {{ if ne .chezmoi.os "darwin" }}
 # MacOS only includes
 # Hombrew scripts
-/.bin/brew-init
-/.bin/brew-install
-/.bin/brew-prune
-/.bin/brew-refresh
-/.bin/brew-sync
-/.bin/brew-upgrade
+.bin/brew-init
+.bin/brew-install
+.bin/brew-prune
+.bin/brew-refresh
+.bin/brew-sync
+.bin/brew-upgrade
 # Homebrew applications
-/.Brewfile
+.Brewfile
 # MacOS application settings
-/Library/Application Support/
+Library/Application Support/
 # Doomemacs scripts
-/.bin/doomemacs-init
+.bin/doomemacs-init
 {{ end }}
